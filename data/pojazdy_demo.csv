@@ -1,0 +1,19 @@
+ID_pojazdu,Typ,Winda,Status,Przebieg_km,Dokumenty
+POJ-001,Kontener z windą,TAK,Aktywny,188400,Kompletne
+POJ-002,Kontener z windą,TAK,Serwis,214900,Kompletne
+POJ-003,Kontener z windą,TAK,Aktywny,176250,Kompletne
+POJ-004,Dostawczy,NIE,Aktywny,152700,Kompletne
+POJ-005,Dostawczy,NIE,Aktywny,133100,Kompletne
+POJ-006,Dostawczy,NIE,Przestój,201850,Braki
+POJ-007,Dostawczy,NIE,Aktywny,98200,Kompletne
+POJ-008,Dostawczy,NIE,Rezerwowy,165400,Kompletne
+POJ-009,Dostawczy,NIE,Aktywny,118750,Kompletne
+POJ-010,Dostawczy,NIE,Aktywny,144600,Kompletne
+POJ-011,Van,NIE,Aktywny,87700,Kompletne
+POJ-012,Van,NIE,Aktywny,109250,Kompletne
+POJ-013,Van,NIE,Aktywny,124900,Kompletne
+POJ-014,Osobowy,NIE,Aktywny,69700,Kompletne
+POJ-015,Osobowy,NIE,Aktywny,81650,Kompletne
+POJ-016,Osobowy,NIE,Rezerwowy,93300,Kompletne
+POJ-017,Osobowy,NIE,Aktywny,74850,Kompletne
+POJ-018,Osobowy,NIE,Aktywny,105100,Kompletne
