@@ -1,0 +1,28 @@
+{
+  "application": "ZIELONA MARKA PrintFlow Control Center",
+  "demo_notice": "Wszystkie dane są syntetyczne i służą wyłącznie prezentacji portfolio.",
+  "stages": [
+    "Zapytanie",
+    "Oferta",
+    "Negocjacje",
+    "Zamówienie",
+    "Zaliczka",
+    "Prepress",
+    "Produkcja",
+    "Introligatornia",
+    "Kontrola jakości",
+    "Logistyka",
+    "Faktura",
+    "Zamknięte"
+  ],
+  "roles": {
+    "Właściciel": ["*"],
+    "Handel": ["Zapytanie", "Oferta", "Negocjacje", "Zamówienie"],
+    "Produkcja": ["Prepress", "Produkcja", "Introligatornia"],
+    "Jakość": ["Kontrola jakości"],
+    "Logistyka": ["Logistyka"],
+    "Finanse": ["Zaliczka", "Faktura", "Zamknięte"]
+  },
+  "transport_types": ["Odbiór własny", "Kurier", "Transport firmowy", "Transport dedykowany"],
+  "product_types": ["Katalog", "Ulotka", "Opakowanie", "Instrukcja", "Plakat", "Materiały POS"]
+}
