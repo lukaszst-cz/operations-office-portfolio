@@ -14,10 +14,12 @@ Jako Key Account Manager w spółce akcyjnej z branży poligraficzno-produkcyjne
 
 ## Udokumentowane wyniki
 
-- ograniczenie zwrotów o **39% dla Empiku**,
-- ograniczenie zwrotów o **32% dla Auchan**.
+- ograniczenie zwrotów o **39% dla ogólnopolskiej sieci detalicznej A**,
+- ograniczenie zwrotów o **32% dla ogólnopolskiej sieci detalicznej B**.
 
 ## Kompetencje
 
 Obsługa klienta B2B, koordynacja produkcji, kontrola jakości, rozwiązywanie problemów, komunikacja międzydziałowa, raportowanie.
+
+> Nazwy klientów zostały zanonimizowane ze względu na poufność relacji biznesowych.
 
