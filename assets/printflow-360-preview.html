@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrintFlow 360 — podgląd publiczny</title>
+  <style>
+    :root{--bg:#081322;--panel:#10233a;--line:#28415e;--ink:#f4f7fb;--muted:#a8b8ca;--green:#79d7a5;--blue:#6fb2ff;--amber:#f2c879}
+    *{box-sizing:border-box}html,body{margin:0;width:1200px;height:627px;overflow:hidden;background:var(--bg);font-family:Segoe UI,Arial,sans-serif;color:var(--ink)}
+    body{padding:42px 52px;background:radial-gradient(circle at 90% 5%,#183b4d 0,transparent 32%),linear-gradient(145deg,#07111e,#0b1a2d)}
+    header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:22px}
+    .brand{display:flex;align-items:center;gap:14px}.mark{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--blue));color:#07111e;font-weight:900;font-size:18px}.brand b{font-size:22px;letter-spacing:.02em}.tag{padding:9px 14px;border:1px solid #426681;border-radius:999px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.1em}
+    main{display:grid;grid-template-columns:1.35fr .65fr;gap:34px;padding-top:30px}.eyebrow{color:var(--green);font-size:12px;letter-spacing:.16em;font-weight:800;margin:0 0 10px}.copy h1{font-size:42px;line-height:1.05;letter-spacing:-.035em;margin:0 0 14px}.lead{color:var(--muted);font-size:17px;line-height:1.45;margin:0 0 24px;max-width:690px}
+    .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.step{min-height:74px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(16,35,58,.78)}.step small{display:block;color:var(--green);font-weight:800;font-size:10px;letter-spacing:.08em}.step b{display:block;margin-top:6px;font-size:15px}.step span{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+    .metrics{display:grid;grid-template-columns:1fr 1fr;gap:11px}.metric{padding:18px 16px;border-radius:14px;background:linear-gradient(150deg,#122d46,#10233a);border:1px solid #2a4968}.metric strong{display:block;font-size:32px;letter-spacing:-.04em;color:var(--green)}.metric span{font-size:12px;color:var(--muted)}.metric.wide{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}.metric.wide strong{font-size:21px}.metric.wide span{text-align:right;max-width:150px}
+    footer{position:absolute;left:52px;right:52px;bottom:30px;display:flex;justify-content:space-between;align-items:center}.badges{display:flex;gap:9px}.badge{font-size:11px;color:#c7d4e2;border:1px solid #304d69;border-radius:8px;padding:7px 10px;background:rgba(9,23,40,.75)}.privacy{font-size:11px;color:#7f96ad}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><div class="mark">PF</div><b>ZIELONA MARKA · PrintFlow 360</b></div>
+    <div class="tag">DANE SYNTETYCZNE · PORTFOLIO</div>
+  </header>
+  <main>
+    <section class="copy">
+      <p class="eyebrow">SYSTEM OPERACYJNO-FINANSOWY W EXCELU</p>
+      <h1>Od zapytania klienta<br>do rentowności zlecenia</h1>
+      <p class="lead">Pełny, zanonimizowany proces poligraficzno-logistyczny z kontrolą odpowiedzialności, terminów, jakości i kosztów.</p>
+      <div class="flow">
+        <div class="step"><small>01 · SPRZEDAŻ</small><b>Oferta i negocjacje</b><span>pilotaż · proforma · zaliczka</span></div>
+        <div class="step"><small>02 · PREPRESS</small><b>DTP i akceptacja</b><span>pliki · proof · wersjonowanie</span></div>
+        <div class="step"><small>03 · PRODUKCJA</small><b>Druk na 3 zmiany</b><span>plan · zasoby · przekazanie</span></div>
+        <div class="step"><small>04 · JAKOŚĆ</small><b>Introligatornia i QA</b><span>bramki · niezgodności · korekty</span></div>
+        <div class="step"><small>05 · LOGISTYKA</small><b>Magazyn i transport</b><span>własny · kurier · odbiór</span></div>
+        <div class="step"><small>06 · FINANSE</small><b>Faktura i KPI</b><span>płatność · reklamacja · marża</span></div>
+      </div>
+    </section>
+    <aside class="metrics">
+      <div class="metric"><strong>44</strong><span>połączone arkusze</span></div>
+      <div class="metric"><strong>499</strong><span>zdefiniowanych pól</span></div>
+      <div class="metric"><strong>120</strong><span>zleceń demonstracyjnych</span></div>
+      <div class="metric"><strong>18</strong><span>pojazdów w modelu</span></div>
+      <div class="metric wide"><strong>Dashboard · KPI · RACI</strong><span>instrukcje działowe i kontrole jakości danych</span></div>
+      <div class="metric wide"><strong>11.2011–07.2024</strong><span>historyczny zakres modelu</span></div>
+    </aside>
+  </main>
+  <footer>
+    <div class="badges"><span class="badge">Microsoft Excel</span><span class="badge">Koordynacja operacyjna</span><span class="badge">Produkcja</span><span class="badge">Controlling</span></div>
+    <div class="privacy">Bez danych osobowych, klientów i dokumentów źródłowych</div>
+  </footer>
+</body>
+</html>
