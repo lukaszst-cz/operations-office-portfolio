@@ -1,4 +1,4 @@
-# Operations & Office Management Portfolio — Łukasz Staniewicz
+# Operations & Office Management Portfolio — Łukasz S.
 
 Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjnej, administracji, floty, obsługi B2B, raportowania i cyfrowej organizacji pracy.
 
@@ -13,6 +13,8 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **Ryzyko i koszty:** ubezpieczenia, szkody, przestoje, pojazdy zastępcze oraz koszty eksploatacyjne.
 - **Analizy okresowe:** porównania roczne, kwartalne, miesięczne, tygodniowe i dzienne z poprzednim oraz kolejnym okresem.
 - **AI w pracy biurowej:** praktyczne wykorzystanie ChatGPT, Claude Code i OpenAI Codex przy zachowaniu kontroli merytorycznej i poufności danych.
+- **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md) — lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
+- **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego — 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
 
 ## Portfolio online
 
@@ -20,7 +22,19 @@ Strona startowa znajduje się w pliku [`index.html`](index.html) i jest przygoto
 
 ## Przykład Excel
 
-W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_lukasz_staniewicz.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
+W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_demo.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
+
+## PrintFlow 360 — pełny skoroszyt
+
+Plik [`ZIELONA_MARKA_PrintFlow_360_demo.xlsx`](assets/ZIELONA_MARKA_PrintFlow_360_demo.xlsx) zawiera 44 połączone arkusze, 499 zdefiniowanych pól, dashboard KPI, instrukcje działowe, macierz RACI oraz syntetyczne dane procesu poligraficzno-logistycznego.
+
+Skoroszyt jest publicznym materiałem demonstracyjnym. Wszystkie osoby, klienci, pracownicy, pojazdy, umowy, dokumenty, daty operacyjne i kwoty jednostkowe są losowe lub zanonimizowane. Plik nie zawiera makr, połączeń zewnętrznych ani metadanych autora.
+
+### Model odpowiedzialności i dostępu
+
+W rzeczywistym sposobie pracy poszczególne osoby korzystały tylko z arkuszy, zakresów i informacji przypisanych do ich działu oraz odpowiedzialności. Handel, DTP, produkcja, jakość, magazyn, logistyka, kadry, księgowość i flota pracowały na właściwych dla siebie częściach procesu.
+
+Twórca systemu i właściciel procesu miał pełny dostęp do całego skoroszytu: parametrów, słowników, kontroli, dashboardu, rentowności, kosztów, rozliczeń i raportowania zarządczego. Publiczny plik demonstracyjny pokazuje pełną architekturę wyłącznie po to, aby zaprezentować sposób zaprojektowania rozwiązania.
 
 W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 2018–2024, 21 umów najmu, 11 leasingów oraz 5 przykładów wyposażenia samochodów do pracy taxi.
 
@@ -32,8 +46,9 @@ W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 201
 2. [Dokumentacja transportowa](case-studies/02-dokumentacja-transportowa.md)
 3. [Obsługa kluczowych klientów i produkcja](case-studies/03-obsluga-b2b-i-produkcja.md)
 4. [Second Brain i cyfrowa organizacja informacji](case-studies/04-second-brain.md)
+5. [ZIELONA MARKA PrintFlow 360](case-studies/05-printflow-360.md)
 
 ## Kontakt
 
-- [LinkedIn](https://www.linkedin.com/in/%C5%82ukasz-staniewicz-300ab6428/)
+- [LinkedIn](https://www.linkedin.com/in/%C5%82ukasz-st-cz-300ab6428/)
 - [GitHub](https://github.com/lukaszst-cz)
