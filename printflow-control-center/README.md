@@ -23,6 +23,28 @@ python app.py
 
 Następnie otwórz `http://127.0.0.1:8010`.
 
+## Portfolio QA — warsztat mocnego mida
+
+Projekt zawiera kompletny pakiet jakościowy przygotowany w stylu pracy QA:
+
+- strategię testów i macierz ryzyka P1–P3;
+- 16 przypadków testowych: pozytywnych, negatywnych, granicznych i eksploracyjnych;
+- checklistę smoke oraz regresji procesu i interfejsu;
+- przykładowe raporty defektów z priorytetem, dotkliwością i rekomendacją;
+- 20 automatycznych testów Python obejmujących logikę, API, SQLite, role, alerty, eksport i bezpieczeństwo ścieżek;
+- macierz śledzenia wymagań, bramki jakości GO/NO-GO i workflow GitHub Actions;
+- podsumowanie testów z kryteriami decyzji GO/NO-GO.
+
+Materiały znajdują się w katalogu [`qa`](qa/TEST_STRATEGY.md), a testy automatyczne w [`tests`](tests/test_printflow.py).
+
+## Uruchomienie testów
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+Testy korzystają z osobnej tymczasowej bazy SQLite i nie modyfikują danych demonstracyjnych aplikacji.
+
 ## Kontrola demonstracji
 
 ```powershell
@@ -39,6 +61,6 @@ Kontrola sprawdza 30 syntetycznych zamówień, 12 etapów procesu, widoki ról, 
 - `POST /api/orders/{id}/advance` — przejście do następnego etapu;
 - `GET /api/export` — pobranie zanonimizowanego eksportu JSON.
 
-## Zakres pierwszej wersji
+## Zakres wersji portfolio
 
-To celowo niewielka aplikacja portfolio, a nie system produkcyjny. Kolejny etap może objąć import XLSX/JSON, historię zmian w interfejsie, uwierzytelnianie demonstracyjne, raporty okresowe i automatyczne testy jednostkowe.
+To aplikacja portfolio, a nie system produkcyjny. Wybór roli demonstruje filtrowanie procesu, ale nie jest technicznym mechanizmem uwierzytelniania ani kontroli dostępu. Kolejny etap może objąć rzeczywiste RBAC, import XLSX/JSON, historię zmian w interfejsie i raporty okresowe.

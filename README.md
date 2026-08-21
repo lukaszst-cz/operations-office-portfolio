@@ -15,6 +15,7 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **AI w pracy biurowej:** praktyczne wykorzystanie ChatGPT, Claude Code i OpenAI Codex przy zachowaniu kontroli merytorycznej i poufności danych.
 - **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md) — lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego — 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
+- **PrintFlow QA — mocny mid:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
 
 ## Portfolio online
 
