@@ -1,0 +1,17 @@
+ID,Obszar,Priorytet,Typ,Warunki wstępne,Kroki,Oczekiwany rezultat,Automatyzacja
+PF-QA-001,Baza,P1,Integracyjny,Pusta baza,Uruchom inicjalizację z resetem,Powstaje 30 zleceń i 12 etapów,Tak
+PF-QA-002,Role,P1,Funkcjonalny,Baza demo,Wybierz rolę Handel,Widoczne tylko etapy przypisane do Handlu,Tak
+PF-QA-003,Zamówienie,P1,Pozytywny,Baza demo,Dodaj poprawne zapytanie,HTTP 201 i etap Zapytanie,Tak
+PF-QA-004,Walidacja,P1,Negatywny,Baza demo,Ustaw nakład równy 0,HTTP 400 i komunikat walidacyjny,Tak
+PF-QA-005,Walidacja,P2,Negatywny,Baza demo,Wprowadź błędną datę produkt i transport,Trzy czytelne informacje o błędach,Tak
+PF-QA-006,Workflow,P1,Przejścia stanów,Zlecenie na etapie Zapytanie,Przesuń jako Handel,Etap Oferta i nowy rekord historii,Tak
+PF-QA-007,Workflow,P2,Negatywny,Nieistniejące ID,Wywołaj advance,Kontrolowany błąd bez zmiany danych,Tak
+PF-QA-008,Workflow,P2,Negatywny,Zlecenie zamknięte,Wywołaj advance,Komunikat o zamkniętym zleceniu,Tak
+PF-QA-009,Alerty,P1,Tablica decyzyjna,Produkcja bez zaliczki i akceptacji,Przelicz metryki,Alert zaliczki akceptacji terminu i marży,Tak
+PF-QA-010,Filtry,P2,Funkcjonalny,Baza demo,Połącz wyszukiwanie klienta i etap,Tylko pasujące rekordy,Tak
+PF-QA-011,Eksport,P1,Bezpieczeństwo,Baza demo,Pobierz JSON,Metadane synthetic-demo i brak danych prywatnych,Tak
+PF-QA-012,API,P2,Kontrakt,Baza demo,Pobierz dashboard roli,HTTP 200 i poprawny JSON,Tak
+PF-QA-013,Bezpieczeństwo,P1,Negatywny,Aplikacja działa,Zażądaj /static/../app.py,HTTP 404,Tak
+PF-QA-014,UI,P2,Manualny,Aplikacja działa,Otwórz formularz na szerokości 375 px,Formularz czytelny bez poziomego przewijania,Nie
+PF-QA-015,Dostępność,P3,Manualny,Aplikacja działa,Obsłuż formularz klawiaturą,Fokus i kolejność pól są logiczne,Nie
+PF-QA-016,Eksploracja,P3,Manualny,Aplikacja działa,Szybko zmieniaj role filtry i etapy,Brak błędów konsoli i niespójnych KPI,Nie

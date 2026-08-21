@@ -1,0 +1,31 @@
+name: PrintFlow QA
+
+on:
+  push:
+    paths:
+      - "printflow-control-center/**"
+      - ".github/workflows/printflow-qa.yml"
+  pull_request:
+    paths:
+      - "printflow-control-center/**"
+      - ".github/workflows/printflow-qa.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: printflow-control-center
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile Python
+        run: python -m compileall -q .
+      - name: Validate JSON configuration
+        run: python -m json.tool data/workflow.json > /dev/null
+      - name: Run automated QA suite
+        run: python -m unittest discover -s tests -v
+      - name: Run portfolio control
+        run: python app.py --reset --check
