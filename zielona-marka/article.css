@@ -10,7 +10,7 @@
 .article-shell blockquote{margin:2.1rem 0;padding:1.3rem 1.5rem;border-left:4px solid var(--green);background:#e8e9e0;color:var(--green);font-size:1.2rem;font-weight:800;line-height:1.5}
 .article-shell .article-cta{max-width:900px;background:#0d3c2d;color:#f5f9ef;padding:3rem;margin-top:4rem;border:0}
 .article-cta h2{max-width:650px}
-.article-shell .article-cta p{color:#eef5ef;max-width:690px}
+.article-shell .article-cta p{color:#fff;max-width:690px}
 .article-cta .kicker{color:var(--lime)}
 .article-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
 .article-cta .ghost{border-color:rgba(255,255,255,.35);color:#fff}

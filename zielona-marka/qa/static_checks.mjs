@@ -21,12 +21,13 @@ check(files["case-study.html"].includes("ODPOWIEDZIALNOŚĆ RACI"), "Brakuje mac
 check(files["case-study.html"].includes("OBSŁUGA WYJĄTKÓW"), "Brakuje scenariuszy wyjątków.");
 check(files["case-study.html"].includes("Dokumentacja API"), "Brakuje odnośnika do API.");
 check(files["jak-powstal-projekt.html"].includes("Przygotowałem trzy ścieżki"), "Brakuje końcowego zaproszenia do projektu.");
+check(files["jak-powstal-projekt.html"].includes('href="article.css?v=2"'), "Arkusz stylów artykułu nie ma wersjonowania pamięci podręcznej.");
 check(files["article.css"].includes(".article-shell .article-cta p"), "Brakuje reguły kontrastu tekstu w końcowym panelu artykułu.");
-check(files["article.css"].includes("color:#eef5ef"), "Tekst w końcowym panelu artykułu nie ma jasnego koloru.");
+check(files["article.css"].includes("color:#fff"), "Tekst w końcowym panelu artykułu nie ma białego koloru.");
 
 if (failures.length) {
   console.error("TOOLS QA: FAIL");
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
-console.log("TOOLS QA: PASS (13 checks)");
+console.log("TOOLS QA: PASS (14 checks)");
