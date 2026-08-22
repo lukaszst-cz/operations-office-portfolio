@@ -25,7 +25,9 @@ Strona startowa znajduje się w pliku [`index.html`](index.html) i jest przygoto
 
 Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego można przełożyć na stronę prezentacyjną, portal statusów zleceń i panel działów:
 
+- [Start tutaj — jedna strona prowadząca przez całe portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/udostepnij.html)
 - [Strona demonstracyjna ZIELONEJ MARKI](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/)
+- [Jak powstawał projekt — osobisty opis procesu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/jak-powstal-projekt.html)
 - [PrintFlow Portal — klient i działy](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/)
 - [Opis powstania aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/o-aplikacji.html)
 - [Instrukcja PWA dla Androida, Apple i komputera](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/instrukcja.html)

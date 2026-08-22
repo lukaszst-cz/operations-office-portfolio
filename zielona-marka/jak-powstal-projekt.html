@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jak powstawało portfolio ZIELONA MARKA: od doświadczenia operacyjnego, przez model procesu i dane, po PWA, Python oraz QA.">
+  <meta name="theme-color" content="#10251f">
+  <link rel="canonical" href="https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/jak-powstal-projekt.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Od doświadczenia do działającego portfolio — ZIELONA MARKA">
+  <meta property="og:description" content="Osobista historia porządkowania procesu: arkusz, KPI, PWA, Python i kontrola jakości.">
+  <meta property="og:image" content="https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="article.css">
+  <title>Jak powstał projekt — ZIELONA MARKA</title>
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <div class="archive-bar">PORTFOLIO · HISTORIA POWSTANIA PROJEKTU</div>
+  <header class="header"><a class="logo" href="index.html"><span class="logo-mark">ZM</span><span>ZIELONA<br><b>MARKA</b></span></a><a class="portfolio-link" href="udostepnij.html">Start tutaj ↗</a></header>
+  <main id="main" class="article-shell">
+    <article>
+      <header class="article-hero">
+        <p class="kicker">OD DOŚWIADCZENIA DO NARZĘDZIA</p>
+        <h1>Nie zaczynałem od kodu. Zacząłem od procesu, który znałem.</h1>
+        <p class="lead">Chciałem pokazać w portfolio nie tylko listę programów, ale przede wszystkim sposób myślenia: jak rozłożyć złożoną pracę na etapy, odpowiedzialności, dane i punkty kontrolne.</p>
+        <div class="article-meta"><span>Łukasz S.</span><span>case study portfolio</span><span>dane syntetyczne</span></div>
+      </header>
+
+      <section>
+        <h2>Najpierw było pytanie: co właściwie chcę pokazać?</h2>
+        <p>Przez lata pracowałem na styku obsługi klienta, produkcji, dokumentacji, transportu i rozliczeń. W takim środowisku pojedyncze zadanie rzadko jest naprawdę pojedyncze. Jedna zmiana w zamówieniu potrafi wpłynąć na cenę, termin, materiały, pliki, produkcję, pakowanie, dostawę i fakturę.</p>
+        <p>W CV można napisać „koordynacja procesu”, ale to nadal tylko dwa słowa. Chciałem więc zbudować przykład, na którym da się zobaczyć, co pod tym pojęciem rozumiem. Tak powstał pomysł demonstracyjnego projektu ZIELONA MARKA.</p>
+      </section>
+
+      <section>
+        <h2>Najtrudniejsze nie było dodawanie funkcji, tylko wybieranie tego, co naprawdę potrzebne.</h2>
+        <p>Początkowo lista elementów rosła bardzo szybko. Oferta, negocjacje, proforma, zaliczka, pliki, preflight, produkcja, introligatornia, kontrola jakości, transport, faktura, reklamacje i raportowanie. Do tego role pracowników, sezonowość, koszty, flota i dokumenty.</p>
+        <p>W pewnym momencie zrozumiałem, że profesjonalny projekt nie polega na umieszczeniu wszystkiego na jednym ekranie. Ważniejsza jest czytelna odpowiedź na trzy pytania: kto wykonuje dany krok, na podstawie jakich danych oraz co musi się wydarzyć, aby proces mógł przejść dalej.</p>
+        <blockquote>Ta zasada stała się szkieletem całego rozwiązania: etap, właściciel, status, warunek przejścia i ślad decyzji.</blockquote>
+      </section>
+
+      <section>
+        <h2>Arkusz był pierwszym modelem, bo dobrze pokazuje zależności.</h2>
+        <p>Zacząłem od rozpisania procesu w arkuszu. Nie traktowałem go jak zwykłej tabeli. Miał być wspólnym modelem dla handlu, przygotowalni, produkcji, jakości, logistyki, administracji i osoby zarządzającej całością.</p>
+        <p>Dodałem zależności między etapami, pola kontrolne, KPI, koszty, terminy i odpowiedzialności RACI. Założenie było proste: osoba z danego działu powinna widzieć przede wszystkim swój zakres, natomiast właściciel procesu musi rozumieć cały przepływ i miejsca ryzyka.</p>
+        <p>Wszystkie rekordy zostały przygotowane jako syntetyczne. Nie przenosiłem do projektu danych klientów, pracowników ani prawdziwych dokumentów. Zależało mi, żeby pokazać strukturę i logikę bez naruszania poufności.</p>
+      </section>
+
+      <section>
+        <h2>Potem pojawiło się pytanie: jak ten proces zobaczy klient i jak zobaczą go działy?</h2>
+        <p>Sam arkusz był dobrym fundamentem, ale nie pokazywał doświadczenia użytkownika. Dlatego powstał portal demonstracyjny. Klient może sprawdzić przykładowy status zlecenia, a działy widzą własne kolejki i kolejne kroki.</p>
+        <p>Portal przygotowałem jako PWA, czyli stronę, którą można dodać do ekranu telefonu i uruchamiać podobnie jak aplikację. Działa na Androidzie, iPhonie i komputerze, a podstawowy interfejs jest dostępny również po utracie połączenia. Wersja publiczna zapisuje zmiany wyłącznie lokalnie w przeglądarce.</p>
+        <p>To celowe ograniczenie. Portfolio nie udaje gotowego systemu produkcyjnego. Nie ma prawdziwych kont, płatności ani centralnej bazy klientów.</p>
+      </section>
+
+      <section>
+        <h2>Python i SQLite wykorzystałem tam, gdzie potrzebna była logika, a nie tylko prezentacja.</h2>
+        <p>Kolejnym krokiem był lokalny PrintFlow Control Center. Chciałem sprawdzić, jak proces zachowa się po dodaniu walidacji, ról, historii zmian, alertów i danych przechowywanych w relacyjnej bazie.</p>
+        <p>Python obsługuje logikę aplikacji i proste API, SQLite przechowuje demonstracyjne zlecenia oraz historię statusów, a JSON służy do konfiguracji i eksportu. Dzięki temu projekt nie kończy się na makiecie. Można go uruchomić lokalnie, dodać rekord, przejść przez etapy i zobaczyć wynik działania reguł.</p>
+      </section>
+
+      <section>
+        <h2>Testy dodałem dlatego, że działający ekran to jeszcze nie dowód jakości.</h2>
+        <p>Najwięcej uczą sytuacje, w których coś nie powinno się wydarzyć. Zlecenie nie powinno przejść dalej bez wymaganych danych. Zamkniętego procesu nie można przesuwać ponownie. Rola przypisana do jednego obszaru nie powinna zarządzać przypadkowym etapem.</p>
+        <p>Dlatego przygotowałem przypadki testowe, checklisty smoke i regresji, raporty defektów oraz testy automatyczne. Sprawdzają między innymi walidację, API, bazę SQLite, role, alerty, eksport i bezpieczeństwo ścieżek. Osobne kontrole obejmują też portal PWA i publiczne narzędzia strony.</p>
+      </section>
+
+      <section>
+        <h2>Narzędzia AI przyspieszyły pracę, ale nie zastąpiły decyzji.</h2>
+        <p>W projekcie korzystałem z ChatGPT i Codex do porządkowania materiału, pracy nad kodem, kontroli spójności oraz testów. Nie traktowałem jednak wygenerowanej odpowiedzi jako gotowego wyniku. Każdy etap wymagał sprawdzenia: czy pasuje do rzeczywistego procesu, czy nie tworzy fałszywej deklaracji i czy nie ujawnia danych, które powinny pozostać prywatne.</p>
+        <p>Dla mnie właśnie na tym polega rozsądne użycie AI w pracy: narzędzie może przyspieszyć analizę i wykonanie, ale odpowiedzialność za sens, jakość oraz końcową decyzję nadal pozostaje po stronie człowieka.</p>
+      </section>
+
+      <section>
+        <h2>Co ten projekt mówi o mojej pracy?</h2>
+        <p>Najważniejszym rezultatem nie jest sama strona ani liczba użytych technologii. Jest nim spójny model, który łączy doświadczenie operacyjne, dane i komunikację z prostym narzędziem cyfrowym.</p>
+        <p>Projekt pokazał mi też, że potrafię przejść od wiedzy praktycznej do dokumentacji, od dokumentacji do prototypu, a następnie sprawdzić rezultat z perspektywy użytkownika i jakości. To właśnie tę umiejętność chcę rozwijać dalej w pracy związanej z koordynacją operacyjną, administracją, raportowaniem i usprawnianiem procesów.</p>
+      </section>
+
+      <section class="article-cta">
+        <p class="kicker">ZOBACZ PROJEKT</p>
+        <h2>Najlepiej zacząć od jednej strony.</h2>
+        <p>Przygotowałem trzy ścieżki: biznesową, analityczną i techniczną. Dzięki temu każdy może wejść do projektu od strony, która jest mu najbliższa.</p>
+        <div class="article-actions"><a class="button primary" href="udostepnij.html">Otwórz „Start tutaj”</a><a class="button ghost" href="https://github.com/lukaszst-cz/operations-office-portfolio">Zobacz kod na GitHubie ↗</a></div>
+      </section>
+    </article>
+  </main>
+  <footer><div class="logo footer-logo"><span class="logo-mark">ZM</span><span>ZIELONA<br><b>MARKA</b></span></div><p>Autorski materiał portfolio oparty na danych syntetycznych.</p><div class="footer-links"><a href="udostepnij.html">Start tutaj</a><a href="case-study.html">Case study</a><a href="prywatnosc.html">Prywatność</a></div></footer>
+  <script>document.querySelectorAll("p,h1,h2,h3,b,span,a,li,blockquote").forEach(e=>e.childNodes.forEach(n=>{if(n.nodeType===3)n.nodeValue=n.nodeValue.replace(/(^|[\s\u00A0])([AaIiOoUuWwZz])\s+/g,"$1$2\u00A0")}));</script>
+</body>
+</html>
