@@ -1,0 +1,35 @@
+/* Lokalny system fontów i uzupełnienia dostępności. Bez zewnętrznych usług fontów. */
+body {
+  font-family: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+}
+
+.archive-bar,
+.kicker,
+.card-label,
+.process-list span,
+.capability-grid article > p,
+.tag-list span {
+  font-family: ui-monospace, Consolas, monospace;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links a,
+footer > a {
+  color: var(--green);
+  font-weight: 800;
+  text-decoration: none;
+  font-size: .84rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+}

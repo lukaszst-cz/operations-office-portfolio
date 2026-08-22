@@ -15,3 +15,5 @@
 | PWA-11 | P2 | Odnośniki techniczne | Otwórz opis aplikacji | Widoczne są odnośniki do kodu, QA i instrukcji. |
 | PWA-12 | P3 | Instalacja Android | Otwórz w Chrome na fizycznym Androidzie | Pojawia się instalacja lub opcja dodania do ekranu głównego. |
 | PWA-13 | P3 | Instalacja Apple | Otwórz w Safari na fizycznym iPhonie/iPadzie | Działa „Do ekranu początkowego”. |
+| PWA-14 | P2 | Dostępność widoków | Przełącz widok klawiaturą lub czytnikiem ekranu | Aktywny tryb ma stan `aria-selected`, a fokus jest widoczny. |
+| PWA-15 | P2 | Aktualizacja PWA | Zaktualizuj pliki i ponownie otwórz portal | Nowa wersja cache zastępuje poprzednią; nawigacja pobiera aktualny HTML. |

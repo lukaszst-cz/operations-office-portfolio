@@ -18,6 +18,8 @@
 | PWA-11 | PASS | Opis aplikacji odsyła do kodu, QA i instrukcji. |
 | PWA-12 | NOT EXECUTED | Wymaga testu akceptacyjnego na fizycznym urządzeniu Android. |
 | PWA-13 | NOT EXECUTED | Wymaga testu akceptacyjnego na fizycznym iPhonie lub iPadzie. |
+| PWA-14 | PASS | Interfejs ma stan `aria-selected` dla aktywnego widoku oraz wyraźny fokus klawiatury. |
+| PWA-15 | PASS | Service worker używa wersjonowanego cache, usuwa starszy cache i aktywuje nową wersję. |
 
 ## Kontrole automatyczne
 

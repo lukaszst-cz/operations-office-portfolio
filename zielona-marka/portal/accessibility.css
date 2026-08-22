@@ -1,0 +1,11 @@
+/* Dostępność interakcji: czytelny fokus klawiatury i systemowe fonty. */
+html {
+  font-family: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+}

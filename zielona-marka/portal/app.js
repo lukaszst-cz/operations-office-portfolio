@@ -34,12 +34,12 @@ function renderClient(code = document.querySelector("#orderCode").value.trim().t
   searchMessage.textContent = order ? "" : "Nie znaleziono zlecenia demonstracyjnego. Spróbuj ZM-2024-018.";
   if (!order) { clientResult.innerHTML = ""; return; }
   const timeline = STAGES.map(([name], index) => `<div class="${index < order.step ? "done" : index === order.step ? "current" : ""}">${name}</div>`).join("");
-  clientResult.innerHTML = `<article class="order-card"><div class="order-meta"><div><p>${order.code} · ${order.client}</p><h3>${order.title}</h3><p>Aktualny etap: <b>${displayStage(order)}</b></p></div><span class="status-chip">${order.priority.toUpperCase()} PRIORYTET</span></div><div class="details"><div><small>Nakład</small><b>${order.quantity}</b></div><div><small>Planowany termin</small><b>${order.deadline}</b></div><div><small>Dostawa</small><b>${order.delivery}</b></div><div><small>Zaliczka</small><b>${order.deposit}</b></div><div><small>Osoba / dział prowadzący</small><b>${stage(order)[1]}</b></div><div><small>Widoczność</small><b>Tylko to zlecenie</b></div></div><div class="timeline" aria-label="Etapy zlecenia">${timeline}</div></article>`;
+  clientResult.innerHTML = `<article class="order-card"><div class="order-meta"><div><p>${order.code} · ${order.client}</p><h3>${order.title}</h3><p>Aktualny etap: <b>${displayStage(order)}</b></p></div><span class="status-chip">${order.priority.toUpperCase()} PRIORYTET</span></div><div class="details"><div><small>Nakład</small><b>${order.quantity}</b></div><div><small>Planowany termin</small><b>${order.deadline}</b></div><div><small>Dostawa</small><b>${order.delivery}</b></div><div><small>Zaliczka</small><b>${order.deposit}</b></div><div><small>Osoba / dział prowadzący</small><b>${stage(order)[1]}</b></div><div><small>Zakres widoku</small><b>Demonstracyjny — bez autoryzacji</b></div></div><div class="timeline" aria-label="Etapy zlecenia">${timeline}</div></article>`;
 }
 
 function renderRoles() {
   const roles = ["Wszystkie", ...new Set(STAGES.map((item) => item[1]))];
-  roleTabs.innerHTML = roles.map((role) => `<button class="${role === activeRole ? "active" : ""}" data-role="${role}">${role}</button>`).join("");
+  roleTabs.innerHTML = roles.map((role) => `<button class="${role === activeRole ? "active" : ""}" type="button" role="tab" aria-selected="${role === activeRole}" data-role="${role}">${role}</button>`).join("");
   roleTabs.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => { activeRole = button.dataset.role; renderDepartments(); }));
 }
 
@@ -57,7 +57,11 @@ function renderDepartments() {
 }
 
 function changeMode(mode) {
-  document.querySelectorAll(".mode").forEach((button) => button.classList.toggle("active", button.dataset.mode === mode));
+  document.querySelectorAll(".mode").forEach((button) => {
+    const selected = button.dataset.mode === mode;
+    button.classList.toggle("active", selected);
+    button.setAttribute("aria-selected", String(selected));
+  });
   document.querySelector("#clientView").hidden = mode !== "client";
   document.querySelector("#departmentsView").hidden = mode !== "departments";
   document.querySelector("#aboutView").hidden = mode !== "about";
