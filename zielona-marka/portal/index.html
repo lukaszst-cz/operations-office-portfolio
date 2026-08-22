@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="icon-180.png">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="accessibility.css">
+  <link rel="stylesheet" href="roles.css">
   <style>.documentation-link,.security-note a{color:var(--green);font-weight:800;text-decoration:none}</style>
   <title>PrintFlow Portal — demo PWA</title>
 </head>
@@ -40,7 +41,7 @@
     </section>
 
     <section id="departmentsView" class="view" hidden>
-      <div class="view-heading"><div><p class="eyebrow">PANEL DZIAŁÓW</p><h2>Kolejka pracy według odpowiedzialności</h2></div><p>Model pokazuje, jakie elementy widziałby dany dział w swoim aktualnym etapie. Przycisk przejścia etapu działa lokalnie, aby pokazać przepływ pracy.</p></div>
+      <div class="view-heading"><div><p class="eyebrow">PANEL DZIAŁÓW · 12 PERSPEKTYW</p><h2>Kolejka pracy według odpowiedzialności</h2></div><p>Klient oraz 11 ról wewnętrznych widzą tylko swój zakres. Właściciel / administrator ma pełny obraz procesu. Przełącznik jest jawną symulacją uprawnień w publicznym demo.</p></div>
       <div id="roleTabs" class="role-tabs" role="group" aria-label="Wybór działu"></div>
       <div id="departmentSummary" class="summary-grid"></div>
       <div id="taskList" class="task-list"></div>
@@ -50,7 +51,7 @@
       <div class="view-heading"><div><p class="eyebrow">ARCHITEKTURA WERSJI DEMO</p><h2>Prosty model, który można rozbudować</h2></div><a class="documentation-link" href="o-aplikacji.html">Jak powstała aplikacja ↗</a></div>
       <div class="about-grid">
         <article><p class="number">01</p><h3>Klient</h3><p>Model widoku statusu, etapu, terminu, informacji o akceptacji oraz dostawie. Wersja publiczna nie zastępuje logowania ani kontroli uprawnień.</p></article>
-        <article><p class="number">02</p><h3>Działy</h3><p>Model kolejek dla handlu, przygotowalni, produkcji, jakości, logistyki i administracji oraz punktów wymagających reakcji.</p></article>
+        <article><p class="number">02</p><h3>Role</h3><p>12 perspektyw: klient oraz 11 ról wewnętrznych — od handlu i DTP po finanse, kadry, flotę oraz pełny widok właściciela.</p></article>
         <article><p class="number">03</p><h3>Dane</h3><p>W wersji portfolio dane działają lokalnie. W aplikacji produkcyjnej źródłem byłaby chroniona baza danych i API.</p></article>
         <article><p class="number">04</p><h3>PWA</h3><p>Manifest i service worker pozwalają zainstalować portal na Androidzie, iPhonie i iPadzie. Strona może też działać offline po pierwszym otwarciu.</p></article>
       </div>

@@ -1,9 +1,20 @@
 const STAGES = [
-  ["Zapytanie", "Handel"], ["Oferta", "Handel"], ["Zaliczka", "Administracja"],
-  ["Akceptacja plików", "Przygotowalnia"], ["Produkcja", "Produkcja"],
-  ["Wykończenie", "Produkcja"], ["Kontrola jakości", "Jakość"],
-  ["Logistyka", "Logistyka"], ["Faktura", "Administracja"], ["Zamknięcie", "Administracja"]
+  ["Zapytanie", "Handel"], ["Oferta", "Handel"], ["Zaliczka", "Finanse"],
+  ["Akceptacja plików", "Przygotowalnia / DTP"], ["Produkcja", "Produkcja"],
+  ["Wykończenie", "Introligatornia"], ["Kontrola jakości", "Jakość"],
+  ["Magazynowanie", "Magazyn"], ["Logistyka", "Logistyka"], ["Faktura", "Finanse"],
+  ["Zamknięcie", "Finanse"]
 ];
+
+const INTERNAL_ROLES = [
+  "Właściciel / administrator", "Handel", "Finanse", "Przygotowalnia / DTP",
+  "Produkcja", "Introligatornia", "Jakość", "Magazyn", "Logistyka", "Kadry", "Flota / transport"
+];
+
+const SUPPORT_ROLE_INFO = {
+  "Kadry": "Widok wsparcia: obsada zmian, ewidencja czasu, pracownicy sezonowi i agencyjni oraz dane do rozliczenia.",
+  "Flota / transport": "Widok wsparcia: dostępność pojazdów, plan dostaw, terminy serwisowe, dokumenty i koszty transportu."
+};
 
 const DEFAULT_ORDERS = [
   { code: "ZM-2024-018", client: "KLIENT DEMO 01", title: "Katalog produktowy", quantity: "2 500 egz.", step: 6, deadline: "18 lipca", delivery: "Kurier", deposit: "opłacona", priority: "standard" },
@@ -14,9 +25,9 @@ const DEFAULT_ORDERS = [
   { code: "ZM-2024-034", client: "KLIENT DEMO 06", title: "Wizytówki", quantity: "500 kompletów", step: 2, deadline: "29 lipca", delivery: "Kurier", deposit: "oczekuje", priority: "niski" }
 ];
 
-const storageKey = "printflow-portal-demo-v1";
+const storageKey = "printflow-portal-demo-v2";
 let orders = JSON.parse(localStorage.getItem(storageKey) || "null") || structuredClone(DEFAULT_ORDERS);
-let activeRole = "Wszystkie";
+let activeRole = "Właściciel / administrator";
 let deferredPrompt;
 
 const clientResult = document.querySelector("#clientResult");
@@ -38,18 +49,17 @@ function renderClient(code = document.querySelector("#orderCode").value.trim().t
 }
 
 function renderRoles() {
-  const roles = ["Wszystkie", ...new Set(STAGES.map((item) => item[1]))];
-  roleTabs.innerHTML = roles.map((role) => `<button class="${role === activeRole ? "active" : ""}" type="button" role="tab" aria-selected="${role === activeRole}" data-role="${role}">${role}</button>`).join("");
+  roleTabs.innerHTML = INTERNAL_ROLES.map((role) => `<button class="${role === activeRole ? "active" : ""}" type="button" role="tab" aria-selected="${role === activeRole}" data-role="${role}">${role}</button>`).join("");
   roleTabs.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => { activeRole = button.dataset.role; renderDepartments(); }));
 }
 
 function renderDepartments() {
   renderRoles();
-  const visible = orders.filter((order) => activeRole === "Wszystkie" || stage(order)[1] === activeRole);
+  const visible = orders.filter((order) => activeRole === "Właściciel / administrator" || stage(order)[1] === activeRole);
   const overdue = visible.filter((order) => order.priority === "wysoki").length;
   const deposits = visible.filter((order) => order.deposit !== "opłacona").length;
   departmentSummary.innerHTML = `<article><small>W kolejce</small><b>${visible.length}</b></article><article><small>Wysoki priorytet</small><b>${overdue}</b></article><article><small>Do kontroli zaliczki</small><b>${deposits}</b></article><article><small>Wybrany widok</small><b>${activeRole}</b></article>`;
-  taskList.innerHTML = visible.length ? visible.map((order) => `<article class="task"><div><p class="current-stage">${displayStage(order)} · ${stage(order)[1]}</p><h3>${order.code} — ${order.title}</h3><p>${order.client} · ${order.quantity} · termin: ${order.deadline}</p></div><div><p>Zaliczka: <b>${order.deposit}</b></p><p>Dostawa: <b>${order.delivery}</b></p></div><button class="advance" data-code="${order.code}" ${order.step === STAGES.length - 1 ? "disabled" : ""}>Przejdź do etapu: ${order.step === STAGES.length - 1 ? "zakończono" : STAGES[order.step + 1][0]}</button></article>`).join("") : `<p>Brak zleceń w tym widoku.</p>`;
+  taskList.innerHTML = visible.length ? visible.map((order) => `<article class="task"><div><p class="current-stage">${displayStage(order)} · ${stage(order)[1]}</p><h3>${order.code} — ${order.title}</h3><p>${order.client} · ${order.quantity} · termin: ${order.deadline}</p></div><div><p>Zaliczka: <b>${order.deposit}</b></p><p>Dostawa: <b>${order.delivery}</b></p></div><button class="advance" data-code="${order.code}" ${order.step === STAGES.length - 1 ? "disabled" : ""}>Przejdź do etapu: ${order.step === STAGES.length - 1 ? "zakończono" : STAGES[order.step + 1][0]}</button></article>`).join("") : `<article class="support-role"><p class="current-stage">ROLA WSPARCIA PROCESU</p><h3>${activeRole}</h3><p>${SUPPORT_ROLE_INFO[activeRole] || "Brak zleceń oczekujących w tym widoku."}</p></article>`;
   taskList.querySelectorAll(".advance").forEach((button) => button.addEventListener("click", () => {
     const order = orders.find((item) => item.code === button.dataset.code);
     if (order && order.step < STAGES.length - 1) { order.step += 1; save(); renderDepartments(); renderClient(); }

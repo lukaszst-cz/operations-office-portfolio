@@ -1,0 +1,13 @@
+.timeline {
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+}
+
+.support-role {
+  background: #e5ecd9;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  padding: 1.25rem;
+}
+
+.support-role h3 { margin: .2rem 0; }
+.support-role p { margin: .25rem 0; color: var(--muted); }
