@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pracownia procesów ZIELONA MARKA: kalkulator zlecenia i dashboard KPI na syntetycznych danych demonstracyjnych.">
+  <meta name="theme-color" content="#10251f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="pracownia.css">
+  <title>Pracownia procesów — ZIELONA MARKA</title>
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <div class="archive-bar">PRACOWNIA PROCESÓW · DANE SYNTETYCZNE · PROJEKT PORTFOLIO</div>
+  <header class="header"><a class="logo" href="index.html"><span class="logo-mark">ZM</span><span>ZIELONA<br><b>MARKA</b></span></a><a class="portfolio-link" href="case-study.html">Case study ↗</a></header>
+  <main id="main" class="lab-shell">
+    <section class="lab-intro">
+      <p class="kicker">NARZĘDZIA DEMONSTRACYJNE</p>
+      <h1>Od parametrów zlecenia do decyzji operacyjnej.</h1>
+      <p>Ta pracownia pokazuje sposób myślenia o kalkulacji, kontroli procesu i raportowaniu. Wszystkie wartości są przykładowe; wynik nie jest ofertą handlową ani cennikiem.</p>
+      <div class="lab-links"><a class="button primary" href="#kalkulator">Model kalkulacji</a><a class="button ghost" href="#kpi">Dashboard KPI</a><a class="button ghost" href="case-study.html">RACI, wyjątki i QA</a></div>
+    </section>
+
+    <section id="kalkulator" class="lab-section" aria-labelledby="calc-title">
+      <div class="section-heading"><div><p class="kicker">01 · MODEL KALKULACJI</p><h2 id="calc-title">Parametry zlecenia pod kontrolą</h2></div><p>Wprowadzane parametry przekładają się na zakres prac, punkty kontrolne, zaliczkę oraz modelową wartość netto.</p></div>
+      <div class="calc-layout">
+        <form id="calcForm" class="calc-form">
+          <fieldset><legend>Specyfikacja produktu</legend>
+            <label>Format<select name="format"><option value="0.72">A5</option><option value="1" selected>A4</option><option value="1.65">A3</option></select></label>
+            <label>Nakład<input name="quantity" type="number" min="100" max="100000" step="50" value="2500" required></label>
+            <label>Liczba stron<input name="pages" type="number" min="2" max="400" step="2" value="16" required></label>
+            <label>Druk<select name="colour"><option value="1.55" selected>CMYK 4/4</option><option value="1">CMYK 4/0</option><option value="0.58">Czarno-biały</option></select></label>
+            <label>Papier<select name="paper"><option value="1">offsetowy 90 g</option><option value="1.18" selected>kredowy 130 g</option><option value="1.42">kredowy 250 g</option></select></label>
+          </fieldset>
+          <fieldset><legend>Wykończenie i dostawa</legend>
+            <label>Introligatornia<select name="finish"><option value="0">brak</option><option value="180">zszywanie</option><option value="340" selected>oprawa klejona</option><option value="520">laminowanie i oprawa</option></select></label>
+            <label>Pakowanie<select name="pack"><option value="90">standardowe</option><option value="180" selected>zbiorcze / paleta</option><option value="300">indywidualne komplety</option></select></label>
+            <label>Dostawa<select name="delivery"><option value="0">odbiór własny</option><option value="120" selected>kurier</option><option value="260">transport firmowy</option><option value="430">transport dedykowany</option></select></label>
+            <label>Termin<select name="deadline"><option value="1">standardowy</option><option value="1.18" selected>przyspieszony</option><option value="1.38">ekspresowy</option></select></label>
+          </fieldset>
+          <button class="button primary" type="submit">Przelicz model procesu</button>
+        </form>
+        <aside class="calc-result" aria-live="polite">
+          <p class="kicker">WYNIK DEMONSTRACYJNY</p><h3 id="estimateValue">—</h3><p id="estimateNote">Uzupełnij parametry, aby zobaczyć model.</p>
+          <dl id="estimateBreakdown"></dl>
+          <div class="control-note"><b>Ważne:</b> kalkulator pokazuje metodę agregacji parametrów. Nie odzwierciedla prawdziwych cen, marż ani warunków handlowych.</div>
+        </aside>
+      </div>
+      <div class="flow-output" id="flowOutput" aria-live="polite"></div>
+    </section>
+
+    <section id="kpi" class="lab-section kpi-section" aria-labelledby="kpi-title">
+      <div class="section-heading"><div><p class="kicker">02 · DASHBOARD KPI</p><h2 id="kpi-title">Widok właściciela procesu</h2></div><p>Model pokazuje, jak łączyć terminy, zaliczki, produkcję, logistykę i wynik finansowy w jednym widoku zarządczym.</p></div>
+      <div class="toolbar"><label for="yearSelect">Rok demonstracyjny</label><select id="yearSelect"><option value="2024" selected>2024</option><option value="2023">2023</option></select><span>Porównanie rok do roku jest obliczane z syntetycznych rekordów.</span></div>
+      <div id="kpiCards" class="kpi-cards" aria-live="polite"></div>
+      <div class="kpi-grid"><article class="panel-card"><h3>Terminowość miesięczna</h3><div id="onTimeChart" class="bar-chart"></div></article><article class="panel-card"><h3>Kontrola przepływu</h3><div id="processChart" class="process-bars"></div></article></div>
+      <article class="panel-card quarter-card"><h3>Podsumowanie kwartalne</h3><div class="table-wrap"><table><thead><tr><th>Kwartał</th><th>Zlecenia</th><th>Terminowość</th><th>Śr. czas realizacji</th><th>Wartość modelowa</th></tr></thead><tbody id="quarterBody"></tbody></table></div></article>
+      <p class="kpi-disclaimer">Wskaźniki i wartości służą wyłącznie prezentacji sposobu raportowania. Nie są wynikiem rzeczywistej działalności.</p>
+    </section>
+
+    <section class="lab-section next-section"><p class="kicker">03 · JAK PROJEKTOWAĆ PEŁNY PROCES</p><h2>Same liczby nie wystarczą.</h2><p>W case study znajdują się role RACI, kontrola wersji dokumentów, scenariusze wyjątków, granice wersji demonstracyjnej, API Python i dowody QA.</p><a class="button primary" href="case-study.html">Otwórz pełne case study</a></section>
+  </main>
+  <footer><div class="logo footer-logo"><span class="logo-mark">ZM</span><span>ZIELONA<br><b>MARKA</b></span></div><p>Pracownia demonstracyjna na syntetycznych danych.</p><div class="footer-links"><a href="prywatnosc.html">Prywatność</a><a href="index.html">Strona projektu ↗</a></div></footer>
+  <script src="pracownia.js"></script>
+</body>
+</html>

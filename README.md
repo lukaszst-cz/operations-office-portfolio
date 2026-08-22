@@ -30,6 +30,8 @@ Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego moż
 - [Opis powstania aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/o-aplikacji.html)
 - [Instrukcja PWA dla Androida, Apple i komputera](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/instrukcja.html)
 - [Pakiet QA portalu](zielona-marka/portal/qa/README.md)
+- [Pracownia procesów: kalkulator i dashboard KPI](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/pracownia.html)
+- [Case study PrintFlow: RACI, wyjątki, dokumenty, API i QA](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/case-study.html)
 
 Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczego zlecenia oraz działów pracujących na własnych kolejkach. Jest instalowalny na Androidzie, iPhonie i iPadzie bez Google Play ani App Store. Dane są syntetyczne, a lokalne zmiany zapisują się wyłącznie w przeglądarce.
 
