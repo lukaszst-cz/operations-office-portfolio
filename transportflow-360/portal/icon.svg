@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="104" fill="#071c25"/>
+  <path d="M104 142h304v228H104z" fill="#0d8178"/>
+  <path d="M140 196h150M140 256h232M140 316h106" stroke="#f4f3ec" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="326" cy="196" r="16" fill="#72ddd2"/>
+  <circle cx="278" cy="316" r="16" fill="#f4b860"/>
+  <path d="M326 196l46 60-94 60" fill="none" stroke="#72ddd2" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="438" text-anchor="middle" fill="#f4f3ec" font-family="Arial, sans-serif" font-size="54" font-weight="800">TF 360</text>
+</svg>
