@@ -5,7 +5,7 @@ import { dirname, join } from "node:path";
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, "..");
 const files = Object.fromEntries(await Promise.all(
-  ["index.html", "pracownia.html", "pracownia.js", "case-study.html"].map(async (name) => [name, await readFile(join(root, name), "utf8")])
+  ["index.html", "pracownia.html", "pracownia.js", "case-study.html", "jak-powstal-projekt.html", "article.css"].map(async (name) => [name, await readFile(join(root, name), "utf8")])
 ));
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
@@ -20,10 +20,13 @@ check(files["pracownia.js"].includes("renderCalculator"), "Brakuje logiki kalkul
 check(files["case-study.html"].includes("ODPOWIEDZIALNOŚĆ RACI"), "Brakuje macierzy RACI.");
 check(files["case-study.html"].includes("OBSŁUGA WYJĄTKÓW"), "Brakuje scenariuszy wyjątków.");
 check(files["case-study.html"].includes("Dokumentacja API"), "Brakuje odnośnika do API.");
+check(files["jak-powstal-projekt.html"].includes("Przygotowałem trzy ścieżki"), "Brakuje końcowego zaproszenia do projektu.");
+check(files["article.css"].includes(".article-shell .article-cta p"), "Brakuje reguły kontrastu tekstu w końcowym panelu artykułu.");
+check(files["article.css"].includes("color:#eef5ef"), "Tekst w końcowym panelu artykułu nie ma jasnego koloru.");
 
 if (failures.length) {
   console.error("TOOLS QA: FAIL");
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
-console.log("TOOLS QA: PASS (10 checks)");
+console.log("TOOLS QA: PASS (13 checks)");
