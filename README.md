@@ -21,6 +21,18 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 
 Strona startowa znajduje się w pliku [`index.html`](index.html) i jest przygotowana do publikacji przez GitHub Pages.
 
+### ZIELONA MARKA — strona demonstracyjna i portal PWA
+
+Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego można przełożyć na stronę prezentacyjną, portal statusów zleceń i panel działów:
+
+- [Strona demonstracyjna ZIELONEJ MARKI](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/)
+- [PrintFlow Portal — klient i działy](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/)
+- [Opis powstania aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/o-aplikacji.html)
+- [Instrukcja PWA dla Androida, Apple i komputera](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/instrukcja.html)
+- [Pakiet QA portalu](zielona-marka/portal/qa/README.md)
+
+Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczego zlecenia oraz działów pracujących na własnych kolejkach. Jest instalowalny na Androidzie, iPhonie i iPadzie bez Google Play ani App Store. Dane są syntetyczne, a lokalne zmiany zapisują się wyłącznie w przeglądarce.
+
 ## Przykład Excel
 
 W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_demo.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
