@@ -8,6 +8,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="app.css">
+  <style>.documentation-link,.security-note a{color:var(--green);font-weight:800;text-decoration:none}</style>
   <title>PrintFlow Portal — demo PWA</title>
 </head>
 <body>
@@ -44,14 +45,14 @@
     </section>
 
     <section id="aboutView" class="view" hidden>
-      <div class="view-heading"><div><p class="eyebrow">ARCHITEKTURA WERSJI DEMO</p><h2>Prosty model, który można rozbudować</h2></div></div>
+      <div class="view-heading"><div><p class="eyebrow">ARCHITEKTURA WERSJI DEMO</p><h2>Prosty model, który można rozbudować</h2></div><a class="documentation-link" href="o-aplikacji.html">Jak powstała aplikacja ↗</a></div>
       <div class="about-grid">
         <article><p class="number">01</p><h3>Klient</h3><p>Widok statusu, etapu, terminu, informacji o akceptacji oraz dostawie — bez dostępu do kosztów i danych innych klientów.</p></article>
         <article><p class="number">02</p><h3>Działy</h3><p>Handel, przygotowalnia, produkcja, jakość, logistyka i administracja dostają własne kolejki oraz punkty wymagające reakcji.</p></article>
         <article><p class="number">03</p><h3>Dane</h3><p>W wersji portfolio dane działają lokalnie. W aplikacji produkcyjnej źródłem byłaby chroniona baza danych i API.</p></article>
         <article><p class="number">04</p><h3>Android</h3><p>Manifest i service worker pozwalają zainstalować portal jako PWA na Androidzie. Strona może też działać offline po pierwszym otwarciu.</p></article>
       </div>
-      <div class="security-note"><b>Co byłoby potrzebne w wersji dla prawdziwych klientów:</b> konta i uwierzytelnianie, indywidualne uprawnienia, szyfrowane połączenie HTTPS, serwer i baza danych, kopie zapasowe, monitoring, zgodność z RODO oraz historia zmian.</div>
+      <div class="security-note"><b>Co byłoby potrzebne w wersji dla prawdziwych klientów:</b> konta i uwierzytelnianie, indywidualne uprawnienia, szyfrowane połączenie HTTPS, serwer i baza danych, kopie zapasowe, monitoring, zgodność z RODO oraz historia zmian. <a href="instrukcja.html">Otwórz pełną instrukcję uruchomienia.</a></div>
     </section>
   </main>
 
