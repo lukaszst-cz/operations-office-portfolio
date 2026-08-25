@@ -1,0 +1,3 @@
+:root { --ink:#201d1b; --muted:#716b67; --paper:#f7f3ed; --teal:#ff6b35; --dark:#1b1b1d; --amber:#ffc247; --line:#dfd8cf; --red:#c9422f; }
+.header{background:rgba(27,27,29,.96)}.hero-shade{background:linear-gradient(90deg,rgba(20,18,17,.95) 0%,rgba(20,18,17,.73) 38%,rgba(20,18,17,.08) 76%),linear-gradient(0deg,rgba(20,18,17,.62),transparent 45%)}
+.kicker,.process-grid span,.kpi-grid i,.market-note a{color:#e95320}.primary,.project-bar{color:#211610}.live-card{background:rgba(27,27,29,.91)}.dashboard-section{background:#ede7df}footer{background:#131315}
