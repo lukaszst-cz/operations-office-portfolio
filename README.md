@@ -73,6 +73,16 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
 | Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
 
+### Działające prezentacje
+
+- [Główne portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/)
+- [Zielona Marka Studio](https://zielona-marka-portfolio.l-st-cz.chatgpt.site)
+- [PrintFlow 360](https://lukaszst-cz.github.io/printflow-360/)
+- [TransportFlow 360](https://lukaszst-cz.github.io/transportflow-360/)
+- [WorkshopFlow 360](https://lukaszst-cz.github.io/workshopflow-360/)
+- [Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
+- [Zielona Marka WordPress, podgląd wizualny](https://lukaszst-cz.github.io/zielona-marka-wordpress/preview/)
+
 ## Przykład Excel
 
 W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_demo.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
