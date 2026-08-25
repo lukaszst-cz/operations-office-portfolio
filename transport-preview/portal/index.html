@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071b27"><meta name="robots" content="noindex,nofollow"><title>RouteFlow Control Tower — demo</title><link rel="stylesheet" href="app.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="../"><span>RF</span> ROUTE<b>FLOW</b></a><div class="top-actions"><a href="?role=client">Portal klienta</a><label for="role">WIDOK</label><select id="role"><option value="client">Klient</option><option value="dispatcher">Dyspozytor</option><option value="driver">Kierowca</option><option value="accounting">Księgowość</option><option value="manager">Zarząd / pełny widok</option></select></div></header>
+  <div class="notice">DEMO PROCESOWE · DANE, OSOBY, POJAZDY, TRASY I KWOTY SĄ PRZYKŁADOWE</div>
+  <main>
+    <section id="clientView" class="view">
+      <div class="view-head"><div><span class="kicker">PORTAL KLIENTA</span><h1>Twój transport. Jeden aktualny status.</h1><p>Wybierz przykładowe zlecenie, aby zobaczyć trasę, ETA, dokumenty i historię.</p></div><label>NUMER ZLECENIA<select id="clientOrderSelect"></select></label></div>
+      <div id="clientOrder"></div>
+    </section>
+
+    <section id="staffView" class="view" hidden>
+      <div class="view-head"><div><span id="roleKicker" class="kicker">CONTROL TOWER</span><h1 id="roleTitle">Bieżąca operacja.</h1><p id="roleDescription">Najważniejsze wyjątki i decyzje w jednym miejscu.</p></div><div class="clock"><b>25.08.2026</b><span>08:42 · zmiana dzienna</span></div></div>
+      <div id="kpis" class="kpis"></div>
+      <div class="workspace">
+        <section class="card shipments-card"><header><div><span class="kicker">TRANSPORTY</span><h2>Aktywne zlecenia</h2></div><div class="toolbar"><input id="search" placeholder="Szukaj trasy, zlecenia lub klienta…"><select id="statusFilter"><option value="all">Wszystkie statusy</option><option>Planowanie</option><option>Załadunek</option><option>W trasie</option><option>Rozładunek</option><option>Dokumenty</option><option>Rozliczenie</option><option>Zakończone</option></select></div></header><div class="table-wrap"><table><thead><tr><th>Zlecenie</th><th>Trasa / klient</th><th>Status</th><th>ETA</th><th>Pojazd</th><th id="valueHead">Wartość</th><th></th></tr></thead><tbody id="shipmentsBody"></tbody></table></div></section>
+        <aside class="card action-card"><span class="kicker">WYMAGA REAKCJI</span><h2>Alerty operacyjne</h2><div id="alerts"></div></aside>
+        <section class="card map-card"><header><div><span class="kicker">MAPA OPERACJI</span><h2>Trasy i obciążenie</h2></div><span class="online"><i></i> ONLINE</span></header><div class="operation-map"><span class="city city-a">Warszawa</span><span class="city city-b">Berlin</span><span class="city city-c">Praga</span><span class="city city-d">Wiedeń</span><span class="city city-e">Poznań</span><i class="route-line line-a"></i><i class="route-line line-b"></i><i class="route-line line-c"></i><b class="truck-marker one">RF</b><b class="truck-marker two">RF</b></div></section>
+        <aside class="card fleet-card"><span class="kicker">FLOTA</span><h2>Wykorzystanie</h2><div id="fleet"></div></aside>
+      </div>
+    </section>
+  </main>
+  <dialog id="shipmentDialog"><button class="close" aria-label="Zamknij">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
