@@ -17,6 +17,7 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego — 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
 - **PrintFlow QA — mocny mid:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
 - **TransportFlow 360:** kompletny proces transportu krajowego i międzynarodowego dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki), 26 kierowców, najmu 14 taxi i 3 kontenerów z windą — Excel, PWA, Python/SQLite i QA.
+- **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe — PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 
 ## Portfolio online
 
@@ -37,6 +38,14 @@ Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego moż
 - [Case study PrintFlow: RACI, wyjątki, dokumenty, API i QA](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/case-study.html)
 
 Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczego zlecenia oraz działów pracujących na własnych kolejkach. Jest instalowalny na Androidzie, iPhonie i iPadzie bez Google Play ani App Store. Dane są syntetyczne, a lokalne zmiany zapisują się wyłącznie w przeglądarce.
+
+### ZIELONA MARKA — motyw WordPress dla firmy tworzącej strony
+
+- [Interaktywny podgląd projektu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka-wordpress-preview/)
+- [Kod źródłowy motywu](zielona-marka-wordpress/)
+- [Pobierz instalacyjną paczkę WordPress](zielona-marka-wordpress/zielona-marka-wordpress-v1.0.0.zip)
+
+Projekt pokazuje kompletny proces przygotowania strony firmowej: pozycjonowanie oferty, nowy kierunek wizualny, responsywny layout, sekcję realizacji edytowaną w panelu WordPressa, bezpieczny formularz briefu oraz lekką warstwę techniczną bez ciężkiego kreatora stron.
 
 ### TransportFlow 360 — transport ciężki, taxi i kontenery
 

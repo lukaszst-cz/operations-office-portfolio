@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": { "contentSize": "760px", "wideSize": "1280px" },
+    "color": {
+      "palette": [
+        { "slug": "paper", "name": "Papier", "color": "#f3f1e8" },
+        { "slug": "ink", "name": "Atrament", "color": "#171816" },
+        { "slug": "acid", "name": "Limonka", "color": "#c7ff2f" },
+        { "slug": "coral", "name": "Koral", "color": "#ff6b55" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        { "fontFamily": "Arial, Helvetica, sans-serif", "name": "Sans", "slug": "sans" },
+        { "fontFamily": "Georgia, 'Times New Roman', serif", "name": "Serif", "slug": "serif" }
+      ]
+    }
+  }
+}
