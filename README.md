@@ -57,6 +57,22 @@ Projekt pokazuje kompletny proces przygotowania strony firmowej: pozycjonowanie 
 - [Skoroszyt TransportFlow 360](transportflow-360/assets/TransportFlow_360_demo.xlsx)
 - [Aplikacja Python/SQLite i dokumentacja QA](transportflow-control-center/README.md)
 
+## Samodzielne projekty
+
+To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przypadku oraz materiały demonstracyjne. Najważniejsze realizacje są również dostępne jako osobne repozytoria, aby można było je szybko pokazać rekruterowi, klientowi albo zespołowi technicznemu.
+
+| Projekt | Co pokazuje | Osobne repozytorium |
+| --- | --- | --- |
+| Zielona Marka Studio | Responsywna strona demonstracyjna i panel PrintFlow | [zielona-marka-studio](https://github.com/lukaszst-cz/zielona-marka-studio) |
+| Zielona Marka WordPress | Autorski motyw PHP, CSS i JavaScript | [zielona-marka-wordpress](https://github.com/lukaszst-cz/zielona-marka-wordpress) |
+| PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
+| PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
+| TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
+| TransportFlow Control Center | Python, testy i dokumentacja jakości | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
+| WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
+| Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
+| Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
+
 ## Przykład Excel
 
 W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_demo.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
