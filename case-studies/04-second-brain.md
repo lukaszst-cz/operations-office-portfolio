@@ -21,7 +21,7 @@ Stworzenie uporządkowanego środowiska do pracy z dokumentami, notatkami, bazam
 
 ## Narzędzia
 
-Notion, Obsidian, Microsoft Word i Excel, Google Workspace, ChatGPT, Claude Code, OpenAI Codex, CSV, JSON i Markdown.
+Notion, Obsidian, Microsoft Word i Excel, Google Workspace, narzędzia AI, CSV, JSON i Markdown.
 
 ## Wartość biznesowa
 

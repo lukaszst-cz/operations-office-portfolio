@@ -12,7 +12,7 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **Taxi:** rejestr montażu taksometrów, legalizacji, urządzeń fiskalnych, oznakowania i kosztów serwisu.
 - **Ryzyko i koszty:** ubezpieczenia, szkody, przestoje, pojazdy zastępcze oraz koszty eksploatacyjne.
 - **Analizy okresowe:** porównania roczne, kwartalne, miesięczne, tygodniowe i dzienne z poprzednim oraz kolejnym okresem.
-- **AI w pracy biurowej:** praktyczne wykorzystanie ChatGPT, Claude Code i OpenAI Codex przy zachowaniu kontroli merytorycznej i poufności danych.
+- **AI w pracy biurowej:** praktyczne wykorzystanie narzędzi wspierających analizę, dokumentację i automatyzację przy zachowaniu kontroli merytorycznej i poufności danych.
 - **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md) — lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego — 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
 - **PrintFlow QA — mocny mid:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
@@ -76,7 +76,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 ### Działające prezentacje
 
 - [Główne portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/)
-- [Zielona Marka Studio](https://zielona-marka-portfolio.l-st-cz.chatgpt.site)
+- [Zielona Marka Studio](https://zielona-marka.pl/studio)
 - [PrintFlow 360](https://lukaszst-cz.github.io/printflow-360/)
 - [TransportFlow 360](https://lukaszst-cz.github.io/transportflow-360/)
 - [WorkshopFlow 360](https://lukaszst-cz.github.io/workshopflow-360/)
