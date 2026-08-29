@@ -6,6 +6,7 @@ Mała, lokalna aplikacja demonstracyjna do zarządzania flotą. Pokazuje praktyc
 - **SQLite / SQL**, pojazdy, koszty, najem oraz leasing;
 - **HTML i CSS**, responsywny panel operacyjny;
 - **JavaScript**, filtrowanie rejestru pojazdów w przeglądarce.
+- **Kontrole jakości danych** — wbudowane sprawdzenie spójności danych demonstracyjnych uruchamiane z wiersza poleceń.
 
 Wszystkie rekordy są generowane przez aplikację jako **dane demonstracyjne**. Baza `fleet_demo.sqlite3` powstaje lokalnie przy pierwszym uruchomieniu i nie jest wersjonowana.
 

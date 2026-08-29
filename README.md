@@ -15,9 +15,31 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **AI w pracy biurowej:** praktyczne wykorzystanie narzędzi wspierających analizę, dokumentację i automatyzację przy zachowaniu kontroli merytorycznej i poufności danych.
 - **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md), lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego, 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
-- **PrintFlow QA, mocny mid:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
+- **PrintFlow QA i automatyzacja testów:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
 - **TransportFlow 360:** kompletny proces transportu krajowego i międzynarodowego dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki), 26 kierowców, najmu 14 taxi i 3 kontenerów z windą, Excel, PWA, Python/SQLite i QA.
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
+
+## Technologie i praktyka inżynierska
+
+Portfolio łączy pracę operacyjną z tworzeniem narzędzi, które można obejrzeć, uruchomić i zweryfikować. Każda pozycja poniżej wynika z kodu albo dokumentacji dostępnej w repozytorium.
+
+| Obszar | Potwierdzone kompetencje |
+| --- | --- |
+| Frontend i strony | TypeScript, React, JavaScript ES6, HTML5, CSS3, Tailwind CSS, responsywne interfejsy, PWA i podstawy dostępności |
+| Backend i dane | Python, PHP, WordPress, SQLite, SQL, JSON, modelowanie danych, walidacja i eksport danych |
+| API i automatyzacja | Projektowanie endpointów HTTP, automatyzacje API, testowanie odpowiedzi JSON, GitHub Actions oraz zautomatyzowane kontrole demonstracji |
+| Cloud i wdrożenia | Cloudflare Workers, Cloudflare D1, GitHub Pages, środowiska demonstracyjne i konfiguracja deploymentu |
+| QA i jakość | Strategia oparta na ryzyku, przypadki testowe, testy eksploracyjne, smoke, regresja, raporty defektów, traceability, quality gates GO/NO-GO oraz testy automatyczne Python `unittest` |
+| Analityka i dokumentacja | Excel, Google Sheets, dashboardy KPI, formuły, raportowanie, Notion, Obsidian, CSV, Markdown i dokumentacja procesowa |
+
+### QA: co faktycznie robię w tych projektach
+
+- Przekładam wymagania i ryzyka procesu na przypadki testowe, checklisty oraz macierz śledzenia.
+- Testuję scenariusze pozytywne, negatywne, graniczne i eksploracyjne, w tym przepływ ról, alerty oraz dane wejściowe.
+- Automatyzuję testy logiki, API, JSON i SQLite w Pythonie, a wyniki uruchamiam w GitHub Actions przy zmianach kodu.
+- Dokumentuję defekty przez wpływ, priorytet, kroki odtworzenia i kryterium akceptacji. Decyzję o wydaniu wspieram bramką GO/NO-GO.
+
+Nie deklaruję Java, ponieważ w tym portfolio nie ma jeszcze projektu opartego na Javie. Uczciwe i mocne pozycjonowanie to: **QA Engineer | Manual Testing & Python Test Automation**.
 
 ## Portfolio online
 

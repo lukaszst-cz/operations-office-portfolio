@@ -35,4 +35,4 @@ python app.py --check
 python -m unittest discover -s tests -v
 ```
 
-Dokumentacja QA znajduje się w katalogu `qa/`.
+Dokumentacja QA znajduje się w katalogu `qa/`. Obejmuje strategię opartą na ryzyku, scenariusze manualne, smoke, regresję, raporty defektów i kryteria GO/NO-GO. Testy automatyczne Python weryfikują logikę operacyjną oraz odpowiedzi API i SQLite na danych syntetycznych.

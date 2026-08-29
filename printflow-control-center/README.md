@@ -23,7 +23,7 @@ python app.py
 
 Następnie otwórz `http://127.0.0.1:8010`.
 
-## Portfolio QA, warsztat mocnego mida
+## Portfolio QA: testy manualne i automatyzacja Python
 
 Projekt zawiera kompletny pakiet jakościowy przygotowany w stylu pracy QA:
 
@@ -31,11 +31,11 @@ Projekt zawiera kompletny pakiet jakościowy przygotowany w stylu pracy QA:
 - 16 przypadków testowych: pozytywnych, negatywnych, granicznych i eksploracyjnych;
 - checklistę smoke oraz regresji procesu i interfejsu;
 - przykładowe raporty defektów z priorytetem, dotkliwością i rekomendacją;
-- 20 automatycznych testów Python obejmujących logikę, API, SQLite, role, alerty, eksport i bezpieczeństwo ścieżek;
+- 20 automatycznych testów Python `unittest` obejmujących logikę, API, SQLite, role, alerty, eksport i bezpieczeństwo ścieżek;
 - macierz śledzenia wymagań, bramki jakości GO/NO-GO i workflow GitHub Actions;
 - podsumowanie testów z kryteriami decyzji GO/NO-GO.
 
-Materiały znajdują się w katalogu [`qa`](qa/TEST_STRATEGY.md), a testy automatyczne w [`tests`](tests/test_printflow.py).
+Materiały znajdują się w katalogu [`qa`](qa/TEST_STRATEGY.md), a testy automatyczne w [`tests`](tests/test_printflow.py). Suita uruchamia się również automatycznie w GitHub Actions po zmianie kodu projektu.
 
 ## Uruchomienie testów
 
