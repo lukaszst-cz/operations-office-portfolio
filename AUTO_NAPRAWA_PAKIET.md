@@ -1,14 +1,14 @@
-# AUTO NAPRAWA — pakiet prezentacyjny
+# AUTO NAPRAWA, pakiet prezentacyjny
 
 Data aktualizacji: 25 sierpnia 2026 r.
 
 ## Publiczne adresy
 
-- Koncepcja A — techniczna: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/
+- Koncepcja A, techniczna: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/
 - Portal klienta: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/portal/?role=client
-- Panel zarządzania — pełny widok kierownika: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/portal/?role=manager
+- Panel zarządzania, pełny widok kierownika: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/portal/?role=manager
 - Faktury i symulacja KSeF: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/portal/faktury.html
-- Koncepcja B — jasna i sprzedażowa: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-concept-b/
+- Koncepcja B, jasna i sprzedażowa: https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-concept-b/
 
 ## Zakres
 

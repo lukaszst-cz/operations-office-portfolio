@@ -10,7 +10,7 @@
 <a class="skip-link" href="#main"><?php esc_html_e('Przejdź do treści', 'zielona-marka'); ?></a>
 <header class="site-header" data-header>
     <div class="wrap nav-wrap">
-        <a class="brand" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Zielona Marka — strona główna">
+        <a class="brand" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Zielona Marka, strona główna">
             <span class="brand-dot" aria-hidden="true"></span>
             <span>ZIELONA<br>MARKA</span>
         </a>

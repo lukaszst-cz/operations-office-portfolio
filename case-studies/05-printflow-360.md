@@ -2,7 +2,7 @@
 
 ## Cel projektu
 
-Zaprojektowanie w Excelu jednego, spójnego systemu zarządzania procesem poligraficzno-logistycznym — od pierwszego zapytania klienta aż do płatności, reklamacji i oceny rentowności zlecenia.
+Zaprojektowanie w Excelu jednego, spójnego systemu zarządzania procesem poligraficzno-logistycznym, od pierwszego zapytania klienta aż do płatności, reklamacji i oceny rentowności zlecenia.
 
 Projekt pokazuje sposób łączenia danych sprzedażowych, produkcyjnych, jakościowych, logistycznych, kadrowych i finansowych w narzędziu zrozumiałym dla kierownictwa oraz pracowników poszczególnych działów.
 
@@ -44,7 +44,7 @@ Zakres modelu obejmuje okres od listopada 2011 do lipca 2024, ale wszystkie dane
 
 ## Pobierz skoroszyt
 
-[ZIELONA MARKA PrintFlow 360 — zanonimizowany plik demonstracyjny `.xlsx`](../assets/ZIELONA_MARKA_PrintFlow_360_demo.xlsx)
+[ZIELONA MARKA PrintFlow 360, zanonimizowany plik demonstracyjny `.xlsx`](../assets/ZIELONA_MARKA_PrintFlow_360_demo.xlsx)
 
 ## Kompetencje potwierdzane przez projekt
 

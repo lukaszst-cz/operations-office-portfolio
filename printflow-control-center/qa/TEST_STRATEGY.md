@@ -1,4 +1,4 @@
-# Strategia testów — PrintFlow Control Center
+# Strategia testów, PrintFlow Control Center
 
 ## 1. Cel i poziom jakości
 

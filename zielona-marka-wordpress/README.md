@@ -1,4 +1,4 @@
-# ZIELONA MARKA — motyw WordPress
+# ZIELONA MARKA, motyw WordPress
 
 Autorski motyw portfolio dla firmy projektującej i wdrażającej strony internetowe.
 
@@ -7,7 +7,7 @@ Autorski motyw portfolio dla firmy projektującej i wdrażającej strony interne
 1. W panelu WordPress przejdź do **Wygląd → Motywy → Dodaj nowy → Wyślij motyw na serwer**.
 2. Wybierz plik `zielona-marka-wordpress.zip`, zainstaluj i aktywuj motyw.
 3. Przejdź do **Ustawienia → Bezpośrednie odnośniki** i kliknij „Zapisz zmiany”. Dzięki temu aktywuje się adres archiwum realizacji.
-4. W **Wygląd → Dostosuj → Zielona Marka — kontakt** wpisz prawdziwy e-mail, telefon i Instagram.
+4. W **Wygląd → Dostosuj → Zielona Marka, kontakt** wpisz prawdziwy e-mail, telefon i Instagram.
 5. W **Ustawienia → Czytanie** pozostaw stronę główną jako najnowsze wpisy albo wskaż dowolną stronę statyczną. Szablon startowy działa w obu wariantach.
 6. Utwórz stronę polityki prywatności i wybierz ją w **Ustawienia → Prywatność**.
 

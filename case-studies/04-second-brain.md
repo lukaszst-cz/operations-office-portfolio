@@ -1,4 +1,4 @@
-# Second Brain — cyfrowa organizacja wiedzy
+# Second Brain, cyfrowa organizacja wiedzy
 
 ## Cel
 
@@ -25,5 +25,5 @@ Notion, Obsidian, Microsoft Word i Excel, Google Workspace, narzędzia AI, CSV, 
 
 ## Wartość biznesowa
 
-Projekt pokazuje umiejętność pracy na dużej liczbie plików, utrzymywania standardów, budowania rejestrów i szybkiego odnajdywania informacji — kompetencje przydatne w administracji, operacjach i wsparciu procesów.
+Projekt pokazuje umiejętność pracy na dużej liczbie plików, utrzymywania standardów, budowania rejestrów i szybkiego odnajdywania informacji, kompetencje przydatne w administracji, operacjach i wsparciu procesów.
 

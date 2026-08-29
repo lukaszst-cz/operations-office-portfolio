@@ -1,4 +1,4 @@
-# PrintFlow Portal PWA — pakiet QA
+# PrintFlow Portal PWA, pakiet QA
 
 Pakiet opisuje kontrolę jakości publicznej, demonstracyjnej aplikacji PWA. Dotyczy wyłącznie danych syntetycznych i nie potwierdza gotowości do przetwarzania danych rzeczywistych klientów.
 

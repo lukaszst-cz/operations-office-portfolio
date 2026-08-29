@@ -18,7 +18,7 @@ async function refreshVehicles() {
   rows.innerHTML = vehicles.map(vehicle => `
     <tr><td>${vehicle.code}</td><td>${vehicle.vehicle_type}</td>
     <td><span class="tag ${vehicle.status.toLowerCase().replace(' ', '-')}">${vehicle.status}</span></td>
-    <td>${vehicle.fuel}</td><td>${vehicle.cargo_lift ? 'Tak' : '—'}</td>
+    <td>${vehicle.fuel}</td><td>${vehicle.cargo_lift ? 'Tak' : ', '}</td>
     <td>${currency.format(vehicle.annual_cost)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Brak pojazdów dla wybranych filtrów.</td></tr>';
 }
 

@@ -1,7 +1,7 @@
 const orders = {
   "TF-240718": { type: "Chłodnia", route: "Warszawa → Berlin", status: "W trasie", eta: "dzisiaj 18:40", note: "Temperatura +4°C · bez odchyleń", location: "A12, 37 km przed Berlinem", updated: "17:18", progress: 86, current: 3 },
-  "TF-240719": { type: "Plandeka", route: "Garwolin → Brno", status: "Załadunek", eta: "jutro 09:20", note: "Oczekiwanie na potwierdzenie plomby", location: "Punkt załadunku — Garwolin", updated: "16:52", progress: 28, current: 2 },
-  "TF-240720": { type: "Cysterna ADR", route: "Płock → Rotterdam", status: "Blokada", eta: "nieustalone", note: "Brak certyfikatu mycia", location: "Baza — wyjazd wstrzymany", updated: "16:45", progress: 8, current: 0 }
+  "TF-240719": { type: "Plandeka", route: "Garwolin → Brno", status: "Załadunek", eta: "jutro 09:20", note: "Oczekiwanie na potwierdzenie plomby", location: "Punkt załadunku, Garwolin", updated: "16:52", progress: 28, current: 2 },
+  "TF-240720": { type: "Cysterna ADR", route: "Płock → Rotterdam", status: "Blokada", eta: "nieustalone", note: "Brak certyfikatu mycia", location: "Baza, wyjazd wstrzymany", updated: "16:45", progress: 8, current: 0 }
 };
 const steps = ["Zlecenie przyjęte", "Zestaw i kierowca przypisani", "Załadunek", "Transport w drodze", "Dostawa / POD", "Gotowe do faktury"];
 const roleIds = ["client","sales","dispatcher","driver","fleet","compliance","finance","rental","manager"];

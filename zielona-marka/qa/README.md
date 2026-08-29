@@ -1,4 +1,4 @@
-# QA — narzędzia demonstracyjne ZIELONA MARKA
+# QA, narzędzia demonstracyjne ZIELONA MARKA
 
 Ten pakiet potwierdza podstawową spójność statycznych narzędzi portfolio: kalkulatora zlecenia, dashboardu KPI i case study. Nie zastępuje testów produkcyjnego systemu, bezpieczeństwa ani audytu RODO.
 

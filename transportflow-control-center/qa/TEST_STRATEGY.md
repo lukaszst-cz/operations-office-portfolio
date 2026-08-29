@@ -1,4 +1,4 @@
-# Strategia testów — TransportFlow 360
+# Strategia testów, TransportFlow 360
 
 ## Cel
 
@@ -18,11 +18,11 @@ Potwierdzić, że demonstracja przedstawia spójny proces transportowy, kontrolu
 
 ## Poziomy testów
 
-1. Testy jednostkowe Python — obliczenia, liczebność floty, dokumenty i konfiguracja.
-2. Testy integracyjne — Python/SQLite/API JSON oraz spójność statusów.
-3. Testy statyczne strony — linki, wymagane podstrony, 28/90 dni, role i komunikaty o danych demonstracyjnych.
-4. Testy arkusza — formuły, checki, listy rozwijane, formaty, dashboard i brak błędów formuł.
-5. Testy akceptacyjne — przejście scenariusza klienta, dyspozytora, kierowcy, floty, finansów i właściciela.
+1. Testy jednostkowe Python, obliczenia, liczebność floty, dokumenty i konfiguracja.
+2. Testy integracyjne, Python/SQLite/API JSON oraz spójność statusów.
+3. Testy statyczne strony, linki, wymagane podstrony, 28/90 dni, role i komunikaty o danych demonstracyjnych.
+4. Testy arkusza, formuły, checki, listy rozwijane, formaty, dashboard i brak błędów formuł.
+5. Testy akceptacyjne, przejście scenariusza klienta, dyspozytora, kierowcy, floty, finansów i właściciela.
 
 ## Kryteria wejścia i wyjścia
 

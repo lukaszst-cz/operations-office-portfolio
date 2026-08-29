@@ -65,7 +65,7 @@ add_action('save_post_realizacja', 'zm_save_project_meta');
 
 function zm_customize_register(WP_Customize_Manager $customizer): void {
     $customizer->add_section('zm_contact', [
-        'title' => __('Zielona Marka — kontakt', 'zielona-marka'),
+        'title' => __('Zielona Marka, kontakt', 'zielona-marka'),
         'priority' => 30,
     ]);
     $fields = [

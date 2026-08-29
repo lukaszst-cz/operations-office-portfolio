@@ -1,4 +1,4 @@
-# Protokół testów — PrintFlow Portal PWA
+# Protokół testów, PrintFlow Portal PWA
 
 ## 1. Cel
 
@@ -37,7 +37,7 @@ Potwierdzić, że demonstracyjny portal umożliwia sprawdzenie przykładowego st
 ## 6. Ryzyka i ograniczenia
 
 - PWA to statyczna demonstracja; dane są przechowywane lokalnie w `localStorage`.
-- Nie testowano logowania, płatności, RODO, uprawnień ani API produkcyjnego — tych funkcji nie ma w wersji demo.
+- Nie testowano logowania, płatności, RODO, uprawnień ani API produkcyjnego, tych funkcji nie ma w wersji demo.
 - Instalacja PWA na Androidzie, iPhonie i iPadzie wymaga fizycznych urządzeń oraz osobnego testu akceptacyjnego.
 
 ## 7. Rezultat

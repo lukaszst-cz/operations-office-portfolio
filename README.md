@@ -1,4 +1,4 @@
-# Operations & Office Management Portfolio — Łukasz S.
+# Operations & Office Management Portfolio, Łukasz S.
 
 Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjnej, administracji, floty, obsługi B2B, raportowania i cyfrowej organizacji pracy.
 
@@ -13,24 +13,24 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **Ryzyko i koszty:** ubezpieczenia, szkody, przestoje, pojazdy zastępcze oraz koszty eksploatacyjne.
 - **Analizy okresowe:** porównania roczne, kwartalne, miesięczne, tygodniowe i dzienne z poprzednim oraz kolejnym okresem.
 - **AI w pracy biurowej:** praktyczne wykorzystanie narzędzi wspierających analizę, dokumentację i automatyzację przy zachowaniu kontroli merytorycznej i poufności danych.
-- **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md) — lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
-- **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego — 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
-- **PrintFlow QA — mocny mid:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
-- **TransportFlow 360:** kompletny proces transportu krajowego i międzynarodowego dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki), 26 kierowców, najmu 14 taxi i 3 kontenerów z windą — Excel, PWA, Python/SQLite i QA.
-- **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe — PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
+- **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md), lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
+- **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego, 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
+- **PrintFlow QA, mocny mid:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
+- **TransportFlow 360:** kompletny proces transportu krajowego i międzynarodowego dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki), 26 kierowców, najmu 14 taxi i 3 kontenerów z windą, Excel, PWA, Python/SQLite i QA.
+- **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 
 ## Portfolio online
 
 Strona startowa znajduje się w pliku [`index.html`](index.html) i jest przygotowana do publikacji przez GitHub Pages.
 
-### ZIELONA MARKA — strona demonstracyjna i portal PWA
+### ZIELONA MARKA, strona demonstracyjna i portal PWA
 
 Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego można przełożyć na stronę prezentacyjną, portal statusów zleceń i panel działów:
 
-- [Start tutaj — jedna strona prowadząca przez całe portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/udostepnij.html)
+- [Start tutaj, jedna strona prowadząca przez całe portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/udostepnij.html)
 - [Strona demonstracyjna ZIELONEJ MARKI](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/)
-- [Jak powstawał projekt — osobisty opis procesu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/jak-powstal-projekt.html)
-- [PrintFlow Portal — klient i działy](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/)
+- [Jak powstawał projekt, osobisty opis procesu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/jak-powstal-projekt.html)
+- [PrintFlow Portal, klient i działy](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/)
 - [Opis powstania aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/o-aplikacji.html)
 - [Instrukcja PWA dla Androida, Apple i komputera](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/instrukcja.html)
 - [Pakiet QA portalu](zielona-marka/portal/qa/README.md)
@@ -39,7 +39,7 @@ Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego moż
 
 Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczego zlecenia oraz działów pracujących na własnych kolejkach. Jest instalowalny na Androidzie, iPhonie i iPadzie bez Google Play ani App Store. Dane są syntetyczne, a lokalne zmiany zapisują się wyłącznie w przeglądarce.
 
-### ZIELONA MARKA — motyw WordPress dla firmy tworzącej strony
+### ZIELONA MARKA, motyw WordPress dla firmy tworzącej strony
 
 - [Interaktywny podgląd projektu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka-wordpress-preview/)
 - [Kod źródłowy motywu](zielona-marka-wordpress/)
@@ -47,7 +47,7 @@ Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczeg
 
 Projekt pokazuje kompletny proces przygotowania strony firmowej: pozycjonowanie oferty, nowy kierunek wizualny, responsywny layout, sekcję realizacji edytowaną w panelu WordPressa, bezpieczny formularz briefu oraz lekką warstwę techniczną bez ciężkiego kreatora stron.
 
-### TransportFlow 360 — transport ciężki, taxi i kontenery
+### TransportFlow 360, transport ciężki, taxi i kontenery
 
 - [Strona startowa projektu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/)
 - [Transport ciężki i cykl życia zestawu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/flota.html)
@@ -87,7 +87,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 
 W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_demo.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
 
-## PrintFlow 360 — pełny skoroszyt
+## PrintFlow 360, pełny skoroszyt
 
 Plik [`ZIELONA_MARKA_PrintFlow_360_demo.xlsx`](assets/ZIELONA_MARKA_PrintFlow_360_demo.xlsx) zawiera 44 połączone arkusze, 499 zdefiniowanych pól, dashboard KPI, instrukcje działowe, macierz RACI oraz syntetyczne dane procesu poligraficzno-logistycznego.
 
@@ -110,7 +110,7 @@ W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 201
 3. [Obsługa kluczowych klientów i produkcja](case-studies/03-obsluga-b2b-i-produkcja.md)
 4. [Second Brain i cyfrowa organizacja informacji](case-studies/04-second-brain.md)
 5. [ZIELONA MARKA PrintFlow 360](case-studies/05-printflow-360.md)
-6. [TransportFlow 360 — od zapytania do zapłaty](case-studies/06-transportflow-360.md)
+6. [TransportFlow 360, od zapytania do zapłaty](case-studies/06-transportflow-360.md)
 
 ## Kontakt
 

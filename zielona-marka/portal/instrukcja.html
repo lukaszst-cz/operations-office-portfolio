@@ -10,7 +10,7 @@
   <style>
     .guide{max-width:1000px}.guide section{padding:2.5rem 0;border-top:1px solid var(--line)}.guide h2{font-size:clamp(1.65rem,3vw,2.7rem);letter-spacing:-.045em;line-height:1.1;margin:.25rem 0 1.3rem}.guide h3{margin:1.5rem 0 .45rem}.guide p,.guide li{color:var(--muted)}.guide li{margin:.45rem 0}.guide a{color:var(--green);font-weight:800}.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.guide-card{background:var(--surface);border:1px solid var(--line);padding:1.3rem}.guide-card h3{margin-top:0}.code{display:block;overflow:auto;padding:1rem;background:#122920;color:#e7f2dd;font:500 .78rem/1.7 ui-monospace,monospace;white-space:pre}.notice{background:#f7eed8;border-left:3px solid var(--warn);padding:1.2rem;color:#63410e}.notice p{color:#63410e;margin:.35rem 0}@media(max-width:600px){.guide-grid{grid-template-columns:1fr}.code{font-size:.68rem}}
   </style>
-  <title>Instrukcja uruchomienia — PrintFlow Portal</title>
+  <title>Instrukcja uruchomienia, PrintFlow Portal</title>
 </head>
 <body>
   <a class="skip" href="#main">Przejdź do treści</a>
@@ -33,13 +33,13 @@ python app.py
 http://127.0.0.1:8010
 
 # testy automatyczne
-python -m unittest discover -s tests -v</span><p>Projekt korzysta ze standardowej biblioteki Pythona — nie wymaga instalowania zewnętrznych pakietów.</p></section>
+python -m unittest discover -s tests -v</span><p>Projekt korzysta ze standardowej biblioteki Pythona, nie wymaga instalowania zewnętrznych pakietów.</p></section>
 
     <section><p class="eyebrow">4. WŁASNA KOPIA DLA FIRMY</p><h2>Co należy przygotować przed użyciem z prawdziwymi klientami</h2><div class="notice"><p><b>Nie używaj publicznej wersji demonstracyjnej do obsługi prawdziwych zleceń ani danych osobowych.</b></p><p>Publiczna PWA ma syntetyczne dane i lokalne zapisy. Nie zapewnia kont użytkowników, centralnej bazy danych ani produkcyjnych uprawnień.</p></div><ol><li>Zdefiniuj role, statusy i dane, które klient ma widzieć.</li><li>Przygotuj serwer aplikacyjny, bezpieczne API i bazę danych.</li><li>Dodaj logowanie, uprawnienia, HTTPS, kopie zapasowe i historię zmian.</li><li>Wprowadź zasady RODO, retencję danych oraz procedury obsługi incydentów.</li><li>Przetestuj proces na ograniczonej grupie użytkowników przed pełnym wdrożeniem.</li></ol></section>
 
     <section><p class="eyebrow">5. PUBLIKACJA WŁASNEJ WERSJI PWA</p><h2>Prosty scenariusz techniczny</h2><ol><li>Utwórz własne repozytorium GitHub i skopiuj pliki portalu.</li><li>Dostosuj nazwę, ikonę, kolory, etapy oraz dane demonstracyjne.</li><li>Włącz GitHub Pages w ustawieniach repozytorium.</li><li>Otwórz nowy adres w telefonie i zainstaluj aplikację z przeglądarki.</li></ol><p>Ten wariant jest właściwy dla strony demonstracyjnej lub wewnętrznego prototypu. Dla systemu obsługującego rzeczywistych klientów potrzebny jest bezpieczny backend opisany w poprzednim punkcie.</p></section>
   </main>
-  <footer><span>PrintFlow Portal · instrukcja projektu demonstracyjnego</span><div><a href="../prywatnosc.html">Prywatność</a> · <a href="../index.html">ZIELONA MARKA — strona projektu ↗</a></div></footer>
+  <footer><span>PrintFlow Portal · instrukcja projektu demonstracyjnego</span><div><a href="../prywatnosc.html">Prywatność</a> · <a href="../index.html">ZIELONA MARKA, strona projektu ↗</a></div></footer>
   <script>document.querySelectorAll("p,h1,h2,h3,small,b,span,button,a,label,li,td").forEach(e=>e.childNodes.forEach(n=>{if(n.nodeType===3)n.nodeValue=n.nodeValue.replace(/(^|[\s\u00A0])([AaIiOoUuWwZz])\s+/g,"$1$2\u00A0")}));</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-# TransportFlow 360 — od zapytania ofertowego do zapłaty
+# TransportFlow 360, od zapytania ofertowego do zapłaty
 
 ## Cel projektu
 
@@ -28,10 +28,10 @@ Publiczna wersja demonstruje tę architekturę przełącznikiem ról. Produkcyjn
 
 ## Technologie i weryfikacja
 
-- HTML, CSS i JavaScript — strona oraz portal PWA;
-- Excel — formuły, dashboard, RACI, checki, walidacje i definicje pól;
-- Python, SQLite i JSON — lokalny model danych, API i reguły procesu;
-- QA — strategia, przypadki testowe, macierz śledzenia oraz raport wykonania.
+- HTML, CSS i JavaScript, strona oraz portal PWA;
+- Excel, formuły, dashboard, RACI, checki, walidacje i definicje pól;
+- Python, SQLite i JSON, lokalny model danych, API i reguły procesu;
+- QA, strategia, przypadki testowe, macierz śledzenia oraz raport wykonania.
 
 Wszystkie dane są syntetyczne. Projekt nie stanowi porady prawnej, podatkowej ani oferty transportowej.
 

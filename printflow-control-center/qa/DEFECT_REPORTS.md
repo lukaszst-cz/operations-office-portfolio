@@ -2,7 +2,7 @@
 
 Poniższe zgłoszenia dokumentują sposób raportowania. Status „naprawiony” oznacza, że kontrola istnieje w aktualnej wersji demonstracyjnej.
 
-## PF-BUG-001 — przejście zamkniętego zlecenia
+## PF-BUG-001, przejście zamkniętego zlecenia
 
 - Priorytet / dotkliwość: P1 / wysoka
 - Warunki: zlecenie ma etap `Zamknięte`.
@@ -11,7 +11,7 @@ Poniższe zgłoszenia dokumentują sposób raportowania. Status „naprawiony”
 - Aktualne: kontrola zwraca „Zlecenie jest już zamknięte”.
 - Status: naprawiony, pokryty testem automatycznym.
 
-## PF-BUG-002 — próba przejścia ścieżki statycznej
+## PF-BUG-002, próba przejścia ścieżki statycznej
 
 - Priorytet / dotkliwość: P1 / krytyczna
 - Kroki: wykonać `GET /static/../app.py`.
@@ -19,7 +19,7 @@ Poniższe zgłoszenia dokumentują sposób raportowania. Status „naprawiony”
 - Aktualne: ścieżka jest normalizowana i weryfikowana względem katalogu `static`.
 - Status: naprawiony, pokryty testem automatycznym.
 
-## PF-BUG-003 — brak pełnej semantyki autoryzacji
+## PF-BUG-003, brak pełnej semantyki autoryzacji
 
 - Priorytet / dotkliwość: P1 / wysoka
 - Obserwacja: wybór roli jest filtrem demonstracyjnym, nie uwierzytelnianiem.
@@ -27,7 +27,7 @@ Poniższe zgłoszenia dokumentują sposób raportowania. Status „naprawiony”
 - Rekomendacja: w wersji produkcyjnej dodać logowanie, sesje, RBAC po stronie serwera i testy uprawnień.
 - Status: zaakceptowane ograniczenie wersji portfolio; jawnie opisane w README.
 
-## PF-BUG-004 — brak idempotencji tworzenia zapytania
+## PF-BUG-004, brak idempotencji tworzenia zapytania
 
 - Priorytet / dotkliwość: P2 / średnia
 - Obserwacja: ponowienie żądania POST może utworzyć drugi rekord.

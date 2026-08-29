@@ -1,4 +1,4 @@
-# Raport wykonania testów — PrintFlow Portal PWA
+# Raport wykonania testów, PrintFlow Portal PWA
 
 **Data kontroli:** 2026-08-22  
 **Zakres:** wersja portfolio na danych syntetycznych.

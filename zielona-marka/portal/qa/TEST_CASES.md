@@ -1,4 +1,4 @@
-# Przypadki testowe — PrintFlow Portal PWA
+# Przypadki testowe, PrintFlow Portal PWA
 
 | ID | Priorytet | Scenariusz | Kroki | Oczekiwany rezultat |
 |---|---|---|---|---|

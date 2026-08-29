@@ -1,4 +1,4 @@
-# PrintFlow Control Center — API demonstracyjne
+# PrintFlow Control Center, API demonstracyjne
 
 Lokalne API aplikacji portfolio uruchamianej przez `python app.py`. Wszystkie odpowiedzi i dane wejściowe są demonstracyjne oraz syntetyczne. Nie jest to publiczne API produkcyjne i nie zawiera uwierzytelniania.
 
@@ -20,9 +20,9 @@ Zwraca liczbę zleceń, wartość modelową, marżę, alerty i podział według 
 
 Parametry opcjonalne:
 
-- `role` — widok demonstracyjny roli;
-- `q` — wyszukiwanie po kodzie zlecenia, kliencie lub produkcie;
-- `stage` — dokładny etap procesu.
+- `role`, widok demonstracyjny roli;
+- `q`, wyszukiwanie po kodzie zlecenia, kliencie lub produkcie;
+- `stage`, dokładny etap procesu.
 
 ## Utworzenie zapytania
 

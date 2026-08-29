@@ -7,11 +7,11 @@ Klasyfikacja danych: syntetyczne / zanonimizowane
 
 ## Wynik
 
-- `python app.py --check` — PASS
-- `python -m unittest discover -s tests -v` — 4/4 PASS
-- checki skoroszytu — PASS
-- liczba wygenerowanych arkuszy — 20
-- komplet podglądów wizualnych — 20/20
+- `python app.py --check`, PASS
+- `python -m unittest discover -s tests -v`, 4/4 PASS
+- checki skoroszytu, PASS
+- liczba wygenerowanych arkuszy, 20
+- komplet podglądów wizualnych, 20/20
 
 ## Uwagi
 

@@ -1,4 +1,4 @@
-# AUTO NAPRAWA — prezentacja dla klienta
+# AUTO NAPRAWA, prezentacja dla klienta
 
 ## Jeden link do wysłania
 
@@ -8,10 +8,10 @@ Strona jest publiczna. Klient nie potrzebuje konta GitHub ani logowania.
 
 ## Proponowana kolejność prezentacji
 
-1. Strona główna — oferta, sposób działania i korzyści dla warsztatu.
-2. Portal klienta — sprawdzanie statusu naprawy i informacji o zleceniu.
-3. Panel zarządzania — pełny widok kierownika, zlecenia, KPI, wartości i marże.
-4. Faktury i KSeF — demonstracyjny proces wystawiania i weryfikacji dokumentu.
+1. Strona główna, oferta, sposób działania i korzyści dla warsztatu.
+2. Portal klienta, sprawdzanie statusu naprawy i informacji o zleceniu.
+3. Panel zarządzania, pełny widok kierownika, zlecenia, KPI, wartości i marże.
+4. Faktury i KSeF, demonstracyjny proces wystawiania i weryfikacji dokumentu.
 
 ## Bezpośrednie linki
 

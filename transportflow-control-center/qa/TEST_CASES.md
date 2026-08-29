@@ -1,4 +1,4 @@
-# Przypadki testowe — TransportFlow 360
+# Przypadki testowe, TransportFlow 360
 
 | ID | Obszar | Warunek | Oczekiwany rezultat |
 |---|---|---|---|

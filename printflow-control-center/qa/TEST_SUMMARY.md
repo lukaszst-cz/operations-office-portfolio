@@ -1,4 +1,4 @@
-# Podsumowanie testów — PrintFlow Control Center
+# Podsumowanie testów, PrintFlow Control Center
 
 ## Zakres wydania portfolio QA
 

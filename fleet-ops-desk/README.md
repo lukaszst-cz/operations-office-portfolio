@@ -1,11 +1,11 @@
-# Fleet Ops Desk — Python + SQLite + CSS
+# Fleet Ops Desk, Python + SQLite + CSS
 
 Mała, lokalna aplikacja demonstracyjna do zarządzania flotą. Pokazuje praktyczne użycie:
 
-- **Python** — logika aplikacji i lokalny serwer HTTP bez zewnętrznych bibliotek;
-- **SQLite / SQL** — pojazdy, koszty, najem oraz leasing;
-- **HTML i CSS** — responsywny panel operacyjny;
-- **JavaScript** — filtrowanie rejestru pojazdów w przeglądarce.
+- **Python**, logika aplikacji i lokalny serwer HTTP bez zewnętrznych bibliotek;
+- **SQLite / SQL**, pojazdy, koszty, najem oraz leasing;
+- **HTML i CSS**, responsywny panel operacyjny;
+- **JavaScript**, filtrowanie rejestru pojazdów w przeglądarce.
 
 Wszystkie rekordy są generowane przez aplikację jako **dane demonstracyjne**. Baza `fleet_demo.sqlite3` powstaje lokalnie przy pierwszym uruchomieniu i nie jest wersjonowana.
 

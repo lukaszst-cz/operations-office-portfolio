@@ -4,7 +4,7 @@
 |---|---|---|---|
 | Proces RFQ → zapłata | `proces.html` | `RACI`, `Faktury` | `workflow.json` |
 | 20 zestawów 12/4/4 | `flota.html` | `Flota_Ciezka` | `test_fleet_and_drivers` |
-| 26 kierowców | portal — zgodność | `Kierowcy` | `test_fleet_and_drivers` |
+| 26 kierowców | portal, zgodność | `Kierowcy` | `test_fleet_and_drivers` |
 | Odczyty 28/90 dni | `flota.html`, artykuł | `Kierowcy`, `Czas_Pracy`, `Flota_Ciezka` | `test_workflow_download_periods` |
 | Koszt i stawka za km | `kalkulator.html` | `Kalkulator_km` | `test_margin` |
 | Dokumenty i blokady | `dokumenty.html` | `Dokumenty`, `Checki` | `test_required_documents` |
