@@ -8,6 +8,7 @@ Projekt łączy operacje transportowe, relacje z klientami, e-CRM kierowców, fl
 
 - [artykuł o powstaniu i wartości systemu](ARTYKUL_TRANSPORTFLOW.md);
 - [gotowa publikacja do LinkedIn](PUBLIKACJA_LINKEDIN.md).
+- [pakiet treści dla LinkedIn, Facebooka, Instagrama i TikToka](SOCIAL_MEDIA_TRANSPORTFLOW.md).
 
 ## Zakres demonstratora
 
