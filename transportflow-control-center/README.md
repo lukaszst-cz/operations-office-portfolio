@@ -4,6 +4,11 @@ Rozwijany system demonstracyjny TMS/CRM dla firmy transportowej zarządzającej 
 
 Projekt łączy operacje transportowe, relacje z klientami, e-CRM kierowców, flotę, dokumenty i finanse w jednym panelu. Wszystkie rekordy, firmy, osoby, trasy, kwoty i identyfikatory są syntetyczne.
 
+## Materiały publikacyjne
+
+- [artykuł o powstaniu i wartości systemu](ARTYKUL_TRANSPORTFLOW.md);
+- [gotowa publikacja do LinkedIn](PUBLIKACJA_LINKEDIN.md).
+
 ## Zakres demonstratora
 
 - dashboard operacyjny i alerty;
