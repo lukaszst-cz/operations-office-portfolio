@@ -135,7 +135,7 @@ export default function TransportFlowApp() {
       if (!response.ok) throw new Error();
       const payload = await response.json() as { order?: TransportOrder };
       setOrders((current) => [payload.order ?? newOrder, ...current]);
-      notify(`Utworzono i zapisano zlecenie ${(payload.order ?? newOrder).id}`);
+      notify(`Dodano testowe zlecenie ${(payload.order ?? newOrder).id}. Zniknie po odświeżeniu strony.`);
     } catch {
       setOrders((current) => [newOrder, ...current]);
       notify(`Utworzono zlecenie ${newOrder.id} w trybie demonstracyjnym`);
@@ -154,7 +154,7 @@ export default function TransportFlowApp() {
       if (payload.document) setDocumentRows((current) => [payload.document!, ...current]);
       setShowNewDocument(false);
       setActiveModule("documents");
-      notify("Dokument został zapisany i przekazany do weryfikacji.");
+      notify("Dodano testowy dokument. Zniknie po odświeżeniu strony.");
     } catch {
       notify("Nie udało się zapisać dokumentu. Spróbuj ponownie.");
     }
@@ -166,7 +166,7 @@ export default function TransportFlowApp() {
       if (!response.ok) throw new Error();
       const payload = await response.json() as { document?: DocumentViewRecord };
       if (payload.document) setDocumentRows((current) => current.map((document) => document.id === id ? payload.document! : document));
-      notify(status === "Ważny" ? "Dokument zatwierdzony." : "Status dokumentu został zmieniony.");
+      notify(status === "Ważny" ? "Testowo zatwierdzono dokument." : "Testowo zmieniono status dokumentu.");
     } catch {
       notify("Nie udało się zmienić statusu dokumentu.");
     }
@@ -181,7 +181,7 @@ export default function TransportFlowApp() {
         setOrders((current) => current.map((order) => order.id === id ? payload.order! : order));
         setSelectedOrder(payload.order);
       }
-      notify("Status zlecenia i historia operacji zostały zapisane.");
+      notify("Testowo zmieniono etap zlecenia. Zmiana zniknie po odświeżeniu strony.");
     } catch {
       notify("Nie udało się zaktualizować zlecenia.");
     }
@@ -217,6 +217,7 @@ export default function TransportFlowApp() {
         </header>
 
         <div className="content">
+          <div className="demo-notice" role="status"><strong>Wersja demonstracyjna</strong><span>Możesz dodawać i zmieniać dane testowe. Nie trafiają do trwałej bazy i są resetowane po odświeżeniu strony.</span></div>
           <div className="page-heading"><div><p className="eyebrow">{heading.eyebrow}</p><h1>{heading.title}</h1><p>{heading.description}</p></div><div className="demo-pill">DANE DEMONSTRACYJNE</div></div>
           {filters[activeModule].length > 0 ? <div className="filter-row" aria-label="Filtry">{filters[activeModule].map((filter) => <button className={statusFilter === filter ? "active" : ""} key={filter} onClick={() => setStatusFilter(filter)}>{filter}</button>)}</div> : null}
 
@@ -351,7 +352,7 @@ function AccessView() {
     ["Kierowca", "Tylko własne dane", "Własne zlecenia, pojazd, zadania, czas pracy, dokumenty i rozliczenia"],
     ["Klient", "Tylko własne zlecenia", "Etap, ETA, dokument dostawy i faktury własnej firmy"],
   ];
-  return <><section className="access-callout"><div><span>INDYWIDUALNY DOSTĘP</span><h2>Każde konto ma własną rolę i zakres danych.</h2><p>Kierowcy oraz klienci nie widzą danych innych osób ani wewnętrznej rentowności firmy. Każda istotna zmiana będzie przypisana do użytkownika i zapisana w historii.</p></div><div className="access-stat"><b>8</b><span>ról systemowych</span><small>uprawnienia kontrolowane po stronie serwera</small></div></section><section className="panel module-panel"><PanelHeading eyebrow="MACIERZ UPRAWNIEŃ" title="Role systemowe" action={<span className="summary-note">Sprawdź widoki demonstracyjne</span>} /><div className="role-grid">{roles.map((role) => <article key={role[0]}><div className="role-icon">{role[0].split(" ").slice(0, 2).map((part) => part[0]).join("")}</div><div><strong>{role[0]}</strong><Badge tone="blue">{role[1]}</Badge><p>{role[2]}</p></div></article>)}</div><div className="role-links"><a href="/driver">Otwórz portal kierowcy →</a><a href="/customer">Otwórz portal klienta →</a></div></section></>;
+  return <><section className="access-callout"><div><span>INDYWIDUALNY DOSTĘP</span><h2>Każde konto może mieć własną rolę i zakres danych.</h2><p>Widoki kierowcy i klienta pokazują docelowy podział informacji. W produkcyjnym wdrożeniu każda istotna zmiana będzie przypisana do użytkownika i zapisana w historii.</p></div><div className="access-stat"><b>8</b><span>ról systemowych</span><small>model ról do wdrożenia produkcyjnego</small></div></section><section className="panel module-panel"><PanelHeading eyebrow="MACIERZ UPRAWNIEŃ" title="Role systemowe" action={<span className="summary-note">Przykładowe widoki demonstracyjne</span>} /><div className="role-grid">{roles.map((role) => <article key={role[0]}><div className="role-icon">{role[0].split(" ").slice(0, 2).map((part) => part[0]).join("")}</div><div><strong>{role[0]}</strong><Badge tone="blue">{role[1]}</Badge><p>{role[2]}</p></div></article>)}</div><div className="role-links"><a href="/driver">Otwórz portal kierowcy →</a><a href="/customer">Otwórz portal klienta →</a></div></section></>;
 }
 
 function DriverDrawer({ driver, onClose }: { driver: Driver; onClose: () => void }) {
@@ -364,7 +365,7 @@ function OrderDrawer({ order, onClose, onUpdate }: { order: TransportOrder; onCl
 }
 
 function NewDocumentModal({ onClose, onSubmit }: { onClose: () => void; onSubmit: (event: FormEvent<HTMLFormElement>) => void }) {
-  return <div className="overlay modal-overlay" onMouseDown={onClose}><form className="modal" onSubmit={onSubmit} onMouseDown={(event) => event.stopPropagation()}><button type="button" className="close" onClick={onClose} aria-label="Zamknij">×</button><p className="eyebrow">NOWY DOKUMENT</p><h2>Dodaj plik do obiegu</h2><div className="form-grid"><label>Zakres<select name="scope"><option>Kierowca</option><option>Pojazd</option><option>Firma</option><option>Zlecenie</option></select></label><label>Identyfikator<input name="scopeCode" required placeholder="np. TF-260829-001" /></label><label className="wide">Rodzaj dokumentu<input name="type" required placeholder="np. POD / CMR po dostawie" /></label><label>Termin<input name="dueDate" type="date" /></label><label>Blokuje proces<input name="blocks" defaultValue="Brak blokady" /></label><label className="wide">Plik PDF lub zdjęcie<input name="file" type="file" accept="image/*,application/pdf" /></label></div><div className="modal-actions"><button type="button" className="ghost" onClick={onClose}>Anuluj</button><button type="submit" className="primary">Zapisz dokument</button></div><p className="form-note">Plik trafia do teczki dokumentowej, otrzymuje status weryfikacji i pozostawia ślad w historii.</p></form></div>;
+  return <div className="overlay modal-overlay" onMouseDown={onClose}><form className="modal" onSubmit={onSubmit} onMouseDown={(event) => event.stopPropagation()}><button type="button" className="close" onClick={onClose} aria-label="Zamknij">×</button><p className="eyebrow">NOWY DOKUMENT</p><h2>Dodaj plik do obiegu</h2><div className="form-grid"><label>Zakres<select name="scope"><option>Kierowca</option><option>Pojazd</option><option>Firma</option><option>Zlecenie</option></select></label><label>Identyfikator<input name="scopeCode" required placeholder="np. TF-260829-001" /></label><label className="wide">Rodzaj dokumentu<input name="type" required placeholder="np. POD / CMR po dostawie" /></label><label>Termin<input name="dueDate" type="date" /></label><label>Blokuje proces<input name="blocks" defaultValue="Brak blokady" /></label><label className="wide">Plik PDF lub zdjęcie<input name="file" type="file" accept="image/*,application/pdf" /></label></div><div className="modal-actions"><button type="button" className="ghost" onClick={onClose}>Anuluj</button><button type="submit" className="primary">Dodaj testowy dokument</button></div><p className="form-note">Plik służy wyłącznie do testu tego widoku. Nie jest przechowywany i znika po odświeżeniu strony.</p></form></div>;
 }
 
 function NewOrderModal({ onClose, onSubmit }: { onClose: () => void; onSubmit: (event: FormEvent<HTMLFormElement>) => void }) {

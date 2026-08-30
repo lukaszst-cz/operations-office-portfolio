@@ -104,7 +104,7 @@ export const drivers: Driver[] = Array.from({ length: 58 }, (_, index) => {
     base: bases[index % bases.length],
     status,
     assignedVehicle: number <= 50 ? `TF-${String(number).padStart(3, "0")}` : "Rezerwowy",
-    currentOrder: number <= 12 ? `TF-260829-${String(number).padStart(3, "0")}` : number <= 43 ? `TF-260828-${String(number).padStart(3, "0")}` : "—",
+    currentOrder: number <= 12 ? `TF-260829-${String(number).padStart(3, "0")}` : number <= 43 ? `TF-260828-${String(number).padStart(3, "0")}` : " - ",
     hoursWeek: 22 + ((number * 3) % 23),
     hoursTwoWeeks: 52 + ((number * 5) % 35),
     documentCompleteness: compliance === "Blokada" ? 72 : compliance === "Uwaga" ? 84 : 92 + (number % 9),
@@ -181,7 +181,7 @@ export const orders: TransportOrder[] = routes.map((route, index) => {
 });
 
 export const documents: DocumentRecord[] = [
-  { id: "DOC-001", scope: "Kierowca", scopeCode: "DRV-014", type: "Karta kierowcy — odczyt", dueDate: isoAfter(-1), status: "Brak", blocks: "Nowe zlecenie" },
+  { id: "DOC-001", scope: "Kierowca", scopeCode: "DRV-014", type: "Karta kierowcy  -  odczyt", dueDate: isoAfter(-1), status: "Brak", blocks: "Nowe zlecenie" },
   { id: "DOC-002", scope: "Pojazd", scopeCode: "TF-048", type: "Badanie techniczne", dueDate: isoAfter(2), status: "Do odnowienia", blocks: "Wyjazd" },
   { id: "DOC-003", scope: "Kierowca", scopeCode: "DRV-022", type: "Badania lekarskie", dueDate: isoAfter(4), status: "Do odnowienia", blocks: "Dyspozycyjność" },
   { id: "DOC-004", scope: "Zlecenie", scopeCode: "TF-260829-004", type: "Certyfikat mycia cysterny", dueDate: isoAfter(0), status: "Brak", blocks: "Załadunek" },

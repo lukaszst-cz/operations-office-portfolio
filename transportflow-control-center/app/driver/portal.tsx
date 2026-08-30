@@ -56,7 +56,7 @@ export default function DriverPortal() {
       setShowCompletion(false);
       setFiles([]);
       setNote("");
-      setNotice(digitalProof ? "Dostawa została potwierdzona cyfrowo." : "Zdjęcia zostały dołączone do teczki zlecenia.");
+      setNotice(digitalProof ? "Testowo potwierdzono dostawę cyfrowo. Zmiana zniknie po odświeżeniu." : "Testowo dodano załączniki. Nie są przechowywane i znikną po odświeżeniu.");
     } catch {
       setNotice("Nie udało się zapisać potwierdzenia. Spróbuj ponownie po odzyskaniu połączenia.");
     } finally {
@@ -66,7 +66,7 @@ export default function DriverPortal() {
 
   return <main className="driver-app">
     <header className="driver-top"><a href="/" className="driver-brand"><span>TF</span> TransportFlow</a><div><small>TRYB KIEROWCY</small><b>AK</b></div></header>
-    <section className="driver-hero"><p>29 SIERPNIA 2026</p><h1>Dzień dobry, Adam</h1><span>Twój plan, dokumenty i najważniejsze zadania w jednym miejscu.</span></section>
+    <section className="driver-hero"><p>WERSJA DEMONSTRACYJNA · KONTO PRZYKŁADOWE</p><h1>Dzień dobry, Adam</h1><span>Twój plan, dokumenty i najważniejsze zadania w jednym miejscu. Dane i załączniki testowe są resetowane po odświeżeniu.</span></section>
     <nav className="driver-tabs" aria-label="Portal kierowcy"><button className={tab === "day" ? "active" : ""} onClick={() => setTab("day")}>Mój dzień</button><button className={tab === "documents" ? "active" : ""} onClick={() => setTab("documents")}>Dokumenty</button><button className={tab === "tasks" ? "active" : ""} onClick={() => setTab("tasks")}>Zadania</button><button className={tab === "profile" ? "active" : ""} onClick={() => setTab("profile")}>Profil</button></nav>
     <section className="driver-content">
       {notice ? <div className="driver-notice">✓ {notice}</div> : null}

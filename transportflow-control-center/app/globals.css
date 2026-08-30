@@ -64,6 +64,7 @@ button { cursor: pointer; }
 .page-heading h1 { font-size: 29px; line-height: 1.1; letter-spacing: -.035em; margin: 0; }
 .page-heading > div > p:last-child { color: var(--muted); font-size: 12px; margin: 9px 0 0; }
 .demo-pill { font: 700 8px monospace; letter-spacing: .11em; color: #7b6650; background: #fff3df; border: 1px solid #f1d8ae; border-radius: 20px; padding: 7px 10px; white-space: nowrap; }
+.demo-notice { display:flex; gap:10px; align-items:flex-start; margin:0 0 18px; padding:12px 14px; border:1px solid #f1d8ae; border-radius:10px; background:#fff8ea; color:#5e513f; font-size:10px; line-height:1.45; }.demo-notice strong { flex:0 0 auto; color:#78592f; }.demo-notice span { max-width:760px; }
 .filter-row { display: flex; gap: 6px; flex-wrap: wrap; margin: -7px 0 16px; }
 .filter-row button { border: 1px solid var(--line); color: var(--muted); background: var(--white); border-radius: 20px; padding: 6px 11px; font-size: 9px; font-weight: 700; }
 .filter-row button.active { border-color: var(--green); color: white; background: var(--green); }
