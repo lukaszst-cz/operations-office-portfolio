@@ -1,8 +1,8 @@
-# Portfolio stron WWW i procesów firmowych, Łukasz S.
+# Portfolio operacji, danych i procesów firmowych, Łukasz S.
 
-Praktyczne, zanonimizowane portfolio łączące strony WWW, formularze wyceny, lekkie CRM-y i kontrolę dokumentów z doświadczeniem w koordynacji operacyjnej, administracji, obsłudze B2B, raportowaniu i cyfrowej organizacji pracy.
+Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy operacyjne firmy: sprawy bez właściciela, dokumenty bez statusu, terminy bez kontroli, koszty bez wspólnego obrazu i zlecenia przechodzące przez wiele ról. Modele danych, proste aplikacje, testy QA, strony i formularze są tu dowodem sposobu pracy, a nie listą przypadkowych technologii.
 
-## Co pokazuje repozytorium
+## Problemy i dowody w repozytorium
 
 - **Koordynacja operacyjna:** zlecenia, priorytety, zasoby, terminy i rozliczenia.
 - **Excel i raportowanie:** edytowalny dashboard KPI, formuły, tabele i wykresy.
