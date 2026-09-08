@@ -23,7 +23,7 @@ System jest przygotowany również jako PWA, więc kierowca może korzystać z n
 
 To demonstrator, który pokazuje kierunek dla firm transportowych chcących pracować szybciej, spokojniej i z lepszą kontrolą nad operacją.
 
-Opis realizacji: https://zielona-marka.pl/realizacje/transportflow
+Opis realizacji i kod: https://github.com/lukaszst-cz/transportflow-control-center
 
 Kod demonstratora: https://github.com/lukaszst-cz/operations-office-portfolio/tree/main/transportflow-control-center
 

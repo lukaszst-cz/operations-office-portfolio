@@ -4,7 +4,7 @@
 
 Prowadzić odbiorcę do opisu realizacji i pokazać konkretny efekt dla firmy transportowej: mniej telefonów, krótszy obieg dokumentów, szybsze rozliczenia i lepsza kontrola nad flotą.
 
-Link docelowy: https://zielona-marka.pl/realizacje/transportflow
+Link docelowy: https://github.com/lukaszst-cz/transportflow-control-center
 
 ## LinkedIn
 
@@ -18,7 +18,7 @@ W jednym miejscu łączy zlecenia, flotę, kierowców, klientów, dokumenty i fi
 
 Cel był prosty: mniej dzwonienia o status, mniej szukania dokumentów i szybsze decyzje.
 
-Opis realizacji: https://zielona-marka.pl/realizacje/transportflow
+Opis realizacji: https://github.com/lukaszst-cz/transportflow-control-center
 
 #transport #TMS #CRM #logistyka #spedycja #digitalizacja #PWA
 
@@ -28,7 +28,7 @@ Firma transportowa nie potrzebuje kolejnego arkusza. Potrzebuje porządku od zap
 
 TransportFlow pokazuje, jak połączyć zlecenia, flotę, kierowców, dokumenty i należności w jednym procesie. Kierowca wysyła zdjęcie lub PDF po dostawie, biuro od razu ma komplet dokumentów, a właściciel widzi, gdzie uciekają czas i marża.
 
-Zobacz realizację: https://zielona-marka.pl/realizacje/transportflow
+Zobacz realizację: https://github.com/lukaszst-cz/transportflow-control-center
 
 ## Instagram i Facebook Reels
 
@@ -54,7 +54,7 @@ Transport nie traci czasu na trasie. Traci go między ludźmi.
 
 Mniej telefonów. Krótszy obieg dokumentów. Szybsze rozliczenia. Tak wygląda transport, gdy zlecenia, flota i kierowcy pracują na wspólnych danych.
 
-Pełny opis: https://zielona-marka.pl/realizacje/transportflow
+Pełny opis: https://github.com/lukaszst-cz/transportflow-control-center
 
 #transport #logistyka #spedycja #TMS #CRM
 
@@ -74,7 +74,7 @@ Pełny opis: https://zielona-marka.pl/realizacje/transportflow
 
 ## Wiadomość do osób, które mogą udostępnić materiał
 
-Cześć, przygotowałem demonstrację systemu dla firm transportowych. Pokazuje ona, jak uporządkować zlecenia, kierowców, dokumenty i płatności w jednym procesie. Jeśli znasz właściciela firmy transportowej albo osobę pracującą w dyspozycji, będę wdzięczny za udostępnienie lub przekazanie linku. Materiał jest tutaj: https://zielona-marka.pl/realizacje/transportflow
+Cześć, przygotowałem demonstrację systemu dla firm transportowych. Pokazuje ona, jak uporządkować zlecenia, kierowców, dokumenty i płatności w jednym procesie. Jeśli znasz właściciela firmy transportowej albo osobę pracującą w dyspozycji, będę wdzięczny za udostępnienie lub przekazanie linku. Materiał jest tutaj: https://github.com/lukaszst-cz/transportflow-control-center
 
 ## Prosty rytm publikacji
 

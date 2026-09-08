@@ -1,6 +1,6 @@
-# Operations & Office Management Portfolio, Łukasz S.
+# Portfolio stron WWW i procesów firmowych, Łukasz S.
 
-Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjnej, administracji, floty, obsługi B2B, raportowania i cyfrowej organizacji pracy.
+Praktyczne, zanonimizowane portfolio łączące strony WWW, formularze wyceny, lekkie CRM-y i kontrolę dokumentów z doświadczeniem w koordynacji operacyjnej, administracji, obsłudze B2B, raportowaniu i cyfrowej organizacji pracy.
 
 ## Co pokazuje repozytorium
 
@@ -12,12 +12,14 @@ Praktyczne, zanonimizowane portfolio kompetencji z obszaru koordynacji operacyjn
 - **Taxi:** rejestr montażu taksometrów, legalizacji, urządzeń fiskalnych, oznakowania i kosztów serwisu.
 - **Ryzyko i koszty:** ubezpieczenia, szkody, przestoje, pojazdy zastępcze oraz koszty eksploatacyjne.
 - **Analizy okresowe:** porównania roczne, kwartalne, miesięczne, tygodniowe i dzienne z poprzednim oraz kolejnym okresem.
-- **AI w pracy biurowej:** praktyczne wykorzystanie narzędzi wspierających analizę, dokumentację i automatyzację przy zachowaniu kontroli merytorycznej i poufności danych.
+- **Automatyzacja pracy biurowej:** analiza, dokumentacja i usprawnianie powtarzalnych zadań przy zachowaniu kontroli merytorycznej i poufności danych.
 - **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md), lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego, 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
 - **PrintFlow QA i automatyzacja testów:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
 - **TransportFlow 360:** kompletny proces transportu krajowego i międzynarodowego dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki), 26 kierowców, najmu 14 taxi i 3 kontenerów z windą, Excel, PWA, Python/SQLite i QA.
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
+- **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
+- **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
 
 ## Technologie i praktyka inżynierska
 
@@ -39,7 +41,7 @@ Portfolio łączy pracę operacyjną z tworzeniem narzędzi, które można obejr
 - Automatyzuję testy logiki, API, JSON i SQLite w Pythonie, a wyniki uruchamiam w GitHub Actions przy zmianach kodu.
 - Dokumentuję defekty przez wpływ, priorytet, kroki odtworzenia i kryterium akceptacji. Decyzję o wydaniu wspieram bramką GO/NO-GO.
 
-Nie deklaruję Java, ponieważ w tym portfolio nie ma jeszcze projektu opartego na Javie. Uczciwe i mocne pozycjonowanie to: **QA Engineer | Manual Testing & Python Test Automation**.
+Zakres każdej demonstracji jest opisany wprost wraz z ograniczeniami. Dzięki temu portfolio pokazuje realny sposób pracy, a nie deklaracje bez materiału do sprawdzenia.
 
 ## Portfolio online
 
@@ -90,10 +92,14 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
 | PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
 | TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
-| TransportFlow Control Center | Python, testy i dokumentacja jakości | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
+| TransportFlow Control Center | Odrębny scenariusz około 50 zestawów, role, dokumenty, flota i finanse | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
 | Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
+| Zielona Marka, strona i Studio | Strona usługowa, kwalifikacja zapytań i widok procesu klienta | [zielona-marka-pl](https://github.com/lukaszst-cz/zielona-marka-pl) |
+| Obsługa zapytania i oferty | Wiadomość, braki, szkic odpowiedzi, oferta i lekki CRM z zatwierdzeniem człowieka | [projekt na GitHubie](https://github.com/lukaszst-cz/lead-offer-copilot) |
+| Kontrola dokumentów | Lokalne sprawdzanie CSV, Excela i PDF przed wysłaniem do klienta | [document-checker](https://github.com/lukaszst-cz/document-checker) |
+| Film promocyjny Zielonej Marki | Scenariusz, narracja, montaż, napisy i obróbka dźwięku | [prezentacja w portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/#film-zielona-marka) |
 
 ### Działające prezentacje
 
@@ -104,6 +110,28 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 - [WorkshopFlow 360](https://lukaszst-cz.github.io/workshopflow-360/)
 - [Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
 - [Zielona Marka WordPress, podgląd wizualny](https://lukaszst-cz.github.io/zielona-marka-wordpress/preview/)
+- [Zielona Marka, aktualna strona](https://zielona-marka.pl/)
+- [Obsługa zapytania i oferty](https://lead-offer-zm.pages.dev/)
+- [Kontrola dokumentów](https://document-checker-zm.pages.dev/)
+- [Film promocyjny Zielonej Marki](https://lukaszst-cz.github.io/operations-office-portfolio/#film-zielona-marka)
+
+## Aktualizacja, 8 września 2026
+
+Portfolio uzupełniono o prace wykonane w ostatnich dniach:
+
+- dopracowanie mobilnego nagłówka i nawigacji serwisu Zielona Marka,
+- prezentację strony usługowej, formularza kwalifikującego zapytania oraz widoku procesu klienta,
+- przygotowanie czterech wersji 30-sekundowego filmu promocyjnego,
+- publikację finalnej wersji filmu z ekspresyjnym lektorem, napisami i obróbką dźwięku,
+- nowe studium realizacji łączące cel biznesowy, decyzje produkcyjne i efekt końcowy.
+- dodanie publicznych demonstracji obsługi zapytania i oferty oraz kontroli dokumentów,
+- połączenie opublikowanych materiałów LinkedIn z artykułami i właściwymi projektami.
+
+Na stronie głównej wyróżniono projekty przekrojowe: Second Brain Łukasz 2.0, zielona-marka.pl, oba odrębne modele TransportFlow oraz PrintFlow 360. Second Brain oraz aktualna strona Zielonej Marki otrzymały rozbudowane prezentacje, ponieważ najlepiej pokazują porządkowanie informacji i przełożenie procesu na działające rozwiązanie dla klienta.
+
+Opis Second Brain zaktualizowano na podstawie obecnej struktury w Notion. Starsze liczby inwentaryzacyjne zastąpiono opisem działającego systemu: szybkiego zapisu, priorytetów, terminów, przeglądu tygodnia, spraw i dokumentów, pracy, projektów oraz powiązań z materiałami źródłowymi.
+
+Dodano również stronę [`publikacje.html`](publikacje.html), która zbiera artykuły i materiały przygotowane do LinkedIn dotyczące Second Brain, TransportFlow oraz Zielonej Marki.
 
 ## Przykład Excel
 
@@ -133,6 +161,9 @@ W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 201
 4. [Second Brain i cyfrowa organizacja informacji](case-studies/04-second-brain.md)
 5. [ZIELONA MARKA PrintFlow 360](case-studies/05-printflow-360.md)
 6. [TransportFlow 360, od zapytania do zapłaty](case-studies/06-transportflow-360.md)
+7. [Zielona Marka, strona usługowa i film promocyjny](case-studies/07-zielona-marka-strona-i-film.md)
+8. [Obsługa zapytania i oferty](case-studies/08-obsluga-zapytan-i-ofert.md)
+9. [Kontrola dokumentów przed wysłaniem](case-studies/09-kontrola-dokumentow.md)
 
 ## Kontakt
 

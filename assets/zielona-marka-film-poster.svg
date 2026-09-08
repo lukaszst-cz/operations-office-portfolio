@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Film promocyjny Zielonej Marki</title>
+  <desc id="desc">Ciemnozielona plansza z hasłem Uporządkujmy pierwszy kontakt z klientem.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07131d"/>
+      <stop offset=".55" stop-color="#0f342d"/>
+      <stop offset="1" stop-color="#173d50"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#79d7a5"/>
+      <stop offset="1" stop-color="#62a9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="130" r="310" fill="#79d7a5" opacity=".06"/>
+  <circle cx="220" cy="820" r="360" fill="#62a9ff" opacity=".06"/>
+  <rect x="110" y="110" width="1380" height="680" rx="48" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+  <text x="150" y="250" fill="#79d7a5" font-family="Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="7">FILM PROMOCYJNY · 30 SEKUND</text>
+  <text x="150" y="390" fill="#f2f7ff" font-family="Arial, sans-serif" font-size="82" font-weight="700">Uporządkujmy pierwszy</text>
+  <text x="150" y="485" fill="#f2f7ff" font-family="Arial, sans-serif" font-size="82" font-weight="700">kontakt z klientem.</text>
+  <text x="150" y="610" fill="#a9b9cc" font-family="Arial, sans-serif" font-size="36">Scenariusz · głos · montaż · napisy</text>
+  <circle cx="1330" cy="615" r="78" fill="url(#mark)"/>
+  <path d="M1305 570 L1305 660 L1370 615 Z" fill="#07131d"/>
+  <text x="150" y="725" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">ZIELONA MARKA</text>
+</svg>
