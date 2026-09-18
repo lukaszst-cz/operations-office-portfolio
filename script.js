@@ -1,5 +1,5 @@
 const filters = document.querySelectorAll('.filter');
-const cards = document.querySelectorAll('.case-card');
+const cards = document.querySelectorAll('.case-card[data-category]');
 
 filters.forEach((button) => {
   button.addEventListener('click', () => {
@@ -7,11 +7,11 @@ filters.forEach((button) => {
     button.classList.add('active');
     const selected = button.dataset.filter;
     cards.forEach((card) => {
-      const show = selected === 'all' || card.dataset.category.split(' ').includes(selected);
+      const categories = (card.dataset.category || '').split(' ').filter(Boolean);\n      const show = selected === 'all' || categories.includes(selected);
       card.classList.toggle('hidden', !show);
     });
   });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');\nif (year) year.textContent = new Date().getFullYear();
 
