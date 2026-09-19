@@ -96,7 +96,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | TransportFlow Control Center | Odrębny scenariusz około 50 zestawów, role, dokumenty, flota i finanse | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
-| DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [docpilot](https://github.com/lukaszst-cz/docpilot) |
+| DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) · [repo](https://github.com/lukaszst-cz/docpilot) |
 | Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
 | Zielona Marka, strona i Studio | Strona usługowa, kwalifikacja zapytań i widok procesu klienta | [zielona-marka-pl](https://github.com/lukaszst-cz/zielona-marka-pl) |
 | Obsługa zapytania i oferty | Wiadomość, braki, szkic odpowiedzi, oferta i lekki CRM z zatwierdzeniem człowieka | [projekt na GitHubie](https://github.com/lukaszst-cz/lead-offer-copilot) |
