@@ -34,3 +34,13 @@
   .profile-photo-wrap,.hero-photo-wrap,.portrait-wrap{max-width:240px}
   .profile-photo,.hero-photo,.portrait-photo,.hero img.profile-photo{max-width:220px}
 }
+
+.menu-toggle{display:none;border:1px solid var(--line);background:rgba(17,27,46,.9);color:var(--ink);padding:.55rem .8rem;border-radius:.7rem;font:inherit;font-weight:700;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+@media(max-width:900px){
+  .site-header{flex-wrap:wrap;gap:.75rem}
+  .menu-toggle{display:inline-flex;margin-left:auto}
+  .site-header nav{display:none;width:100%;padding:.65rem 0 .25rem;border-top:1px solid rgba(255,255,255,.07);gap:.35rem;overflow-x:auto}
+  .site-header nav.open{display:flex}
+  .site-header nav a{white-space:nowrap;padding:.55rem .7rem;border-radius:.6rem;background:rgba(255,255,255,.035)}
+}
