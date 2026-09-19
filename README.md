@@ -20,6 +20,7 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 - **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
+- **DocPilot v0.4.0 Beta:** local-first aplikacja Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania.
 
 ## Technologie i praktyka inżynierska
 
@@ -28,8 +29,8 @@ Portfolio łączy pracę operacyjną z tworzeniem narzędzi, które można obejr
 | Obszar | Potwierdzone kompetencje |
 | --- | --- |
 | Frontend i strony | TypeScript, React, JavaScript ES6, HTML5, CSS3, Tailwind CSS, responsywne interfejsy, PWA i podstawy dostępności |
-| Backend i dane | Python, PHP, WordPress, SQLite, SQL, JSON, modelowanie danych, walidacja i eksport danych |
-| API i automatyzacja | Projektowanie endpointów HTTP, automatyzacje API, testowanie odpowiedzi JSON, GitHub Actions oraz zautomatyzowane kontrole demonstracji |
+| Backend i dane | Python, FastAPI, PHP, WordPress, SQLite, SQL, JSON, OCR, modelowanie danych, indeksowanie, walidacja i eksport danych |
+| API i automatyzacja | Projektowanie endpointów HTTP, automatyzacje API, testowanie odpowiedzi JSON, GitHub Actions, PWA, opcjonalny MCP oraz zautomatyzowane kontrole demonstracji |
 | Cloud i wdrożenia | Cloudflare Workers, Cloudflare D1, GitHub Pages, środowiska demonstracyjne i konfiguracja deploymentu |
 | QA i jakość | Strategia oparta na ryzyku, przypadki testowe, testy eksploracyjne, smoke, regresja, raporty defektów, traceability, quality gates GO/NO-GO oraz testy automatyczne Python `unittest` |
 | Analityka i dokumentacja | Excel, Google Sheets, dashboardy KPI, formuły, raportowanie, Notion, Obsidian, CSV, Markdown i dokumentacja procesowa |
@@ -95,6 +96,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | TransportFlow Control Center | Odrębny scenariusz około 50 zestawów, role, dokumenty, flota i finanse | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
+| DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [docpilot](https://github.com/lukaszst-cz/docpilot) |
 | Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
 | Zielona Marka, strona i Studio | Strona usługowa, kwalifikacja zapytań i widok procesu klienta | [zielona-marka-pl](https://github.com/lukaszst-cz/zielona-marka-pl) |
 | Obsługa zapytania i oferty | Wiadomość, braki, szkic odpowiedzi, oferta i lekki CRM z zatwierdzeniem człowieka | [projekt na GitHubie](https://github.com/lukaszst-cz/lead-offer-copilot) |
@@ -113,11 +115,14 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 - [Zielona Marka, aktualna strona](https://zielona-marka.pl/)
 - [Obsługa zapytania i oferty](https://lead-offer-zm.pages.dev/)
 - [Kontrola dokumentów](https://document-checker-zm.pages.dev/)
+- [DocPilot, repozytorium i wydania Windows](https://github.com/lukaszst-cz/docpilot)
 - [Film promocyjny Zielonej Marki](https://lukaszst-cz.github.io/operations-office-portfolio/#film-zielona-marka)
 
-## Aktualizacja, 8 września 2026
+## Aktualizacja, 19 września 2026
 
 Portfolio uzupełniono o prace wykonane w ostatnich dniach:
+
+- dodanie DocPilot v0.4.0 Beta jako projektu local-first do pracy z dokumentami: OCR, terminy, Review Queue, lokalne wyszukiwanie i Q&A, duplikaty, porównywanie wersji, redakcja danych, backup, historia cofania, PWA oraz pakiet Windows;
 
 - dopracowanie mobilnego nagłówka i nawigacji serwisu Zielona Marka,
 - prezentację strony usługowej, formularza kwalifikującego zapytania oraz widoku procesu klienta,
