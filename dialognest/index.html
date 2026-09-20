@@ -32,14 +32,14 @@
     <main>
       <section class="hero">
         <div>
-          <div class="eyebrow">3.1 · PRIVATE PREVIEW · WINDOWS + PWA · LOCAL-FIRST</div>
-          <h1>Rozmowy z AI nie muszą żyć w pięciu różnych miejscach.</h1>
-          <p class="lead">DialogNest tworzy jedno lokalne archiwum rozmów z ChatGPT, Claude, Gemini, Copilot oraz plików JSON, CSV, Markdown i tekstowych. Można je później wyszukiwać, grupować, oznaczać i bezpiecznie odzyskiwać po zmianach.</p>
+          <div class="eyebrow">WERSJA 3.1 · WINDOWS + PWA · WERSJA TESTOWA</div>
+          <h1>Jedno miejsce na rozmowy, do których naprawdę chcesz wrócić.</h1>
+          <p class="lead">DialogNest powstał z prostego problemu: po pewnym czasie wartościowe rozmowy są porozrzucane między różnymi usługami i trudno znaleźć coś, co było potrzebne kilka miesięcy wcześniej. Program zbiera eksporty z ChatGPT, Claude, Gemini i Copilot w jednym archiwum na komputerze, a potem pozwala je normalnie przeszukiwać i porządkować.</p>
           <div class="actions">
             <a class="btn" href="#jak-dziala">Zobacz jak działa</a>
             <a class="btn secondary" href="#status">Status wersji 3.1</a>
           </div>
-          <p class="note">Kod projektu pozostaje prywatny. Wersja Windows przechodzi automatyczne testy i pełny build instalatora w GitHub Actions.</p>
+          <p class="note">Kod projektu pozostaje prywatny. Wersja Windows jest budowana i sprawdzana automatycznie przed przekazaniem jej do testów.</p>
         </div>
         <div class="app-preview" aria-label="Schemat interfejsu DialogNest">
           <div class="window">
@@ -59,8 +59,8 @@
       </section>
 
       <section class="section" id="jak-dziala">
-        <h2>Co robi DialogNest?</h2>
-        <p class="sectionLead">Najważniejsze jest nie samo „zebranie czatów”, tylko możliwość późniejszego znalezienia informacji i zachowania własnej organizacji niezależnie od tego, z którego asystenta pochodzi rozmowa.</p>
+        <h2>Po co właściwie jest DialogNest?</h2>
+        <p class="sectionLead">Samo przeniesienie plików w jedno miejsce niewiele daje. Chodzi o to, żeby po kilku miesiącach dało się znaleźć konkretną rozmowę, przypisać ją do projektu, oznaczyć tagiem albo odtworzyć zmiany, gdy coś pójdzie nie tak.</p>
         <div class="grid">
           <article class="card"><b>Import wielu źródeł</b><p>ChatGPT, Claude, Gemini, Copilot, JSON, CSV, Markdown, TXT oraz lokalne ZIP/TGZ.</p></article>
           <article class="card"><b>Wyszukiwanie</b><p>Pełnotekstowe filtrowanie, operatory, zapisane wyszukiwania oraz opcjonalne lokalne wyszukiwanie semantyczne.</p></article>
@@ -83,17 +83,17 @@
 
       <section class="section privacy">
         <div class="callout">
-          <h3>Local-first naprawdę znaczy lokalnie</h3>
-          <p>Rozmowy są przechowywane w lokalnym IndexedDB. Importy są analizowane na urządzeniu. Semantyczne wyszukiwanie jest opcjonalne; model może zostać pobrany z publicznego hosta, ale treść rozmów nie jest wysyłana do zewnętrznego API embeddingowego.</p>
+          <h3>Archiwum zostaje na Twoim komputerze</h3>
+          <p>Rozmowy są przechowywane lokalnie i importowane na urządzeniu. Opcjonalne wyszukiwanie semantyczne również działa lokalnie po pobraniu modelu. DialogNest nie wymaga wysyłania całego archiwum do zewnętrznej usługi wyszukiwania.</p>
         </div>
         <div class="statusBox" id="status">
-          <h3><b>DialogNest 3.1 Private Preview</b></h3>
-          <p>Testy aplikacji i MCP są automatyczne. Windows build tworzy natywny EXE i instalator, a artefakty są sprawdzane przed uploadem. Repozytorium pozostaje prywatne do czasu zakończenia testów większych archiwów i zmian formatów eksportów dostawców.</p>
+          <h3><b>DialogNest 3.1 — wersja testowa</b></h3>
+          <p>Aplikacja i moduł MCP mają automatyczne testy. Wersja Windows tworzy normalny plik EXE i instalator, które są sprawdzane przed przekazaniem testerom. Repozytorium pozostaje prywatne, dopóki nie sprawdzę programu na większych archiwach i różnych wariantach eksportów.</p>
         </div>
       </section>
     </main>
 
-    <footer>DialogNest · v3.1 · Private Preview · Projekt Łukasza S. · Lokalna praca na danych i odwracalne zmiany.</footer>
+    <footer>DialogNest · v3.1 · Projekt Łukasza S. · Lokalne archiwum rozmów, wyszukiwanie, backup i odwracalne zmiany.</footer>
   </div>
 </body>
 </html>
