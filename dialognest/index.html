@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="DialogNest — lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot. Wyszukiwanie, organizacja, szyfrowane backupy i natywna aplikacja Windows.">
+  <meta property="og:title" content="DialogNest — rozmowy AI w jednym lokalnym archiwum">
+  <meta property="og:description" content="DialogNest 3.1 Private Preview: lokalne archiwum rozmów AI, wyszukiwanie, projekty, backup i recovery.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b1020">
+  <title>DialogNest — rozmowy AI w jednym archiwum</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f3f5fb;background:#090b12;--bg:#090b12;--panel:#101522;--panel2:#151c2d;--line:#293147;--muted:#9da8bc;--accent:#9d92ff;--accent2:#6e60ff;--ok:#8ed8ad}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 78% 0,#1f2040 0,var(--bg) 34%);min-height:100vh}a{color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 24px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:900}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#b7b0ff,#7868ff);color:#111426;display:grid;place-items:center}.back{color:#c2c9d6;text-decoration:none;font-size:14px}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:64px 0 46px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.13em;font-weight:900}.hero h1{font-size:clamp(42px,6vw,72px);line-height:.98;margin:12px 0 20px;letter-spacing:-.045em}.lead{font-size:20px;line-height:1.55;color:#bec6d5;max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 14px}.btn{padding:14px 18px;border-radius:12px;text-decoration:none;font-weight:850;background:#f2f4fb;color:#111522}.btn.secondary{background:#1a2234;color:#eef1f8;border:1px solid #34405a}.note{font-size:12px;color:#7f8ba0;line-height:1.5}
+    .app-preview{background:linear-gradient(180deg,#111727,#0c111c);border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:0 26px 80px rgba(0,0,0,.36)}.window{border:1px solid #30394f;border-radius:14px;overflow:hidden;background:#0c111b}.windowbar{height:38px;display:flex;gap:6px;align-items:center;padding:0 12px;border-bottom:1px solid #242c3d}.dot{width:8px;height:8px;border-radius:50%;background:#4c5870}.fake{display:grid;grid-template-columns:150px 1fr;min-height:360px}.fake aside{padding:16px;border-right:1px solid #242c3d;background:#0f1420}.fake aside b{display:block;margin-bottom:18px}.fake aside span{display:block;padding:7px 8px;margin-bottom:5px;border-radius:8px;color:#aab4c7;font-size:12px}.fake aside span:first-of-type{background:#201f40;color:#d9d5ff}.fake main{padding:18px}.search{height:42px;border:1px solid #313a50;background:#121928;border-radius:10px;margin-bottom:16px}.row{display:grid;grid-template-columns:1fr 110px;gap:12px;padding:13px;border:1px solid #252d40;border-radius:11px;margin-bottom:9px;background:#111725}.row strong{font-size:13px}.row small{display:block;color:#8793aa;margin-top:5px}.tag{align-self:center;justify-self:end;font-size:11px;padding:5px 7px;border-radius:999px;background:#22264b;color:#cbc6ff}
+    .section{padding:54px 0}.section h2{font-size:34px;margin:0 0 12px;letter-spacing:-.025em}.sectionLead{color:var(--muted);max-width:780px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.card{background:linear-gradient(180deg,#121927,#0f151f);border:1px solid var(--line);border-radius:16px;padding:20px}.card b{display:block;margin-bottom:8px}.card p{margin:0;color:#a4afc0;line-height:1.5;font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}.step{padding:18px;border:1px solid var(--line);border-radius:15px;background:#101621}.step span{display:grid;place-items:center;width:30px;height:30px;background:#eeeefe;color:#16162b;border-radius:50%;font-weight:900;margin-bottom:12px}.step b{display:block;margin-bottom:6px}.step p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+    .privacy{display:grid;grid-template-columns:1fr 1fr;gap:20px}.callout{border:1px solid #40446b;background:#15152b;border-radius:18px;padding:24px}.callout h3{margin-top:0}.callout p{color:#c1c0df;line-height:1.6}.statusBox{border:1px solid #355143;background:#0f2018;border-radius:18px;padding:24px}.statusBox b{color:var(--ok)}footer{padding:34px 0 50px;color:#758198;font-size:13px}
+    @media(max-width:900px){.hero,.privacy{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.app-preview{order:-1}.fake{grid-template-columns:120px 1fr}}
+    @media(max-width:620px){.wrap{padding:0 16px}.grid,.steps{grid-template-columns:1fr}.hero h1{font-size:44px}.lead{font-size:17px}.fake{grid-template-columns:1fr}.fake aside{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./"><span class="mark">DN</span><span>DialogNest</span></a>
+      <a class="back" href="../">← Portfolio</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">3.1 · PRIVATE PREVIEW · WINDOWS + PWA · LOCAL-FIRST</div>
+          <h1>Rozmowy z AI nie muszą żyć w pięciu różnych miejscach.</h1>
+          <p class="lead">DialogNest tworzy jedno lokalne archiwum rozmów z ChatGPT, Claude, Gemini, Copilot oraz plików JSON, CSV, Markdown i tekstowych. Można je później wyszukiwać, grupować, oznaczać i bezpiecznie odzyskiwać po zmianach.</p>
+          <div class="actions">
+            <a class="btn" href="#jak-dziala">Zobacz jak działa</a>
+            <a class="btn secondary" href="#status">Status wersji 3.1</a>
+          </div>
+          <p class="note">Kod projektu pozostaje prywatny. Wersja Windows przechodzi automatyczne testy i pełny build instalatora w GitHub Actions.</p>
+        </div>
+        <div class="app-preview" aria-label="Schemat interfejsu DialogNest">
+          <div class="window">
+            <div class="windowbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="fake">
+              <aside><b>DialogNest</b><span>Library</span><span>Timeline</span><span>Favorites</span><span>Projects</span></aside>
+              <main>
+                <div class="search"></div>
+                <div class="row"><div><strong>Plan tygodnia i priorytety</strong><small>ChatGPT · Demo / Organizacja</small></div><span class="tag">favorite</span></div>
+                <div class="row"><div><strong>Notatki do porównania narzędzi</strong><small>Claude · Demo / Research</small></div><span class="tag">research</span></div>
+                <div class="row"><div><strong>Pomysły na krótki weekend</strong><small>Gemini · Demo / Prywatne</small></div><span class="tag">weekend</span></div>
+                <div class="row"><div><strong>Mały refaktor wyszukiwania</strong><small>Copilot · Demo / Kod</small></div><span class="tag">code</span></div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="jak-dziala">
+        <h2>Co robi DialogNest?</h2>
+        <p class="sectionLead">Najważniejsze jest nie samo „zebranie czatów”, tylko możliwość późniejszego znalezienia informacji i zachowania własnej organizacji niezależnie od tego, z którego asystenta pochodzi rozmowa.</p>
+        <div class="grid">
+          <article class="card"><b>Import wielu źródeł</b><p>ChatGPT, Claude, Gemini, Copilot, JSON, CSV, Markdown, TXT oraz lokalne ZIP/TGZ.</p></article>
+          <article class="card"><b>Wyszukiwanie</b><p>Pełnotekstowe filtrowanie, operatory, zapisane wyszukiwania oraz opcjonalne lokalne wyszukiwanie semantyczne.</p></article>
+          <article class="card"><b>Projekty i tagi</b><p>Rozmowy można grupować, oznaczać jako ulubione i porządkować bez zmiany oryginalnych eksportów.</p></article>
+          <article class="card"><b>Recovery</b><p>Cofanie ostatniego importu, kosz, recovery snapshots oraz bezpieczne przywracanie zmian.</p></article>
+          <article class="card"><b>Szyfrowane kopie</b><p>Backup .dnvault tworzony lokalnie z weryfikacją integralności przed odtworzeniem.</p></article>
+          <article class="card"><b>Desktop + PWA</b><p>Natywna aplikacja Windows w Tauri oraz instalowalna PWA korzystają z tego samego modelu lokalnego archiwum.</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Można sprawdzić bez własnych rozmów</h2>
+        <div class="steps">
+          <article class="step"><span>1</span><b>Uruchom</b><p>DialogNest otwiera lokalne archiwum bez konta i bez zewnętrznej bazy.</p></article>
+          <article class="step"><span>2</span><b>Try safe demo</b><p>Cztery fikcyjne rozmowy pokazują wyszukiwanie, źródła, projekty i tagi.</p></article>
+          <article class="step"><span>3</span><b>Importuj</b><p>Dopiero gdy chcesz, dodajesz własny eksport z wybranego asystenta.</p></article>
+          <article class="step"><span>4</span><b>Zrób backup</b><p>Po weryfikacji archiwum możesz utworzyć szyfrowaną kopię i zachować ją osobno.</p></article>
+        </div>
+      </section>
+
+      <section class="section privacy">
+        <div class="callout">
+          <h3>Local-first naprawdę znaczy lokalnie</h3>
+          <p>Rozmowy są przechowywane w lokalnym IndexedDB. Importy są analizowane na urządzeniu. Semantyczne wyszukiwanie jest opcjonalne; model może zostać pobrany z publicznego hosta, ale treść rozmów nie jest wysyłana do zewnętrznego API embeddingowego.</p>
+        </div>
+        <div class="statusBox" id="status">
+          <h3><b>DialogNest 3.1 Private Preview</b></h3>
+          <p>Testy aplikacji i MCP są automatyczne. Windows build tworzy natywny EXE i instalator, a artefakty są sprawdzane przed uploadem. Repozytorium pozostaje prywatne do czasu zakończenia testów większych archiwów i zmian formatów eksportów dostawców.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>DialogNest · v3.1 · Private Preview · Projekt Łukasza S. · Lokalna praca na danych i odwracalne zmiany.</footer>
+  </div>
+</body>
+</html>
