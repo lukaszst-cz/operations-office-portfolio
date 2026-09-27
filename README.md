@@ -20,7 +20,7 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 - **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
-- **DocPilot 0.8.0 (main):** local-first aplikacja Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Ostatnie publiczne stabilne wydanie pozostaje na razie w wersji 0.5.1.
+- **DocPilot 0.9.1 RC (main):** local-first aplikacja Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Ostatnie publiczne stabilne wydanie pozostaje na razie w wersji 0.5.1.
 
 ## Technologie i praktyka inżynierska
 
@@ -68,7 +68,7 @@ Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczeg
 
 - [Interaktywny podgląd projektu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka-wordpress-preview/)
 - [Kod źródłowy motywu](zielona-marka-wordpress/)
-- [Pobierz instalacyjną paczkę WordPress](zielona-marka-wordpress/zielona-marka-wordpress-v1.0.0.zip)
+- [Aktualny kod i status motywu WordPress](https://github.com/lukaszst-cz/zielona-marka-wordpress)
 
 Projekt pokazuje kompletny proces przygotowania strony firmowej: pozycjonowanie oferty, nowy kierunek wizualny, responsywny layout, sekcję realizacji edytowaną w panelu WordPressa, bezpieczny formularz briefu oraz lekką warstwę techniczną bez ciężkiego kreatora stron.
 
@@ -122,7 +122,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 
 Portfolio uzupełniono o prace wykonane w ostatnich dniach:
 
-- rozwój DocPilot od publicznego v0.5.1 do gałęzi main 0.8.0: onboarding, diagnostyka, bezpieczniejszy upload, stabilniejszy desktop, test aktualizacji istniejącej instalacji i rozszerzone testy Windows;
+- rozwój DocPilot od publicznego v0.5.1 do gałęzi main 0.9.1 RC: onboarding, diagnostyka, bezpieczniejszy upload, stabilniejszy desktop, synchronizacja indeksu po Undo, test aktualizacji istniejącej instalacji i rozszerzone testy Windows;
 
 - dopracowanie mobilnego nagłówka i nawigacji serwisu Zielona Marka,
 - prezentację strony usługowej, formularza kwalifikującego zapytania oraz widoku procesu klienta,
