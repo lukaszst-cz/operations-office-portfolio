@@ -20,7 +20,7 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 - **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
-- **DocPilot v0.5.1:** local-first aplikacja Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania.
+- **DocPilot 0.8.0 (main):** local-first aplikacja Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Ostatnie publiczne stabilne wydanie pozostaje na razie w wersji 0.5.1.
 
 ## Technologie i praktyka inżynierska
 
@@ -93,7 +93,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
 | PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
 | TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
-| TransportFlow Control Center | Odrębny scenariusz około 50 zestawów, role, dokumenty, flota i finanse | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
+| TransportFlow Control Center | Python + SQLite: 20 zestawów, 26 kierowców, zlecenia, dokumenty, marża i automatyczne testy | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
 | DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) · [repo](https://github.com/lukaszst-cz/docpilot) |
@@ -122,7 +122,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 
 Portfolio uzupełniono o prace wykonane w ostatnich dniach:
 
-- dodanie DocPilot v0.5.1 jako projektu local-first do pracy z dokumentami: OCR, terminy, Review Queue, lokalne wyszukiwanie i Q&A, duplikaty, porównywanie wersji, redakcja danych, backup, historia cofania, PWA oraz pakiet Windows;
+- rozwój DocPilot od publicznego v0.5.1 do gałęzi main 0.8.0: onboarding, diagnostyka, bezpieczniejszy upload, stabilniejszy desktop, test aktualizacji istniejącej instalacji i rozszerzone testy Windows;
 
 - dopracowanie mobilnego nagłówka i nawigacji serwisu Zielona Marka,
 - prezentację strony usługowej, formularza kwalifikującego zapytania oraz widoku procesu klienta,
@@ -130,13 +130,13 @@ Portfolio uzupełniono o prace wykonane w ostatnich dniach:
 - publikację finalnej wersji filmu z ekspresyjnym lektorem, napisami i obróbką dźwięku,
 - nowe studium realizacji łączące cel biznesowy, decyzje produkcyjne i efekt końcowy.
 - dodanie publicznych demonstracji obsługi zapytania i oferty oraz kontroli dokumentów,
-- połączenie opublikowanych materiałów LinkedIn z artykułami i właściwymi projektami.
+- uporządkowanie materiałów publikacyjnych i połączenie ich z właściwymi projektami.
 
 Na stronie głównej wyróżniono projekty przekrojowe: Second Brain Łukasz 2.0, zielona-marka.pl, oba odrębne modele TransportFlow oraz PrintFlow 360. Second Brain oraz aktualna strona Zielonej Marki otrzymały rozbudowane prezentacje, ponieważ najlepiej pokazują porządkowanie informacji i przełożenie procesu na działające rozwiązanie dla klienta.
 
 Opis Second Brain zaktualizowano na podstawie obecnej struktury w Notion. Starsze liczby inwentaryzacyjne zastąpiono opisem działającego systemu: szybkiego zapisu, priorytetów, terminów, przeglądu tygodnia, spraw i dokumentów, pracy, projektów oraz powiązań z materiałami źródłowymi.
 
-Dodano również stronę [`publikacje.html`](publikacje.html), która zbiera artykuły i materiały przygotowane do LinkedIn dotyczące Second Brain, TransportFlow oraz Zielonej Marki.
+Dodano również stronę [`publikacje.html`](publikacje.html), która zbiera artykuły i materiały dotyczące Second Brain, TransportFlow oraz Zielonej Marki.
 
 ## Przykład Excel
 
@@ -172,5 +172,4 @@ W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 201
 
 ## Kontakt
 
-- [LinkedIn](https://www.linkedin.com/in/%C5%82ukasz-st-cz-300ab6428/)
 - [GitHub](https://github.com/lukaszst-cz)

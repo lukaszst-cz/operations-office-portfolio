@@ -1,6 +1,6 @@
-# TransportFlow | publikacja do LinkedIn
+# TransportFlow | materiał publikacyjny
 
-## Treść posta
+## Treść materiału
 
 W transporcie czas najczęściej nie znika na samej trasie. Znika pomiędzy telefonem, wiadomością, arkuszem, dokumentem, kierowcą, dyspozytorem i księgowością.
 

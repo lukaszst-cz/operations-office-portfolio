@@ -6,7 +6,7 @@ Prowadzić odbiorcę do opisu realizacji i pokazać konkretny efekt dla firmy tr
 
 Link docelowy: https://github.com/lukaszst-cz/transportflow-control-center
 
-## LinkedIn
+## Post tekstowy
 
 W transporcie najwięcej czasu nie znika na samej trasie.
 
@@ -78,7 +78,7 @@ Cześć, przygotowałem demonstrację systemu dla firm transportowych. Pokazuje 
 
 ## Prosty rytm publikacji
 
-1. Dzień 1: post na LinkedIn z linkiem do realizacji.
+1. Dzień 1: post tekstowy z linkiem do realizacji.
 2. Dzień 2: Reels lub TikTok o dokumentach po dostawie.
 3. Dzień 4: post na Facebooku o kontroli płatności i marży.
 4. Dzień 7: krótkie nagranie o dostępie kierowcy z telefonu.

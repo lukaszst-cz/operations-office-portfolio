@@ -1,0 +1,30 @@
+name: Portfolio checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject LinkedIn references
+        run: |
+          if grep -RIniE 'linkedin(\.com)?' . \
+            --exclude-dir=.git \
+            --exclude='portfolio-checks.yml'; then
+            echo "LinkedIn reference found."
+            exit 1
+          fi
+      - name: Check JavaScript syntax
+        run: |
+          node --check script.js
