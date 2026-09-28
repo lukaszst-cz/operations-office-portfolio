@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import type { FormEvent, ReactNode } from "react";
 import {
   customers,
@@ -68,8 +69,13 @@ export default function TransportFlowApp() {
   const [toast, setToast] = useState("");
 
   useEffect(() => {
-    const hash = window.location.hash.slice(1) as ModuleKey;
-    if (modules.some((module) => module.key === hash)) setActiveModule(hash);
+    const syncModuleFromHash = () => {
+      const hash = window.location.hash.slice(1) as ModuleKey;
+      if (modules.some((module) => module.key === hash)) setActiveModule(hash);
+    };
+    const frame = window.requestAnimationFrame(syncModuleFromHash);
+    window.addEventListener("hashchange", syncModuleFromHash);
+
     fetch("/api/orders")
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((payload: { orders?: TransportOrder[] }) => {
@@ -82,17 +88,22 @@ export default function TransportFlowApp() {
         if (payload.documents?.length) setDocumentRows(payload.documents);
       })
       .catch(() => undefined);
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("hashchange", syncModuleFromHash);
+    };
   }, []);
 
   const heading = moduleDescriptions[activeModule];
   const normalizedQuery = query.trim().toLocaleLowerCase("pl");
   const matches = (...values: Array<string | number>) => !normalizedQuery || values.some((value) => String(value).toLocaleLowerCase("pl").includes(normalizedQuery));
 
-  const filteredOrders = useMemo(() => orders.filter((order) => (statusFilter === "Wszystkie" || order.status === statusFilter) && matches(order.id, order.route, order.customer, order.driver, order.vehicle)), [orders, statusFilter, normalizedQuery]);
-  const filteredVehicles = useMemo(() => vehicles.filter((vehicle) => (statusFilter === "Wszystkie" || vehicle.status === statusFilter) && matches(vehicle.id, vehicle.registration, vehicle.type, vehicle.make)), [statusFilter, normalizedQuery]);
-  const filteredDrivers = useMemo(() => drivers.filter((driver) => (statusFilter === "Wszystkie" || driver.status === statusFilter || driver.compliance === statusFilter) && matches(driver.id, driver.name, driver.base, driver.assignedVehicle)), [statusFilter, normalizedQuery]);
-  const filteredCustomers = useMemo(() => customers.filter((customer) => (statusFilter === "Wszystkie" || customer.stage === statusFilter) && matches(customer.id, customer.name, customer.segment, customer.owner)), [statusFilter, normalizedQuery]);
-  const filteredDocuments = useMemo(() => documentRows.filter((document) => (statusFilter === "Wszystkie" || document.status === statusFilter || document.scope === statusFilter) && matches(document.id, document.scopeCode, document.type, document.blocks)), [documentRows, statusFilter, normalizedQuery]);
+  const filteredOrders = orders.filter((order) => (statusFilter === "Wszystkie" || order.status === statusFilter) && matches(order.id, order.route, order.customer, order.driver, order.vehicle));
+  const filteredVehicles = vehicles.filter((vehicle) => (statusFilter === "Wszystkie" || vehicle.status === statusFilter) && matches(vehicle.id, vehicle.registration, vehicle.type, vehicle.make));
+  const filteredDrivers = drivers.filter((driver) => (statusFilter === "Wszystkie" || driver.status === statusFilter || driver.compliance === statusFilter) && matches(driver.id, driver.name, driver.base, driver.assignedVehicle));
+  const filteredCustomers = customers.filter((customer) => (statusFilter === "Wszystkie" || customer.stage === statusFilter) && matches(customer.id, customer.name, customer.segment, customer.owner));
+  const filteredDocuments = documentRows.filter((document) => (statusFilter === "Wszystkie" || document.status === statusFilter || document.scope === statusFilter) && matches(document.id, document.scopeCode, document.type, document.blocks));
 
   function navigate(key: ModuleKey) {
     setActiveModule(key);
@@ -352,11 +363,11 @@ function AccessView() {
     ["Kierowca", "Tylko własne dane", "Własne zlecenia, pojazd, zadania, czas pracy, dokumenty i rozliczenia"],
     ["Klient", "Tylko własne zlecenia", "Etap, ETA, dokument dostawy i faktury własnej firmy"],
   ];
-  return <><section className="access-callout"><div><span>INDYWIDUALNY DOSTĘP</span><h2>Każde konto może mieć własną rolę i zakres danych.</h2><p>Widoki kierowcy i klienta pokazują docelowy podział informacji. W produkcyjnym wdrożeniu każda istotna zmiana będzie przypisana do użytkownika i zapisana w historii.</p></div><div className="access-stat"><b>8</b><span>ról systemowych</span><small>model ról do wdrożenia produkcyjnego</small></div></section><section className="panel module-panel"><PanelHeading eyebrow="MACIERZ UPRAWNIEŃ" title="Role systemowe" action={<span className="summary-note">Przykładowe widoki demonstracyjne</span>} /><div className="role-grid">{roles.map((role) => <article key={role[0]}><div className="role-icon">{role[0].split(" ").slice(0, 2).map((part) => part[0]).join("")}</div><div><strong>{role[0]}</strong><Badge tone="blue">{role[1]}</Badge><p>{role[2]}</p></div></article>)}</div><div className="role-links"><a href="/driver">Otwórz portal kierowcy →</a><a href="/customer">Otwórz portal klienta →</a></div></section></>;
+  return <><section className="access-callout"><div><span>INDYWIDUALNY DOSTĘP</span><h2>Każde konto może mieć własną rolę i zakres danych.</h2><p>Widoki kierowcy i klienta pokazują docelowy podział informacji. W produkcyjnym wdrożeniu każda istotna zmiana będzie przypisana do użytkownika i zapisana w historii.</p></div><div className="access-stat"><b>8</b><span>ról systemowych</span><small>model ról do wdrożenia produkcyjnego</small></div></section><section className="panel module-panel"><PanelHeading eyebrow="MACIERZ UPRAWNIEŃ" title="Role systemowe" action={<span className="summary-note">Przykładowe widoki demonstracyjne</span>} /><div className="role-grid">{roles.map((role) => <article key={role[0]}><div className="role-icon">{role[0].split(" ").slice(0, 2).map((part) => part[0]).join("")}</div><div><strong>{role[0]}</strong><Badge tone="blue">{role[1]}</Badge><p>{role[2]}</p></div></article>)}</div><div className="role-links"><Link href="/driver">Otwórz portal kierowcy →</Link><Link href="/customer">Otwórz portal klienta →</Link></div></section></>;
 }
 
 function DriverDrawer({ driver, onClose }: { driver: Driver; onClose: () => void }) {
-  return <div className="overlay" onMouseDown={onClose}><aside className="drawer" onMouseDown={(event) => event.stopPropagation()}><button className="close" onClick={onClose} aria-label="Zamknij">×</button><div className="profile-head"><span className={`profile-avatar ${driver.compliance === "Blokada" ? "danger" : driver.compliance === "Uwaga" ? "warning" : ""}`}>{driver.initials}</span><div><p className="eyebrow">{driver.id}</p><h2>{driver.name}</h2><p>{driver.base} · prawo jazdy C+E</p></div></div><div className="profile-badges"><Badge tone={driver.accountStatus === "Aktywne" ? "green" : "amber"}>Dostęp: {driver.accountStatus}</Badge><Badge tone={driver.compliance === "Zgodny" ? "green" : driver.compliance === "Blokada" ? "red" : "amber"}>{driver.compliance}</Badge></div><section><h3>Bieżące przypisanie</h3><dl><div><dt>Status</dt><dd>{driver.status}</dd></div><div><dt>Pojazd</dt><dd>{driver.assignedVehicle}</dd></div><div><dt>Zlecenie</dt><dd>{driver.currentOrder}</dd></div></dl></section><section><h3>Czas pracy</h3><div className="time-cards"><article><b>{driver.hoursWeek} h</b><span>ostatnie 7 dni</span></article><article><b>{driver.hoursTwoWeeks} h</b><span>ostatnie 14 dni</span></article></div></section><section><h3>Dokumenty</h3><dl><div><dt>Kompletność akt</dt><dd>{driver.documentCompleteness}%</dd></div><div><dt>Odczyt karty</dt><dd>{driver.cardDue}</dd></div><div><dt>Badania lekarskie</dt><dd>{driver.medicalDue}</dd></div></dl></section><div className="drawer-actions"><a className="primary drawer-link" href="/driver">Otwórz portal kierowcy</a><button className="ghost" onClick={() => window.alert("Zadanie zostało przygotowane dla kierowcy w wersji demonstracyjnej.")}>Wyślij zadanie</button></div><p className="privacy-note">Kierowca na własnym koncie widzi wyłącznie informacje przypisane do niego.</p></aside></div>;
+  return <div className="overlay"><aside className="drawer"><button className="close" onClick={onClose} aria-label="Zamknij">×</button><div className="profile-head"><span className={`profile-avatar ${driver.compliance === "Blokada" ? "danger" : driver.compliance === "Uwaga" ? "warning" : ""}`}>{driver.initials}</span><div><p className="eyebrow">{driver.id}</p><h2>{driver.name}</h2><p>{driver.base} · prawo jazdy C+E</p></div></div><div className="profile-badges"><Badge tone={driver.accountStatus === "Aktywne" ? "green" : "amber"}>Dostęp: {driver.accountStatus}</Badge><Badge tone={driver.compliance === "Zgodny" ? "green" : driver.compliance === "Blokada" ? "red" : "amber"}>{driver.compliance}</Badge></div><section><h3>Bieżące przypisanie</h3><dl><div><dt>Status</dt><dd>{driver.status}</dd></div><div><dt>Pojazd</dt><dd>{driver.assignedVehicle}</dd></div><div><dt>Zlecenie</dt><dd>{driver.currentOrder}</dd></div></dl></section><section><h3>Czas pracy</h3><div className="time-cards"><article><b>{driver.hoursWeek} h</b><span>ostatnie 7 dni</span></article><article><b>{driver.hoursTwoWeeks} h</b><span>ostatnie 14 dni</span></article></div></section><section><h3>Dokumenty</h3><dl><div><dt>Kompletność akt</dt><dd>{driver.documentCompleteness}%</dd></div><div><dt>Odczyt karty</dt><dd>{driver.cardDue}</dd></div><div><dt>Badania lekarskie</dt><dd>{driver.medicalDue}</dd></div></dl></section><div className="drawer-actions"><Link className="primary drawer-link" href="/driver">Otwórz portal kierowcy</Link><button className="ghost" onClick={() => window.alert("Zadanie zostało przygotowane dla kierowcy w wersji demonstracyjnej.")}>Wyślij zadanie</button></div><p className="privacy-note">Kierowca na własnym koncie widzi wyłącznie informacje przypisane do niego.</p></aside></div>;
 }
 
 function OrderDrawer({ order, onClose, onUpdate }: { order: TransportOrder; onClose: () => void; onUpdate: (id: string, status: TransportOrder["status"]) => void }) {
@@ -365,7 +376,7 @@ function OrderDrawer({ order, onClose, onUpdate }: { order: TransportOrder; onCl
 }
 
 function NewDocumentModal({ onClose, onSubmit }: { onClose: () => void; onSubmit: (event: FormEvent<HTMLFormElement>) => void }) {
-  return <div className="overlay modal-overlay" onMouseDown={onClose}><form className="modal" onSubmit={onSubmit} onMouseDown={(event) => event.stopPropagation()}><button type="button" className="close" onClick={onClose} aria-label="Zamknij">×</button><p className="eyebrow">NOWY DOKUMENT</p><h2>Dodaj plik do obiegu</h2><div className="form-grid"><label>Zakres<select name="scope"><option>Kierowca</option><option>Pojazd</option><option>Firma</option><option>Zlecenie</option></select></label><label>Identyfikator<input name="scopeCode" required placeholder="np. TF-260829-001" /></label><label className="wide">Rodzaj dokumentu<input name="type" required placeholder="np. POD / CMR po dostawie" /></label><label>Termin<input name="dueDate" type="date" /></label><label>Blokuje proces<input name="blocks" defaultValue="Brak blokady" /></label><label className="wide">Plik PDF lub zdjęcie<input name="file" type="file" accept="image/*,application/pdf" /></label></div><div className="modal-actions"><button type="button" className="ghost" onClick={onClose}>Anuluj</button><button type="submit" className="primary">Dodaj testowy dokument</button></div><p className="form-note">Plik służy wyłącznie do testu tego widoku. Nie jest przechowywany i znika po odświeżeniu strony.</p></form></div>;
+  return <div className="overlay modal-overlay"><form className="modal" onSubmit={onSubmit}><button type="button" className="close" onClick={onClose} aria-label="Zamknij">×</button><p className="eyebrow">NOWY DOKUMENT</p><h2>Dodaj plik do obiegu</h2><div className="form-grid"><label>Zakres<select name="scope"><option>Kierowca</option><option>Pojazd</option><option>Firma</option><option>Zlecenie</option></select></label><label>Identyfikator<input name="scopeCode" required placeholder="np. TF-260829-001" /></label><label className="wide">Rodzaj dokumentu<input name="type" required placeholder="np. POD / CMR po dostawie" /></label><label>Termin<input name="dueDate" type="date" /></label><label>Blokuje proces<input name="blocks" defaultValue="Brak blokady" /></label><label className="wide">Plik PDF lub zdjęcie<input name="file" type="file" accept="image/*,application/pdf" /></label></div><div className="modal-actions"><button type="button" className="ghost" onClick={onClose}>Anuluj</button><button type="submit" className="primary">Dodaj testowy dokument</button></div><p className="form-note">Plik służy wyłącznie do testu tego widoku. Nie jest przechowywany i znika po odświeżeniu strony.</p></form></div>;
 }
 
 function NewOrderModal({ onClose, onSubmit }: { onClose: () => void; onSubmit: (event: FormEvent<HTMLFormElement>) => void }) {
