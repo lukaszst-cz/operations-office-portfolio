@@ -93,7 +93,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
 | PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
 | TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
-| TransportFlow Control Center | Python + SQLite: 20 zestawów, 26 kierowców, zlecenia, dokumenty, marża i automatyczne testy | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
+| TransportFlow Control Center (rozszerzony) | React/TypeScript/Cloudflare: model 50 zestawów, 58 kierowców, CRM, dokumenty, finanse, role, PWA i CI | [kod w portfolio](https://github.com/lukaszst-cz/operations-office-portfolio/tree/main/transportflow-control-center) |\n| TransportFlow Python/SQLite | Lokalny prototyp backendu dla modelu 20 zestawów i 26 kierowców, API, SQLite i automatyczne testy | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
 | DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) · [repo](https://github.com/lukaszst-cz/docpilot) |
