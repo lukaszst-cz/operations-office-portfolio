@@ -16,7 +16,7 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md), lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego, 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
 - **PrintFlow QA i automatyzacja testów:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
-- **TransportFlow 360:** kompletny proces transportu krajowego i międzynarodowego dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki), 26 kierowców, najmu 14 taxi i 3 kontenerów z windą, Excel, PWA, Python/SQLite i QA.
+- **TransportFlow 360:** model pracy firmy transportowej dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki) i 26 kierowców. Obejmuje wycenę, zlecenia, dokumenty, role użytkowników, kalkulator stawki, PWA i testy QA.
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 - **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
@@ -93,8 +93,8 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
 | PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
 | TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
-| TransportFlow Control Center (rozszerzony) | React/TypeScript/Cloudflare: model 50 zestawów, 58 kierowców, CRM, dokumenty, finanse, role, PWA i CI | [kod w portfolio](https://github.com/lukaszst-cz/operations-office-portfolio/tree/main/transportflow-control-center) |
-| TransportFlow Python/SQLite | Lokalny prototyp backendu dla modelu 20 zestawów i 26 kierowców, API, SQLite i automatyczne testy | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
+| TransportFlow Control Center | Większa wersja modelu: 50 zestawów, 58 kierowców, CRM, dokumenty, finanse, role, PWA i CI | [kod w portfolio](https://github.com/lukaszst-cz/operations-office-portfolio/tree/main/transportflow-control-center) |
+| TransportFlow Python/SQLite | Lokalny prototyp backendu dla wersji 20/26, z API, SQLite i testami automatycznymi | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
 | DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) · [repo](https://github.com/lukaszst-cz/docpilot) |
