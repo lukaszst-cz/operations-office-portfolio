@@ -46,6 +46,10 @@ jobs:
         working-directory: transportflow-control-center
         run: pnpm install --frozen-lockfile
 
+      - name: Lint TransportFlow Control Center
+        working-directory: transportflow-control-center
+        run: pnpm lint
+
       - name: Build TransportFlow Control Center
         working-directory: transportflow-control-center
         run: pnpm build
