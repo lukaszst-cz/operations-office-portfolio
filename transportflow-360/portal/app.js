@@ -5,8 +5,56 @@ const orders = {
 };
 const steps = ["Zlecenie przyjęte", "Zestaw i kierowca przypisani", "Załadunek", "Transport w drodze", "Dostawa / POD", "Gotowe do faktury"];
 const roleIds = ["client","sales","dispatcher","driver","fleet","compliance","finance","rental","manager"];
-function renderClient() { const id = document.getElementById("orderSelect").value; const order = orders[id]; document.getElementById("clientOrder").innerHTML = `<div class="order-card"><div class="order-summary"><small>${order.type}</small><h3>${id}</h3><p>${order.route}</p><b>${order.status}</b><p>ETA: ${order.eta}</p><div class="location-box"><small>OSTATNIA LOKALIZACJA POJAZDU</small><strong>${order.location}</strong><span>Aktualizacja ${order.updated} · dane demonstracyjne</span><div class="route-progress"><i style="width:${order.progress}%"></i></div></div><small>${order.note}</small></div><div class="timeline">${steps.map((step,index)=>`<div class="timeline-step ${index<order.current?'done':index===order.current?'active':''}"><i></i><div><b>${step}</b><small>${index<order.current?'potwierdzone':index===order.current?'aktualny etap':'oczekuje'}</small></div></div>`).join("")}</div></div>`; }
-function renderDispatch() { document.getElementById("dispatchRows").innerHTML = Object.entries(orders).map(([id,o])=>`<tr><td><b>${id}</b></td><td>${o.type}</td><td>${o.route}</td><td><span class="status-tag">${o.status}</span></td><td>${o.eta}<small style="display:block;color:#56666d">${o.note}</small></td></tr>`).join(""); }
-function showRole(role) { roleIds.forEach(id=>document.getElementById(`${id}View`).hidden=id!==role); localStorage.setItem("tf360-role",role); }
-document.getElementById("roleSelect").addEventListener("change",e=>showRole(e.target.value)); document.getElementById("orderSelect").addEventListener("change",renderClient); renderClient(); renderDispatch(); const saved=localStorage.getItem("tf360-role"); if(roleIds.includes(saved)){document.getElementById("roleSelect").value=saved;showRole(saved)}
-let deferredPrompt; window.addEventListener("beforeinstallprompt",event=>{event.preventDefault();deferredPrompt=event;document.getElementById("installButton").hidden=false}); document.getElementById("installButton").addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;document.getElementById("installButton").hidden=true}); if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js"));
+
+function renderClient() {
+  const id = document.getElementById("orderSelect").value;
+  const order = orders[id];
+  document.getElementById("clientOrder").innerHTML = `<div class="order-card"><div class="order-summary"><small>${order.type}</small><h3>${id}</h3><p>${order.route}</p><b>${order.status}</b><p>ETA: ${order.eta}</p><div class="location-box"><small>OSTATNIA LOKALIZACJA POJAZDU</small><strong>${order.location}</strong><span>Aktualizacja ${order.updated} · dane demonstracyjne</span><div class="route-progress"><i style="width:${order.progress}%"></i></div></div><small>${order.note}</small></div><div class="timeline">${steps.map((step,index)=>`<div class="timeline-step ${index<order.current?"done":index===order.current?"active":""}"><i></i><div><b>${step}</b><small>${index<order.current?"potwierdzone":index===order.current?"aktualny etap":"oczekuje"}</small></div></div>`).join("")}</div></div>`;
+}
+
+function renderDispatch() {
+  document.getElementById("dispatchRows").innerHTML = Object.entries(orders).map(([id,o])=>`<tr><td><b>${id}</b></td><td>${o.type}</td><td>${o.route}</td><td><span class="status-tag">${o.status}</span></td><td>${o.eta}<small style="display:block;color:#56666d">${o.note}</small></td></tr>`).join("");
+}
+
+function showRole(role, syncUrl = true) {
+  if (!roleIds.includes(role)) return;
+  roleIds.forEach(id => document.getElementById(`${id}View`).hidden = id !== role);
+  document.getElementById("roleSelect").value = role;
+  localStorage.setItem("tf360-role", role);
+
+  if (syncUrl) {
+    const url = new URL(window.location.href);
+    if (role === "client") url.searchParams.delete("role");
+    else url.searchParams.set("role", role);
+    history.replaceState(null, "", url);
+  }
+}
+
+document.getElementById("roleSelect").addEventListener("change", event => showRole(event.target.value));
+document.getElementById("orderSelect").addEventListener("change", renderClient);
+
+renderClient();
+renderDispatch();
+
+const params = new URLSearchParams(window.location.search);
+const requestedRole = params.get("role");
+const savedRole = localStorage.getItem("tf360-role");
+const initialRole = roleIds.includes(requestedRole) ? requestedRole : roleIds.includes(savedRole) ? savedRole : "client";
+showRole(initialRole, false);
+
+let deferredPrompt;
+window.addEventListener("beforeinstallprompt", event => {
+  event.preventDefault();
+  deferredPrompt = event;
+  document.getElementById("installButton").hidden = false;
+});
+document.getElementById("installButton").addEventListener("click", async () => {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  document.getElementById("installButton").hidden = true;
+});
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js"));
+}
