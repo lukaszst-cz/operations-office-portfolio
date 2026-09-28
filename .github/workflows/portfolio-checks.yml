@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Reject LinkedIn references
         run: |
           if grep -RIniE 'linkedin(\.com)?' . \
@@ -25,6 +26,30 @@ jobs:
             echo "LinkedIn reference found."
             exit 1
           fi
-      - name: Check JavaScript syntax
-        run: |
-          node --check script.js
+
+      - name: Check portfolio JavaScript syntax
+        run: node --check script.js
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: transportflow-control-center/pnpm-lock.yaml
+
+      - name: Install TransportFlow Control Center dependencies
+        working-directory: transportflow-control-center
+        run: pnpm install --frozen-lockfile
+
+      - name: Build TransportFlow Control Center
+        working-directory: transportflow-control-center
+        run: pnpm build
+
+      - name: Test TransportFlow Control Center
+        working-directory: transportflow-control-center
+        run: pnpm test
