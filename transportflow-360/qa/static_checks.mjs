@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const required = ["index.html","proces.html","flota.html","taxi-kontenery.html","dokumenty.html","kalkulator.html","case-study.html","jak-powstal-projekt.html","portal/index.html"];
+const required = ["index.html","proces.html","flota.html","taxi-kontenery.html","dokumenty.html","kalkulator.html","case-study.html","jak-powstal-projekt.html","obieg-dokumentow.html","prywatnosc.html","udostepnij.html","portal/index.html","portal/instrukcja.html","portal/o-aplikacji.html"];
 const problems = [];
 
 for (const file of required) {
@@ -11,6 +11,8 @@ for (const file of required) {
   if (!fs.existsSync(full)) { problems.push(`Brak pliku: ${file}`); continue; }
   const text = fs.readFileSync(full, "utf8");
   if (!text.trim()) problems.push(`Pusty plik: ${file}`);
+  if (!/<html[^>]+lang=["']pl["']/i.test(text)) problems.push(`Brak lang="pl": ${file}`);
+  if (!/<meta[^>]+name=["']viewport["']/i.test(text)) problems.push(`Brak meta viewport: ${file}`);
 }
 
 const corpus = required
@@ -54,6 +56,15 @@ try {
   problems.push("Manifest PWA nie jest poprawnym JSON-em");
 }
 
+const mainCss = fs.readFileSync(path.join(root, "styles.css"), "utf8");
+const portalCss = fs.readFileSync(path.join(root, "portal/app.css"), "utf8");
+if (!mainCss.includes("@media(max-width:900px)") || !mainCss.includes("@media(max-width:560px)")) {
+  problems.push("Brak oczekiwanych breakpointów mobilnych w styles.css");
+}
+if (!portalCss.includes("@media(max-width:760px)") || !portalCss.includes("@media(max-width:480px)")) {
+  problems.push("Brak oczekiwanych breakpointów mobilnych w portal/app.css");
+}
+
 const calculatorHtml = fs.readFileSync(path.join(root, "kalkulator.html"), "utf8");
 const calculatorJs = fs.readFileSync(path.join(root, "calculator.js"), "utf8");
 for (const id of ["rateForm","vehicleType","currency","loadedKm","emptyKm","fuelPrice","consumption","tolls","driverCost","fixedAllocation","otherCosts","margin","eurRate","resetCalc","totalKm","emptyShare","totalCost","costPerTotalKm","minPrice","sellRate","fuelCost","tollCost","driverCostOut","otherCostOut","marginWarning"]) {
@@ -86,4 +97,4 @@ if (problems.length) {
   console.error(problems.join("\n"));
   process.exit(1);
 }
-console.log(`PASS: ${required.length} stron, 9 ról z deep-linkami, PWA, kalkulator i lokalne odsyłacze.`);
+console.log(`PASS: ${required.length} stron, mobile viewporty, breakpointy, 9 ról z deep-linkami, PWA, kalkulator i lokalne odsyłacze.`);
