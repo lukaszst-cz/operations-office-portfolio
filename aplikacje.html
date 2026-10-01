@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Aplikacje Łukasza S. i Zielonej Marki — programy Windows i działające demonstracje do pobrania i testowania.">
+  <meta property="og:title" content="Aplikacje — pobierz i testuj">
+  <meta property="og:description" content="DocPilot, DialogNest i działające dema narzędzi biznesowych w jednym miejscu.">
+  <meta property="og:type" content="website">
+  <title>Aplikacje — pobierz i testuj</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#edf2f7;background:#0a0d12;--panel:#111722;--line:#293244;--muted:#9aa7b8;--accent:#a9c7ff;--ok:#8fe0ad}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 78% 0,#18283f 0,#0a0d12 36%);min-height:100vh}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}.brand{text-decoration:none;font-weight:900}.back{color:#bac4d2;text-decoration:none}
+    .hero{padding:64px 0 40px}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.14em;color:var(--accent)}h1{font-size:clamp(42px,7vw,76px);line-height:.98;letter-spacing:-.045em;margin:12px 0 18px}.lead{max-width:800px;color:#bcc6d3;font-size:19px;line-height:1.6}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:22px 0 64px}.card{border:1px solid var(--line);background:linear-gradient(180deg,#121a26,#0f151e);border-radius:18px;padding:22px;display:flex;flex-direction:column;min-height:250px}.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.badge{font-size:11px;font-weight:900;letter-spacing:.08em;border:1px solid #3b4d68;border-radius:999px;padding:6px 9px;color:#d7e4f8}.badge.ok{border-color:#365b43;color:var(--ok)}.badge.test{border-color:#5b4d79;color:#cfbfff}h2{margin:0 0 10px;font-size:25px}.card p{color:var(--muted);line-height:1.55}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:auto;padding-top:18px}.btn{padding:11px 14px;border-radius:10px;text-decoration:none;font-weight:800;background:#edf2f7;color:#111720}.btn.secondary{background:#1b2533;color:#edf2f7;border:1px solid #344258}.small{font-size:12px;color:#79879a;margin-top:12px}.section-title{font-size:30px;margin:18px 0 4px}.footer{border-top:1px solid var(--line);padding:28px 0 46px;color:#7d8999;font-size:13px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding-top:38px}.card{min-height:0}.btn{width:100%;text-align:center}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><a class="brand" href="./">Łukasz S. · aplikacje</a><a class="back" href="./">← Portfolio</a></header>
+    <main>
+      <section class="hero">
+        <div class="eyebrow">WINDOWS · PWA · DEMO ONLINE</div>
+        <h1>Pobierz albo przetestuj.</h1>
+        <p class="lead">Jedna strona z projektami, które można rzeczywiście uruchomić. Programy Windows mają wyraźnie oznaczony sposób instalacji, a pozostałe narzędzia otwierają się bezpośrednio w przeglądarce.</p>
+      </section>
+
+      <h2 class="section-title">Programy Windows</h2>
+      <section class="grid">
+        <article class="card">
+          <div class="top"><div><h2>DocPilot 4.0.0</h2><p>Lokalne porządkowanie dokumentów, OCR, terminy, wyszukiwanie, duplikaty, porównywanie wersji i bezpieczne operacje na plikach.</p></div><span class="badge ok">PUBLICZNY</span></div>
+          <div class="actions">
+            <a class="btn" href="https://github.com/lukaszst-cz/docpilot/releases/download/v4.0.0/DocPilot-Setup-Windows-x64.exe">Pobierz instalator EXE</a>
+            <a class="btn secondary" href="https://github.com/lukaszst-cz/docpilot/releases/download/v4.0.0/DocPilot-Portable-Windows-x64.zip">Portable ZIP</a>
+            <a class="btn secondary" href="docpilot/">Opis i instrukcja</a>
+          </div>
+          <p class="small">Instalator nie ma jeszcze komercyjnego podpisu code-signing, dlatego Windows może pokazać ostrzeżenie SmartScreen.</p>
+        </article>
+
+        <article class="card">
+          <div class="top"><div><h2>DialogNest 5.3.0</h2><p>Lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot z wyszukiwaniem, projektami, tagami, recovery i szyfrowanymi kopiami.</p></div><span class="badge test">TESTY ZAMKNIĘTE</span></div>
+          <div class="actions">
+            <a class="btn" href="dialognest/">Zobacz aplikację</a>
+            <a class="btn secondary" href="mailto:kontakt@zielona-marka.pl?subject=DialogNest%205.3%20-%20testy">Poproś o dostęp do testów</a>
+          </div>
+          <p class="small">Repozytorium i pliki wydania są obecnie prywatne. Testerzy otrzymują wersję Windows wraz z instrukcją i sumami SHA-256.</p>
+        </article>
+      </section>
+
+      <h2 class="section-title">Dema do uruchomienia od razu</h2>
+      <section class="grid">
+        <article class="card"><div class="top"><div><h2>Document Checker</h2><p>Kontrola CSV, Excel i PDF przed wysłaniem: kompletność, NIP, daty, e-maile, kwoty i potencjalne duplikaty.</p></div><span class="badge ok">ONLINE</span></div><div class="actions"><a class="btn" href="https://document-checker-zm.pages.dev/">Uruchom demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/document-checker">Kod projektu</a></div></article>
+        <article class="card"><div class="top"><div><h2>Lead &amp; Offer Copilot</h2><p>Od wiadomości klienta przez wykrycie braków i szkic odpowiedzi do kolejnego kroku w lekkim CRM-ie.</p></div><span class="badge ok">ONLINE</span></div><div class="actions"><a class="btn" href="https://lead-offer-zm.pages.dev/">Uruchom demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/lead-offer-copilot">Kod projektu</a></div></article>
+        <article class="card"><div class="top"><div><h2>TransportFlow 360</h2><p>Demonstracja procesu transportowego: wycena, zlecenia, flota, dokumenty, role, KPI i kalkulator stawki.</p></div><span class="badge ok">PWA</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/transportflow-360/">Otwórz</a><a class="btn secondary" href="https://lukaszst-cz.github.io/transportflow-360/portal/">Portal</a></div></article>
+        <article class="card"><div class="top"><div><h2>Fleet Ops Desk</h2><p>Model pracy z flotą, kosztami, najmem, leasingiem, serwisem i relacyjnymi danymi SQLite.</p></div><span class="badge ok">DEMO</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/fleet-ops-desk/">Otwórz demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/fleet-ops-desk">Kod projektu</a></div></article>
+        <article class="card"><div class="top"><div><h2>WorkshopFlow 360</h2><p>Pełny przebieg obsługi warsztatu: rezerwacja, diagnoza, kosztorys, naprawa, kontrola jakości, faktura i wydanie auta.</p></div><span class="badge ok">ONLINE</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/workshopflow-360/">Uruchom</a></div></article>
+        <article class="card"><div class="top"><div><h2>PrintFlow 360</h2><p>Model Order-to-Cash dla produkcji i poligrafii z portalem PWA, KPI, kalkulatorem i skoroszytem Excel.</p></div><span class="badge ok">PWA</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/printflow-360/">Uruchom</a><a class="btn secondary" href="https://lukaszst-cz.github.io/printflow-360/portal/">Portal</a></div></article>
+      </section>
+    </main>
+    <div class="footer">Aplikacje i demonstracje Łukasza S. · Zielona Marka · projekty wykorzystują dane demonstracyjne lub działają lokalnie zgodnie z opisem każdego narzędzia.</div>
+  </div>
+</body>
+</html>
