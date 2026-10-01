@@ -20,7 +20,8 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 - **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
-- **DocPilot 1.0.0:** stabilne publiczne wydanie local-first dla Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Dostępne są instalator Windows, wersja Portable ZIP i sumy SHA-256.
+- **DocPilot 4.0.0:** stabilne publiczne wydanie local-first dla Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Dostępne są instalator Windows, wersja Portable ZIP i sumy SHA-256.
+- **DialogNest 5.3.0:** lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot z wyszukiwaniem, projektami, tagami, recovery, szyfrowanymi backupami i aplikacją Windows. Repozytorium pozostaje prywatne, a wydanie jest obecnie udostępniane testerom.
 
 ## Technologie i praktyka inżynierska
 
@@ -45,6 +46,9 @@ Portfolio łączy pracę operacyjną z tworzeniem narzędzi, które można obejr
 Zakres każdej demonstracji jest opisany wprost wraz z ograniczeniami. Dzięki temu portfolio pokazuje realny sposób pracy, a nie deklaracje bez materiału do sprawdzenia.
 
 ## Portfolio online
+
+- [Aplikacje — pobierz i testuj](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)
+- [Główne portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/)
 
 Strona startowa znajduje się w pliku [`index.html`](index.html) i jest przygotowana do publikacji przez GitHub Pages.
 
@@ -98,6 +102,7 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
 | Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
 | DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) · [repo](https://github.com/lukaszst-cz/docpilot) |
+| DialogNest | Lokalne archiwum rozmów AI, wyszukiwanie, projekty, backup, recovery, MCP i aplikacja Windows | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/dialognest/) |
 | Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
 | Zielona Marka, strona i Studio | Strona usługowa, kwalifikacja zapytań i widok procesu klienta | [zielona-marka-pl](https://github.com/lukaszst-cz/zielona-marka-pl) |
 | Obsługa zapytania i oferty | Wiadomość, braki, szkic odpowiedzi, oferta i lekki CRM z zatwierdzeniem człowieka | [projekt na GitHubie](https://github.com/lukaszst-cz/lead-offer-copilot) |
@@ -117,6 +122,8 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 - [Obsługa zapytania i oferty](https://lead-offer-zm.pages.dev/)
 - [Kontrola dokumentów](https://document-checker-zm.pages.dev/)
 - [DocPilot, repozytorium i wydania Windows](https://github.com/lukaszst-cz/docpilot)
+- [DialogNest 5.3.0, strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/dialognest/)
+- [Aplikacje, pobieranie i testy](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)
 - [Film promocyjny Zielonej Marki](https://lukaszst-cz.github.io/operations-office-portfolio/#film-zielona-marka)
 
 ## Aktualizacja, 19 września 2026
