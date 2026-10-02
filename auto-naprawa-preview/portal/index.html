@@ -9,4 +9,14 @@
     <section id="staffView" class="view" hidden><div class="view-head"><div><small id="roleKicker">PANEL DZIAŁU</small><h1 id="roleTitle">Kolejka pracy</h1></div><div class="clock"><b>25.08.2026</b><span>14:42 · zmiana dzienna</span></div></div><div id="managerKpis" class="kpis"></div><div class="toolbar"><input id="search" aria-label="Szukaj zlecenia" placeholder="Szukaj zlecenia, pojazdu lub klienta…"><select id="statusFilter" aria-label="Filtr statusu"><option value="all">Wszystkie statusy</option><option>Diagnoza</option><option>Oczekuje na zgodę</option><option>Części</option><option>Naprawa</option><option>Kontrola jakości</option><option>Gotowe</option></select></div><div class="table-wrap"><table><thead><tr><th>Zlecenie</th><th>Pojazd / klient</th><th>Etap</th><th>Termin</th><th>Odpowiedzialny</th><th id="amountHead">Wartość</th></tr></thead><tbody id="ordersBody"></tbody></table></div><div class="lower-grid"><article><b>Alerty dla tej roli</b><div id="alerts"></div></article><article><b>Obciążenie stanowisk</b><div id="bays"></div></article></div></section>
   </main>
   <script src="app.js?v=2"></script>
+
+  <style>
+    .creator-support-strip{max-width:1180px;margin:0 auto;padding:18px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 18px;border-top:1px solid rgba(127,127,127,.22);font:600 13px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}
+    .creator-support-strip span{opacity:.86}.creator-support-strip a{font-weight:800;color:inherit;text-decoration:underline;text-underline-offset:3px}
+    @media print{.creator-support-strip{display:none!important}}
+  </style>
+  <aside class="creator-support-strip" aria-label="Wsparcie autora i Zielona Marka">
+    <span>☕ Projekt udostępniony bezpłatnie — jeśli Ci się przydaje, możesz <a href="https://buymeacoffee.com/nalesnik_plus_plus" target="_blank" rel="noopener noreferrer">postawić Naleśnikowi++ kawę</a>.</span>
+    <span>Potrzebujesz własnej strony lub prostego systemu dla firmy? <a href="https://zielona-marka.pl" target="_blank" rel="noopener noreferrer">Zobacz Zielona Marka ↗</a></span>
+  </aside>
 </body></html>
