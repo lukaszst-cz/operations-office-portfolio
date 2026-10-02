@@ -181,3 +181,4 @@ W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 201
 ## Kontakt
 
 - [GitHub](https://github.com/lukaszst-cz)
+- [☕ Buy Me a Coffee — nalesnik_plus_plus](https://buymeacoffee.com/nalesnik_plus_plus) — dobrowolne wsparcie rozwoju darmowych projektów.
