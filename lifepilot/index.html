@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="LifePilot — wrzuć dokument, zobacz co to jest, co zrobić, do kiedy i zachowaj ProofPack. Local-first preview rozwijany na DocPilot.">
+  <meta property="og:title" content="LifePilot — dokument → decyzja → termin → dowód">
+  <meta property="og:description" content="Warstwa nad DocPilot: CoTeraz?, ProofPack, priorytety i local-first workflow dokumentów.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0f14">
+  <title>LifePilot — dokument → decyzja → termin → dowód</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#edf3f8;background:#090d12;--bg:#090d12;--panel:#111821;--line:#263241;--muted:#9aa7b5;--blue:#9fc2ff;--green:#87e0a6;--amber:#efc675}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% 0,#17283d 0,var(--bg) 38%);min-height:100vh}a{color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 24px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{text-decoration:none;font-weight:950}.back{text-decoration:none;color:#b9c5d1}.hero{padding:68px 0 34px;max-width:930px}.eyebrow{font-size:12px;font-weight:950;letter-spacing:.13em;color:var(--green)}h1{font-size:clamp(44px,7vw,80px);line-height:.96;letter-spacing:-.05em;margin:12px 0 22px}.lead{font-size:21px;line-height:1.6;color:#bac6d1;max-width:900px}.promise{font-size:26px;line-height:1.4;font-weight:850;margin:26px 0;padding-left:18px;border-left:3px solid var(--blue)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.btn{padding:13px 17px;border-radius:11px;text-decoration:none;font-weight:850;background:#eef3f8;color:#10161d}.btn.secondary{background:#1b2632;color:#e6edf4;border:1px solid #314052}.section{padding:48px 0}.section h2{font-size:34px;margin:0 0 10px}.sectionLead{max-width:820px;color:var(--muted);line-height:1.65}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}.grid.three{grid-template-columns:repeat(3,1fr)}.card{background:linear-gradient(180deg,#121a23,#0f151d);border:1px solid var(--line);border-radius:17px;padding:21px}.card b{display:block;font-size:17px;margin-bottom:8px}.card p{margin:0;color:#9eabb8;line-height:1.58}.tag{font-size:11px;font-weight:950;letter-spacing:.08em;color:var(--blue);text-transform:uppercase;display:block;margin-bottom:8px}.status{border-color:#3a536f;background:linear-gradient(135deg,#17283b,#101720)}.status h2{font-size:28px}.fine{font-size:13px;color:#7d8b9d;line-height:1.6}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.step{border:1px solid var(--line);border-radius:15px;padding:18px;background:#101720}.step span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#eef3f8;color:#111821;font-weight:900;margin-bottom:10px}.step b{display:block;margin-bottom:6px}.step p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}footer{padding:34px 0 52px;color:#758494;border-top:1px solid var(--line);font-size:13px}
+    @media(max-width:850px){.grid,.grid.three{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}@media(max-width:600px){.wrap{padding:0 16px}.grid,.grid.three,.steps{grid-template-columns:1fr}.hero{padding-top:42px}.lead{font-size:18px}.promise{font-size:21px}.btn{width:100%;text-align:center}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="./">LifePilot</a><a class="back" href="../aplikacje.html">← Aplikacje</a></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">PREVIEW · LOCAL-FIRST · ROZWIJANY NAD DOCPILOT 4.0</div>
+      <h1>Dokument → decyzja → termin → dowód.</h1>
+      <p class="promise">Wrzuć dokument. LifePilot powie Ci, co to jest, co trzeba zrobić, do kiedy i zachowa wszystko na później.</p>
+      <p class="lead">LifePilot ma uprościć moment po otrzymaniu faktury, pisma, umowy, dokumentu szkolnego czy korespondencji. Zamiast samemu szukać znaczenia, terminu i następnego kroku, użytkownik dostaje jeden uporządkowany przepływ.</p>
+      <div class="actions"><a class="btn" href="https://github.com/lukaszst-cz/docpilot">Repozytorium DocPilot / LifePilot</a><a class="btn secondary" href="../docpilot/">Stabilny DocPilot 4.0</a></div>
+    </section>
+
+    <section class="section">
+      <h2>Cztery warstwy</h2>
+      <div class="grid">
+        <article class="card"><span class="tag">DocPilot</span><b>Co to jest?</b><p>OCR, klasyfikacja, metadane, terminy, sprawy, wyszukiwanie, duplikaty i lokalne archiwum.</p></article>
+        <article class="card"><span class="tag">CoTeraz?</span><b>Co mam zrobić?</b><p>Jedna rekomendowana następna czynność z priorytetem i terminem.</p></article>
+        <article class="card"><span class="tag">ProofPack</span><b>Co zachować?</b><p>Oryginał, manifest, next-action, timeline sprawy oraz SHA256SUMS w jednym lokalnym ZIP-ie.</p></article>
+        <article class="card"><span class="tag">CzyToŚciema?</span><b>Czy to wygląda podejrzanie?</b><p>Oddzielna aplikacja do wiadomości, linków, screenshotów i QR; LifePilot nie wysyła do niej automatycznie prywatnej treści.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Jak działa?</h2>
+      <div class="steps">
+        <article class="step"><span>1</span><b>Dodaj dokument</b><p>PDF, skan, obraz albo plik tekstowy trafia do lokalnej analizy.</p></article>
+        <article class="step"><span>2</span><b>Sprawdź odczyt</b><p>Typ, wystawca, kwota i termin są pokazane do weryfikacji.</p></article>
+        <article class="step"><span>3</span><b>Zobacz „Co teraz?”</b><p>LifePilot określa następny krok i priorytet.</p></article>
+        <article class="step"><span>4</span><b>Zachowaj ślad</b><p>Możesz zatwierdzić organizację, dodać termin albo pobrać ProofPack.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Co działa w preview?</h2>
+      <div class="grid three">
+        <article class="card"><b>🧭 Karta „Co teraz?”</b><p>Pokazuje się od razu po analizie dokumentu.</p></article>
+        <article class="card"><b>📋 Kolejka priorytetów</b><p>Przeterminowane → dziś → pilne → do sprawdzenia → wkrótce.</p></article>
+        <article class="card"><b>📦 ProofPack ZIP</b><p>Oryginał, manifest, timeline, next-action i sumy SHA-256.</p></article>
+        <article class="card"><b>📅 Termin .ics</b><p>Pojedynczy wykryty deadline lub data gwarancji może trafić do kalendarza.</p></article>
+        <article class="card"><b>🔐 Local-first</b><p>Podstawowy obieg dokumentu i ProofPack działają lokalnie.</p></article>
+        <article class="card"><b>🧑‍⚖️ Human-in-the-loop</b><p>Niska pewność OCR najpierw kieruje do ręcznego sprawdzenia.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Dla kogo?</h2>
+      <p class="sectionLead">Dom i rodzina, freelancer, mała firma oraz każdy, kto prowadzi kilka spraw jednocześnie i chce po otrzymaniu dokumentu szybko wiedzieć, co jest naprawdę ważne.</p>
+      <div class="grid">
+        <article class="card"><b>Dom / rodzina</b><p>Faktury, szkoła, polisy, gwarancje, umowy i korespondencja.</p></article>
+        <article class="card"><b>Freelancer / mała firma</b><p>Dokumenty kosztowe, umowy, terminy odpowiedzi i sprawy klientów.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="card status">
+        <span class="tag">Status wydania</span>
+        <h2>LifePilot jest preview. Stabilny Windows pozostaje na DocPilot 4.0.0.</h2>
+        <p>Nowe funkcje są rozwijane i testowane w kodzie projektu. Nie opisujemy instalatora 4.0.0 jako pełnego wydania LifePilot. Kolejny publiczny build powinien dostać LifePilot dopiero po pełnym CI, buildzie Windows, self-teście EXE, clean install, upgrade i smoke testach.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Prywatność i ograniczenia</h2>
+      <div class="grid">
+        <article class="card"><b>Bez automatycznego wysyłania</b><p>LifePilot nie przekazuje sam treści dokumentu do CzyToŚciema? ani innej usługi.</p></article>
+        <article class="card"><b>ProofPack nie jest kwalifikowanym podpisem</b><p>SHA-256 pomaga kontrolować integralność, ale nie zastępuje kwalifikowanej pieczęci, podpisu ani zaufanego znacznika czasu.</p></article>
+        <article class="card"><b>OCR wymaga kontroli</b><p>Kwoty i terminy trzeba porównać z oryginałem przed ważną decyzją.</p></article>
+        <article class="card"><b>Bez destrukcyjnej autonomii</b><p>Program nie powinien sam usuwać plików, wykonywać płatności ani wysyłać odpowiedzi.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="actions"><a class="btn" href="https://github.com/lukaszst-cz/docpilot/blob/main/LIFEPILOT.md">Pełna specyfikacja LifePilot</a><a class="btn secondary" href="https://github.com/lukaszst-cz/czy-to-sciema">CzyToŚciema?</a><a class="btn secondary" href="https://buymeacoffee.com/nalesnik_plus_plus">☕ Wesprzyj rozwój</a></div>
+      <p class="fine">LifePilot pomaga organizować informacje i następne kroki. Nie zastępuje profesjonalnej porady prawnej, finansowej ani urzędowej.</p>
+    </section>
+  </main>
+  <footer>LifePilot preview · rozwijany na fundamencie DocPilot · Łukasz St‑cz · Zielona Marka</footer>
+</div>
+</body>
+</html>
