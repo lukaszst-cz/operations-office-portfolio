@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FamilySyncKids++ — wspólny panel rodzica i dziecka</title>
+<meta name="description" content="FamilySyncKids++ to prosty system organizacji dla rodzica i dziecka: zadania, rutyny, szkoła, nastrój, czytanie, aktywność i wspólne sprawy w dwóch zsynchronizowanych panelach.">
+<meta name="theme-color" content="#111827">
+<meta property="og:title" content="FamilySyncKids++">
+<meta property="og:description" content="Dwa panele. Jedna rodzina. Mniej przypominania.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="./manifest.webmanifest">\n<style>:root{--ink:#111827;--muted:#64748b;--bg:#f7f8fc;--card:#fff;--line:#e5e7eb;--brand:#4f46e5;--brand2:#7c3aed;--soft:#eef2ff;--green:#10b981;--yellow:#f59e0b;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55}a{color:inherit;text-decoration:none}.site-header{height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:0 max(24px,calc((100vw - 1180px)/2));background:rgba(247,248,252,.88);backdrop-filter:blur(16px);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(229,231,235,.8)}.brand{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;white-space:nowrap}.brand-mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;font-size:12px;box-shadow:0 8px 20px rgba(79,70,229,.25)}.plusplus{color:var(--brand)}nav{display:flex;gap:24px;color:#475569;font-size:14px}nav a:hover{color:var(--ink)}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 17px;font-weight:750;border:1px solid transparent;transition:.2s ease}.btn:hover{transform:translateY(-1px)}.btn-small{padding:8px 13px;font-size:14px}.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:white;box-shadow:0 10px 30px rgba(79,70,229,.2)}.btn-secondary{background:white;border-color:var(--line)}.btn-outline{border-color:var(--line);background:transparent}.hero{max-width:1180px;margin:auto;padding:88px 24px 64px;display:grid;grid-template-columns:1.03fr .97fr;gap:56px;align-items:center}.eyebrow{color:var(--brand);font-size:12px;font-weight:850;letter-spacing:.12em;margin-bottom:14px}.hero h1{font-size:clamp(44px,6vw,74px);line-height:.98;letter-spacing:-.052em;margin:0 0 24px}.hero h1 span{background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:19px;color:#475569;max-width:690px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.trust-row{display:flex;flex-wrap:wrap;gap:15px;margin-top:22px;color:#64748b;font-size:13px}.product-window{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 28px 80px rgba(15,23,42,.12);overflow:hidden;transform:rotate(.35deg)}.window-bar{height:48px;background:#f8fafc;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 14px;font-size:12px;color:#64748b}.dots{display:flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:#cbd5e1}.dots i:first-child{background:#f87171}.dots i:nth-child(2){background:#fbbf24}.dots i:nth-child(3){background:#34d399}.online{text-align:right;color:#059669}.preview-switch{display:flex;gap:7px;padding:14px 14px 0}.preview-tab{border:0;background:#f1f5f9;border-radius:9px;padding:8px 11px;font-weight:700;color:#64748b;cursor:pointer}.preview-tab.active{background:#111827;color:#fff}.preview{display:none;padding:14px 14px 18px}.preview.active{display:block}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini-card{padding:14px;border:1px solid var(--line);border-radius:13px;background:#fff;min-height:82px}.mini-card b,.mini-card span{display:block}.mini-card span{font-size:12px;color:#64748b;margin-top:6px}.accent-yellow{background:#fffbeb}.accent-green{background:#ecfdf5}.accent-blue{background:#eff6ff}.accent-purple{background:#f5f3ff}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stats div{background:#f8fafc;border-radius:12px;padding:13px}.stats strong,.stats span{display:block}.stats strong{font-size:25px}.stats span{font-size:11px;color:#64748b}.parent-list{margin-top:12px}.parent-list div{padding:12px 3px;border-top:1px solid #eef2f7}.parent-list b,.parent-list span{display:block}.parent-list span{font-size:12px;color:#64748b;margin-top:3px}.strip{max-width:1180px;margin:0 auto 36px;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.strip div{background:#111827;color:#fff;border-radius:16px;padding:18px}.strip strong,.strip span{display:block}.strip span{color:#94a3b8;font-size:13px;margin-top:3px}.section{max-width:1180px;margin:auto;padding:92px 24px}.section-head{max-width:790px;margin-bottom:34px}.section h2{font-size:clamp(32px,4vw,48px);line-height:1.07;letter-spacing:-.035em;margin:0}.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.flow article,.feature-card,.compare-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.num{display:block;color:var(--brand);font-size:12px;font-weight:900;letter-spacing:.08em;margin-bottom:38px}.flow h3,.feature-card h3{font-size:20px;margin:0 0 8px}.flow p,.feature-card p{color:#64748b;margin:0}.feature-section{padding-top:60px}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.feature-card span{font-size:24px}.feature-card h3{margin-top:26px}.feature-card p{font-size:14px}.compare{display:grid;grid-template-columns:1fr 180px 1fr;gap:18px;align-items:center}.compare-title{display:flex;gap:12px;align-items:center;font-size:18px}.compare-title>span{font-size:30px}.compare-title b,.compare-title small{display:block}.compare-title small{color:#64748b;font-size:12px;font-weight:500}.compare ul{padding-left:19px;color:#475569}.compare li{margin:9px 0}.child-card{background:#f8fafc}.parent-card{background:#f5f3ff}.sync-core{text-align:center}.sync-icon{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;font-size:26px}.sync-core b,.sync-core span{display:block}.sync-core span{color:#64748b;font-size:12px;margin-top:4px}.privacy-section{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}.privacy-copy>p{color:#475569;font-size:18px}.privacy-points{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:22px}.privacy-points span{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px;font-size:13px}.privacy-box{background:#111827;color:#fff;border-radius:20px;padding:26px;box-shadow:0 24px 60px rgba(15,23,42,.15)}.privacy-box b{font-size:20px}.privacy-box p{color:#cbd5e1}.start-section{background:#fff;border-radius:30px;margin-top:50px;margin-bottom:50px;max-width:1132px;border:1px solid var(--line)}.start-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.start-steps div{padding:16px;border-radius:14px;background:#f8fafc}.start-steps span{display:grid;width:28px;height:28px;place-items:center;background:#111827;color:#fff;border-radius:8px;font-size:12px;margin-bottom:22px}.start-steps b,.start-steps p{display:block}.start-steps p{color:#64748b;font-size:13px;margin-bottom:0}.center-actions{display:flex;justify-content:center;gap:10px;margin-top:28px}.faq details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px 16px;margin:9px 0}.faq summary{cursor:pointer;font-weight:750}.faq p{color:#64748b;margin-bottom:3px}.final-cta{max-width:1180px;margin:20px auto 90px;padding:34px;border-radius:24px;background:#111827;color:#fff;display:flex;justify-content:space-between;gap:24px;align-items:center}.final-cta h2{font-size:34px;line-height:1.05;max-width:670px;margin:0}.final-cta .eyebrow{color:#a5b4fc}.final-cta .btn-secondary{color:#111827}footer{max-width:1180px;margin:auto;padding:34px 24px 50px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;color:#64748b;font-size:13px}.footer-links{display:flex;justify-content:flex-end;gap:18px}@media(max-width:900px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:60px}.strip,.flow,.feature-grid,.privacy-section,.start-steps{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}.sync-core{padding:8px}.feature-grid{grid-template-columns:1fr 1fr}.final-cta{margin-left:18px;margin-right:18px;flex-direction:column;align-items:flex-start}footer{grid-template-columns:1fr;gap:16px}.footer-links{justify-content:flex-start}}@media(max-width:600px){.site-header{padding:0 16px}.site-header>.btn{display:none}.hero{padding-left:16px;padding-right:16px}.strip,.flow,.feature-grid,.privacy-section,.start-steps,.privacy-points{grid-template-columns:1fr}.section{padding:70px 16px}.mini-grid{grid-template-columns:1fr}.hero h1{font-size:46px}.start-section{margin-left:12px;margin-right:12px;padding-left:16px;padding-right:16px}.center-actions{flex-direction:column}.final-cta h2{font-size:28px}}</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="FamilySyncKids++">
+    <span class="brand-mark">FS</span>
+    <span>FamilySyncKids<span class="plusplus">++</span></span>
+  </a>
+  <nav>
+    <a href="#jak-dziala">Jak działa</a>
+    <a href="#funkcje">Funkcje</a>
+    <a href="#prywatnosc">Prywatność</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-small btn-outline" href="../prototype/">Demo</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">RODZIC + DZIECKO · JEDEN SYSTEM</div>
+    <h1>Dwa panele.<br><span>Jedna rodzina.</span><br>Mniej przypominania.</h1>
+    <p class="lead">FamilySyncKids++ pomaga dziecku ogarniać swój dzień, a rodzicowi widzieć to, co naprawdę ważne — bez tworzenia dwóch osobnych systemów i bez wchodzenia sobie w drogę.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="../prototype/">Wypróbuj demo</a>
+      <a class="btn btn-secondary" href="../template/" download="FamilySyncKids++-template.html">Pobierz pusty template</a>
+    </div>
+    <div class="trust-row">
+      <span>✓ działa lokalnie</span>
+      <span>✓ bez konta</span>
+      <span>✓ bez danych w chmurze</span>
+      <span>✓ panel dziecka + rodzica</span>
+    </div>
+  </div>
+
+  <div class="product-window" aria-label="Podgląd FamilySyncKids++">
+    <div class="window-bar">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <span>FamilySyncKids++</span>
+      <span class="online">● lokalnie</span>
+    </div>
+    <div class="preview-switch">
+      <button class="preview-tab active" data-preview="child">Panel dziecka</button>
+      <button class="preview-tab" data-preview="parent">Panel rodzica</button>
+    </div>
+    <div id="preview-child" class="preview active">
+      <div class="mini-grid">
+        <div class="mini-card accent-yellow"><b>😊 Jaki miałem dzień?</b><span>buźka + jedno zdanie</span></div>
+        <div class="mini-card accent-green"><b>☑️ Rutyny</b><span>2 z 3 gotowe</span></div>
+        <div class="mini-card accent-blue"><b>📚 Szkoła</b><span>dzisiaj i najbliższe</span></div>
+        <div class="mini-card accent-purple"><b>🎮 Czas gry</b><span>START / STOP</span></div>
+        <div class="mini-card"><b>📖 Czytelnia</b><span>46 / 180 stron</span></div>
+        <div class="mini-card"><b>💬 Rodzic i ja</b><span>1 wspólna sprawa</span></div>
+      </div>
+    </div>
+    <div id="preview-parent" class="preview">
+      <div class="stats">
+        <div><strong>3</strong><span>do zrobienia</span></div>
+        <div><strong>1</strong><span>potrzebuje pomocy</span></div>
+        <div><strong>2</strong><span>w toku / czeka</span></div>
+      </div>
+      <div class="parent-list">
+        <div><b>Przygotować rzeczy na jutro</b><span>Wspólne · Do zrobienia</span></div>
+        <div><b>Sprawdzić termin wydarzenia</b><span>Rodzic · Czeka</span></div>
+        <div><b>Ostatni check-in</b><span>😊 Fajnie</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div><strong>Jedna informacja</strong><span>jeden rekord źródłowy</span></div>
+  <div><strong>Dwie perspektywy</strong><span>prosty widok dziecka i pełny rodzica</span></div>
+  <div><strong>Bez chaosu</strong><span>status zmienia się w obu panelach</span></div>
+</section>
+
+<section id="jak-dziala" class="section">
+  <div class="section-head">
+    <div class="eyebrow">JAK TO DZIAŁA</div>
+    <h2>Dziecko nie potrzebuje panelu administracyjnego.<br>Rodzic nie potrzebuje kolejnej listy do ręcznego pilnowania.</h2>
+  </div>
+  <div class="flow">
+    <article><span class="num">01</span><h3>Dziecko ma swój prosty ekran</h3><p>Dzisiaj, rutyny, szkoła, czytanie, aktywność, szybka notatka, nastrój i wspólne sprawy.</p></article>
+    <article><span class="num">02</span><h3>Rodzic widzi szerszy obraz</h3><p>Pełne statusy, terminy, prośby o pomoc, administrację szkolną i prywatne zaplecze.</p></article>
+    <article><span class="num">03</span><h3>Wspólne dane synchronizują się logicznie</h3><p>Ta sama sprawa nie jest kopiowana. Zmiana statusu dotyczy jednego rekordu, tylko prezentowanego inaczej.</p></article>
+  </div>
+</section>
+
+<section id="funkcje" class="section feature-section">
+  <div class="section-head">
+    <div class="eyebrow">FUNKCJE</div>
+    <h2>Codzienność dziecka i rodzica w jednym miejscu.</h2>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-card"><span>📅</span><h3>Mój dzień</h3><p>Zadania, 7 dni, rutyny i rzeczy do przygotowania.</p></article>
+    <article class="feature-card"><span>😊</span><h3>Jaki miałem dzień?</h3><p>16 buziek i jedno zdanie — szybki wieczorny check-in.</p></article>
+    <article class="feature-card"><span>⚡</span><h3>Szybka notatka</h3><p>Pomysł, cel, coś do zapamiętania albo zwykła notatka.</p></article>
+    <article class="feature-card"><span>📚</span><h3>Szkoła</h3><p>Dziecko widzi to, co potrzebne. Rodzic ma pełniejszy widok organizacyjny.</p></article>
+    <article class="feature-card"><span>📖</span><h3>Czytelnia</h3><p>Aktualna książka, postęp i krótka opinia.</p></article>
+    <article class="feature-card"><span>🏃</span><h3>Aktywność</h3><p>Prosty dziennik ruchu i aktywności — bez rankingów i porównywania.</p></article>
+    <article class="feature-card"><span>🎮</span><h3>START / STOP gry</h3><p>Jedna aktywna sesja naraz i czytelna historia.</p></article>
+    <article class="feature-card"><span>💬</span><h3>Rodzic i ja</h3><p>Wspólny inbox, krótkie wiadomości i „Potrzebuję pomocy”.</p></article>
+    <article class="feature-card"><span>⭐</span><h3>Misje i XP</h3><p>Opcjonalna warstwa motywacyjna za inicjatywę i rzeczy dodatkowe.</p></article>
+    <article class="feature-card"><span>🔄</span><h3>Statusy</h3><p>Do zrobienia → W toku → Czeka → Gotowe → Archiwum.</p></article>
+    <article class="feature-card"><span>👁️</span><h3>Widoczność</h3><p>Dziecko · Wspólne · Tylko rodzic.</p></article>
+    <article class="feature-card"><span>🗄️</span><h3>Archiwum</h3><p>Historia zostaje, ale nie przeszkadza w codziennym widoku.</p></article>
+  </div>
+</section>
+
+<section class="section compare-section">
+  <div class="section-head">
+    <div class="eyebrow">DWIE PERSPEKTYWY</div>
+    <h2>To nie są dwa osobne systemy.</h2>
+  </div>
+  <div class="compare">
+    <div class="compare-card child-card">
+      <div class="compare-title"><span>🧒</span><div><b>Panel dziecka</b><small>prosty i codzienny</small></div></div>
+      <ul>
+        <li>Dzisiaj i najbliższe zadania</li>
+        <li>Rutyny do odhaczenia</li>
+        <li>Szkoła w prostym widoku</li>
+        <li>Nastrój i jedno zdanie o dniu</li>
+        <li>Czytanie, aktywność i gra</li>
+        <li>Wiadomości i prośba o pomoc</li>
+      </ul>
+    </div>
+    <div class="sync-core">
+      <div class="sync-icon">↔</div>
+      <b>Wspólna warstwa danych</b>
+      <span>jedna sprawa = jeden rekord</span>
+    </div>
+    <div class="compare-card parent-card">
+      <div class="compare-title"><span>👨‍👩‍👧</span><div><b>Panel rodzica</b><small>pełny i administracyjny</small></div></div>
+      <ul>
+        <li>Pełne statusy i terminy</li>
+        <li>„Potrzebuję pomocy” na wierzchu</li>
+        <li>Szkoła i organizacja</li>
+        <li>Podgląd check-inów i aktywności</li>
+        <li>Wspólny inbox</li>
+        <li>Prywatne moduły tylko rodzica</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prywatnosc" class="section privacy-section">
+  <div class="privacy-copy">
+    <div class="eyebrow">PRYWATNOŚĆ</div>
+    <h2>Najpierw prywatność.<br>Potem funkcje.</h2>
+    <p>Podstawowy template FamilySyncKids++ działa lokalnie w przeglądarce. Nie wymaga konta, zewnętrznej bazy danych ani przesyłania informacji o dziecku do naszego serwera.</p>
+    <div class="privacy-points">
+      <span>🔒 dane lokalne w przeglądarce</span>
+      <span>📦 eksport / import JSON</span>
+      <span>🚫 brak trackerów reklamowych</span>
+      <span>🧼 repo bez danych realnej rodziny</span>
+    </div>
+  </div>
+  <div class="privacy-box">
+    <b>Ważne</b>
+    <p>Jeśli korzystasz z template na współdzielonym komputerze, zabezpiecz profil użytkownika systemu. Lokalny zapis nie zastępuje kontroli dostępu do urządzenia.</p>
+  </div>
+</section>
+
+<section class="section start-section">
+  <div class="section-head">
+    <div class="eyebrow">START</div>
+    <h2>Możesz zacząć bez instalacji.</h2>
+  </div>
+  <div class="start-steps">
+    <div><span>1</span><b>Pobierz pusty template</b><p>Jeden plik HTML.</p></div>
+    <div><span>2</span><b>Otwórz w przeglądarce</b><p>Chrome, Edge, Firefox lub Safari.</p></div>
+    <div><span>3</span><b>Wpisz nick dziecka</b><p>I nazwę rodzica.</p></div>
+    <div><span>4</span><b>Dodaj własne elementy</b><p>Rutyny, zadania, szkołę i resztę.</p></div>
+  </div>
+  <div class="center-actions">
+    <a class="btn btn-primary" href="../template/" download="FamilySyncKids++-template.html">Pobierz FamilySyncKids++</a>
+    <a class="btn btn-outline" href="../docs/GETTING-STARTED.md">Instrukcja</a>
+  </div>
+</section>
+
+<section id="faq" class="section faq">
+  <div class="section-head"><div class="eyebrow">FAQ</div><h2>Najczęstsze pytania.</h2></div>
+  <details><summary>Czy trzeba zakładać konto?</summary><p>Nie. Pusty template działa jako lokalny plik HTML.</p></details>
+  <details><summary>Czy dane trafiają do chmury?</summary><p>Nie w podstawowej wersji. Są zapisywane lokalnie w przeglądarce użytkownika.</p></details>
+  <details><summary>Czy można używać na kilku urządzeniach?</summary><p>Sam lokalny template nie synchronizuje się automatycznie. Repo zawiera model danych umożliwiający późniejsze podłączenie własnej synchronizacji.</p></details>
+  <details><summary>Czy można zrobić kopię zapasową?</summary><p>Tak. Template ma eksport i import JSON.</p></details>
+  <details><summary>Czy dziecko widzi wszystko, co rodzic?</summary><p>Nie. Model rozdziela widoki Dziecko, Wspólne i Tylko rodzic.</p></details>
+  <details><summary>Czy XP jest obowiązkowe?</summary><p>Nie. To opcjonalny moduł. System może działać bez punktów i nagród.</p></details>
+</section>
+
+<section class="final-cta">
+  <div>
+    <div class="eyebrow">FAMILYSYNCKIDS++</div>
+    <h2>Jedno miejsce, które pomaga się dogadać i ogarnąć codzienność.</h2>
+  </div>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="../prototype/">Otwórz demo</a>
+    <a class="btn btn-secondary" href="../template/" download="FamilySyncKids++-template.html">Pobierz pustą wersję</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand"><span class="brand-mark">FS</span><span>FamilySyncKids<span class="plusplus">++</span></span></div>
+  <p>Oczyszczony, prywatnościowy template panelu rodzica i dziecka.</p>
+  <div class="footer-links">
+    <a href="../README.md">README</a>
+    <a href="../docs/PRIVACY.md">Prywatność</a>
+    <a href="../docs/GETTING-STARTED.md">Instrukcja</a>
+  </div>
+</footer>
+<script>document.querySelectorAll(".preview-tab").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".preview-tab").forEach(x=>x.classList.remove("active"));
+    document.querySelectorAll(".preview").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("preview-"+btn.dataset.preview).classList.add("active");
+  });
+});
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    Promise.resolve().catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
