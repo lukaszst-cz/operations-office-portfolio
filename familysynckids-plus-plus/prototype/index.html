@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FamilySyncKids++ — demo</title>
+<style>
+:root{font-family:Inter,system-ui,sans-serif;color:#1f2937;background:#f6f7fb}
+*{box-sizing:border-box} body{margin:0}.app{max-width:1180px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:20px}
+h1{margin:0;font-size:28px} .muted{color:#6b7280}
+.tabs{display:flex;gap:8px;margin:18px 0}.tab{border:0;border-radius:12px;padding:10px 16px;cursor:pointer;background:#e5e7eb}.tab.active{background:#111827;color:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:18px;padding:16px;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+.card h2{font-size:17px;margin:0 0 10px}.wide{grid-column:1/-1}
+.moods{display:flex;flex-wrap:wrap;gap:8px}.mood{border:1px solid #e5e7eb;background:#fff;border-radius:999px;padding:8px 11px;cursor:pointer}.mood.selected{outline:3px solid #c7d2fe;background:#eef2ff}
+input,textarea,select{width:100%;border:1px solid #d1d5db;border-radius:12px;padding:10px;margin-top:8px;font:inherit}
+button.primary{border:0;border-radius:12px;padding:10px 14px;background:#111827;color:#fff;cursor:pointer;margin-top:10px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pill{padding:5px 9px;border-radius:999px;background:#f3f4f6;font-size:13px}
+.item{border-top:1px solid #eee;padding:10px 0}.item:first-child{border-top:0}
+.hidden{display:none}
+@media(max-width:800px){.grid{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div><h1>FamilySyncKids++</h1><div class="muted">Demo produktu — wyłącznie dane demonstracyjne</div></div>
+  <span class="pill">localStorage only</span>
+</header>
+
+<div class="tabs">
+  <button class="tab active" data-panel="child">Panel dziecka</button>
+  <button class="tab" data-panel="parent">Panel rodzica</button>
+</div>
+
+<section id="child" class="panel">
+<div class="grid">
+  <div class="card"><h2>📅 Dzisiaj</h2><div id="childTasks"></div></div>
+  <div class="card"><h2>☑️ Rutyny</h2><p>Spakuj plecak</p><p>Przygotuj rzeczy na jutro</p><p>Krótki porządek</p></div>
+  <div class="card"><h2>📚 Szkoła</h2><p>Plan, zadania i najbliższe terminy.</p></div>
+
+  <div class="card wide">
+    <h2>😊 Jaki miałem dzień?</h2>
+    <div class="muted">Wybierz buźkę i napisz jedno zdanie.</div>
+    <div id="moods" class="moods"></div>
+    <input id="daySentence" maxlength="160" placeholder="Mój dzień w jednym zdaniu…">
+    <button class="primary" id="saveMood">Zapisz dzień</button>
+    <div id="moodHistory"></div>
+  </div>
+
+  <div class="card"><h2>⚡ Szybka notatka</h2><textarea id="quickNote" rows="3" placeholder="Co chcesz zapamiętać?"></textarea><button class="primary" id="saveNote">Zapisz</button></div>
+  <div class="card"><h2>📖 Czytelnia</h2><p>Aktualna książka, postęp i krótka opinia.</p></div>
+  <div class="card"><h2>🏃 Aktywność</h2><p>Ruch, sport i dodatkowe aktywności.</p></div>
+  <div class="card"><h2>🎮 Gra</h2><p>START / STOP i dzienny czas.</p></div>
+  <div class="card"><h2>💬 Rodzic i ja</h2><p>Wiadomości, wspólne sprawy i „Potrzebuję pomocy”.</p></div>
+  <div class="card"><h2>⭐ Misje</h2><p>Regularność, inicjatywa i małe sukcesy.</p></div>
+</div>
+</section>
+
+<section id="parent" class="panel hidden">
+<div class="grid">
+  <div class="card"><h2>👀 Co u dziecka</h2><p>Najbliższe zadania, terminy i bieżący status.</p></div>
+  <div class="card"><h2>🆘 Potrzebuje pomocy</h2><div id="helpTasks"></div></div>
+  <div class="card"><h2>📆 Terminy</h2><p>Pełny widok terminów i zależności.</p></div>
+  <div class="card wide">
+    <h2>🔄 Wspólne zadania</h2>
+    <div id="parentTasks"></div>
+    <div class="row">
+      <input id="newTask" placeholder="Dodaj wspólne zadanie">
+      <select id="owner"><option>Dziecko</option><option>Rodzic</option><option>Wspólne</option></select>
+      <select id="visibility"><option>Wspólne</option><option>Dziecko</option><option>Tylko rodzic</option></select>
+    </div>
+    <button class="primary" id="addTask">Dodaj zadanie</button>
+  </div>
+  <div class="card"><h2>📚 Szkoła — administracja</h2><p>Pełny widok szkoły i dokumentów.</p></div>
+  <div class="card"><h2>🔒 Tylko rodzic</h2><p>Dokumenty, korespondencja, zdrowie, finanse i zaplecze.</p></div>
+  <div class="card"><h2>🗄️ Archiwum</h2><p>Zakończone rekordy bez usuwania historii.</p></div>
+</div>
+</section>
+</div>
+
+<script>
+const moods=["🤩 Mega dzień","😄 Super","😊 Fajnie","🙂 Dobrze","😌 Spokojnie","😎 Pewnie","🥳 Dumny","🤔 Zastanawiam się","😐 Normalnie","😶 Nie wiem","😕 Słabiej","😟 Martwię się","😞 Smutno","😤 Zły","😴 Zmęczony","🤯 Dużo się działo"];
+let selectedMood="";
+let tasks=JSON.parse(localStorage.getItem("pcd_tasks")||"null")||[
+ {name:"Przygotować rzeczy na jutro",status:"Do zrobienia",owner:"Dziecko",visibility:"Wspólne",help:false},
+ {name:"Sprawdzić termin wyjścia",status:"Czeka",owner:"Rodzic",visibility:"Wspólne",help:true}
+];
+let moodEntries=JSON.parse(localStorage.getItem("pcd_moods")||"[]");
+
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+ document.querySelectorAll(".panel").forEach(x=>x.classList.add("hidden"));
+ document.getElementById(b.dataset.panel).classList.remove("hidden");
+});
+
+const moodsEl=document.getElementById("moods");
+moods.forEach(m=>{const b=document.createElement("button");b.className="mood";b.textContent=m;b.onclick=()=>{selectedMood=m;document.querySelectorAll(".mood").forEach(x=>x.classList.remove("selected"));b.classList.add("selected")};moodsEl.appendChild(b)});
+
+function save(){
+ localStorage.setItem("pcd_tasks",JSON.stringify(tasks));
+ localStorage.setItem("pcd_moods",JSON.stringify(moodEntries));
+ render();
+}
+function childStatus(s){return s==="W toku"?"Robię":s==="Gotowe"?"Gotowe":"Do zrobienia"}
+function render(){
+ document.getElementById("childTasks").innerHTML=tasks.filter(t=>t.visibility!=="Tylko rodzic"&&t.owner!=="Rodzic").map(t=>'<div class="item"><b>'+t.name+'</b><div class="muted">'+childStatus(t.status)+'</div></div>').join("")||"<span class='muted'>Brak zadań</span>";
+ document.getElementById("helpTasks").innerHTML=tasks.filter(t=>t.help).map(t=>'<div class="item">'+t.name+'</div>').join("")||"<span class='muted'>Brak próśb o pomoc</span>";
+ document.getElementById("parentTasks").innerHTML=tasks.map((t,i)=>'<div class="item"><b>'+t.name+'</b><div class="row"><span class="pill">'+t.status+'</span><span class="pill">'+t.owner+'</span><span class="pill">'+t.visibility+'</span><button onclick="advance('+i+')">Zmień status</button><button onclick="toggleHelp('+i+')">'+(t.help?"Pomoc ✓":"Potrzebuje pomocy")+'</button></div></div>').join("");
+ document.getElementById("moodHistory").innerHTML=moodEntries.slice().reverse().slice(0,5).map(e=>'<div class="item"><b>'+e.mood+'</b> — '+e.sentence+'<div class="muted">'+e.date+'</div></div>').join("");
+}
+window.advance=i=>{const flow=["Do zrobienia","W toku","Czeka","Gotowe","Archiwum"];tasks[i].status=flow[(flow.indexOf(tasks[i].status)+1)%flow.length];save()}
+window.toggleHelp=i=>{tasks[i].help=!tasks[i].help;save()}
+
+document.getElementById("saveMood").onclick=()=>{
+ const sentence=document.getElementById("daySentence").value.trim();
+ if(!selectedMood||!sentence)return alert("Wybierz buźkę i wpisz jedno zdanie.");
+ moodEntries.push({mood:selectedMood,sentence,date:new Date().toLocaleDateString("pl-PL")});
+ document.getElementById("daySentence").value="";selectedMood="";document.querySelectorAll(".mood").forEach(x=>x.classList.remove("selected"));save();
+};
+document.getElementById("saveNote").onclick=()=>{const v=document.getElementById("quickNote").value.trim();if(v){alert("Notatka zapisana lokalnie w prototypie.");document.getElementById("quickNote").value=""}};
+document.getElementById("addTask").onclick=()=>{const name=document.getElementById("newTask").value.trim();if(!name)return;tasks.push({name,status:"Do zrobienia",owner:document.getElementById("owner").value,visibility:document.getElementById("visibility").value,help:false});document.getElementById("newTask").value="";save()};
+render();
+</script>
+</body>
+</html>
