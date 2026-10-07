@@ -1,0 +1,11 @@
+{
+  "name":"FamilySyncKids++ Local",
+  "short_name":"FamilySyncKids++",
+  "description":"Lokalny wspólny panel rodzica i dziecka.",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#f5f7fb",
+  "theme_color":"#111827",
+  "lang":"pl"
+}
