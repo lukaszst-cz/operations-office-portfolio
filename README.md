@@ -17,7 +17,6 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego, 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
 - **PrintFlow QA i automatyzacja testów:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
 - **TransportFlow 360:** model pracy firmy transportowej dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki) i 26 kierowców. Obejmuje wycenę, zlecenia, dokumenty, role użytkowników, kalkulator stawki, PWA i testy QA.
-- **ZIELONA MARKA WordPress:** autorski, responsywny motyw strony firmowej i portfolio dla studia tworzącego strony internetowe, PHP, CSS, JavaScript, formularz, realizacje i podstawy SEO.
 - **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
 - **DocPilot 4.0.0:** stabilne publiczne wydanie local-first dla Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Dostępne są instalator Windows, wersja Portable ZIP i sumy SHA-256.
@@ -95,7 +94,6 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 | Projekt | Co pokazuje | Osobne repozytorium |
 | --- | --- | --- |
 | Zielona Marka Studio | Responsywna strona demonstracyjna i panel PrintFlow | [zielona-marka-studio](https://github.com/lukaszst-cz/zielona-marka-studio) |
-| Zielona Marka WordPress | Autorski motyw PHP, CSS i JavaScript | [zielona-marka-wordpress](https://github.com/lukaszst-cz/zielona-marka-wordpress) |
 | PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
 | PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
 | TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
