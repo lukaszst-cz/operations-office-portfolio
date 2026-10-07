@@ -504,4 +504,7 @@ if(channel) channel.onmessage=()=>{data=load();renderApp();};
 setInterval(tickTimer,1000);
 renderApp();
 if(!data.settings.child) setTimeout(()=>openSetup(true),50);
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+}
 })();
