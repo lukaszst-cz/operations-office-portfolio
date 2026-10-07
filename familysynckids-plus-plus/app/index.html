@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>FamilySyncKids++ — aplikacja</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="app" class="app">
+<header class="topbar">
+  <div class="brand">
+    <div class="brandmark">FS</div>
+    <div><strong>FamilySyncKids++</strong><span id="familyLabel">lokalny panel rodziny</span></div>
+  </div>
+  <div class="top-actions">
+    <span class="local-pill">● Local-first</span>
+    <button id="backupBtn">Kopia JSON</button>
+    <label class="file-btn">Wczytaj<input id="importFile" type="file" accept="application/json" hidden></label>
+    <button id="settingsBtn">Ustawienia</button>
+  </div>
+</header>
+
+<div class="notice">
+  <strong>Ta wersja zapisuje dane na tym urządzeniu.</strong>
+  <span>Panel rodzica i dziecka korzystają z tych samych rekordów. Synchronizacja między różnymi urządzeniami będzie osobnym modułem.</span>
+</div>
+
+<div class="mode-switch" role="tablist">
+  <button id="childModeBtn" class="active" role="tab">🧒 Panel dziecka</button>
+  <button id="parentModeBtn" role="tab">👨‍👩‍👧 Panel rodzica</button>
+</div>
+
+<nav id="subnav" class="subnav"></nav>
+<main id="main"></main>
+</div>
+
+<dialog id="setupDialog">
+<form method="dialog" class="dialog-card" id="setupForm">
+  <div class="dialog-head"><div><div class="eyebrow">PIERWSZY START</div><h2>Ustaw FamilySyncKids++</h2></div></div>
+  <p class="muted">Podaj tylko nazwę lub nick używany w panelu. Dane pozostają w tej przeglądarce.</p>
+  <label>Nick dziecka<input id="setupChild" autocomplete="off" placeholder="np. Alex" required></label>
+  <label>Nazwa rodzica<input id="setupParent" autocomplete="off" placeholder="np. Mama, Tata, Rodzic" required></label>
+  <div class="dialog-actions"><button value="cancel" id="cancelSetup">Anuluj</button><button class="primary" value="default" id="saveSetupBtn">Zapisz</button></div>
+</form>
+</dialog>
+
+<dialog id="editTaskDialog">
+<form method="dialog" class="dialog-card" id="editTaskForm">
+  <div class="dialog-head"><h2>Edytuj zadanie</h2></div>
+  <input id="editTaskId" type="hidden">
+  <label>Nazwa<input id="editTaskName" required></label>
+  <div class="two">
+    <label>Właściciel<select id="editTaskOwner"><option>Dziecko</option><option>Rodzic</option><option>Wspólne</option></select></label>
+    <label>Widoczność<select id="editTaskVisibility"><option>Wspólne</option><option>Dziecko</option><option>Tylko rodzic</option></select></label>
+  </div>
+  <div class="two">
+    <label>Priorytet<select id="editTaskPriority"><option>Normalny</option><option>Ważny</option><option>Pilny</option></select></label>
+    <label>Termin<input id="editTaskDue" type="date"></label>
+  </div>
+  <div class="dialog-actions"><button value="cancel">Anuluj</button><button class="primary" value="default" id="saveTaskEdit">Zapisz</button></div>
+</form>
+</dialog>
+
+<dialog id="readingDialog">
+<form method="dialog" class="dialog-card" id="readingForm">
+  <div class="dialog-head"><h2>Czytelnia</h2></div>
+  <label>Tytuł książki<input id="readingTitle" required></label>
+  <div class="two">
+    <label>Liczba stron<input id="readingPages" type="number" min="1" required></label>
+    <label>Aktualna strona<input id="readingPage" type="number" min="0"></label>
+  </div>
+  <div class="dialog-actions"><button value="cancel">Anuluj</button><button class="primary" value="default" id="saveReading">Zapisz</button></div>
+</form>
+</dialog>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="./app.js"></script>
+</body>
+</html>
