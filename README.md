@@ -1,4 +1,4 @@
-# Portfolio operacji, danych i procesów firmowych, Łukasz S.
+# Portfolio operacji, danych i procesów firmowych, Łukasz St-cz
 
 Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy operacyjne firmy: sprawy bez właściciela, dokumenty bez statusu, terminy bez kontroli, koszty bez wspólnego obrazu i zlecenia przechodzące przez wiele ról. Modele danych, proste aplikacje, testy QA, strony i formularze są tu dowodem sposobu pracy, a nie listą przypadkowych technologii.
 
@@ -22,6 +22,8 @@ Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy ope
 - **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
 - **DocPilot 4.0.0:** stabilne publiczne wydanie local-first dla Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Dostępne są instalator Windows, wersja Portable ZIP i sumy SHA-256.
 - **DialogNest 5.3.0:** lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot z wyszukiwaniem, projektami, tagami, recovery, szyfrowanymi backupami i aplikacją Windows. Repozytorium pozostaje prywatne, a wydanie jest obecnie udostępniane testerom.
+- **FamilySyncKids++ Local 1.0:** local-first panel organizacji dla rodzica i dziecka. Dwa widoki korzystają z jednego źródła danych dla zadań, rutyn, szkoły, czytania, aktywności, wiadomości i historii. Wersja lokalna działa bez konta i backendu, ma eksport/import JSON; synchronizacja między urządzeniami jest kolejnym etapem.
+- **SpokojnyPC+ 3.1 / Spokojny+:** lokalny opiekun urządzeń z baseline kondycji, monitoringiem, Battery Care, Security Check, historią zmian i DeviceLink. Klient Android korzysta ze wspólnego rdzenia, a sparowany telefon może odczytać status PC bez możliwości zdalnego wykonywania poleceń.
 
 ## Technologie i praktyka inżynierska
 
@@ -29,7 +31,7 @@ Portfolio łączy pracę operacyjną z tworzeniem narzędzi, które można obejr
 
 | Obszar | Potwierdzone kompetencje |
 | --- | --- |
-| Frontend i strony | TypeScript, React, JavaScript ES6, HTML5, CSS3, Tailwind CSS, responsywne interfejsy, PWA i podstawy dostępności |
+| Frontend i strony | TypeScript, React, JavaScript ES6, HTML5, CSS3, Tailwind CSS, C#/.NET, responsywne interfejsy, PWA i podstawy dostępności |
 | Backend i dane | Python, FastAPI, PHP, WordPress, SQLite, SQL, JSON, OCR, modelowanie danych, indeksowanie, walidacja i eksport danych |
 | API i automatyzacja | Projektowanie endpointów HTTP, automatyzacje API, testowanie odpowiedzi JSON, GitHub Actions, PWA, opcjonalny MCP oraz zautomatyzowane kontrole demonstracji |
 | Cloud i wdrożenia | Cloudflare Workers, Cloudflare D1, GitHub Pages, środowiska demonstracyjne i konfiguracja deploymentu |
