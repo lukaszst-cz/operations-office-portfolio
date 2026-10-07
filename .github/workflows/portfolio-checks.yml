@@ -30,6 +30,18 @@ jobs:
       - name: Check portfolio JavaScript syntax
         run: node --check script.js
 
+      - name: Check FamilySyncKids++ JavaScript syntax
+        run: node --check familysynckids-plus-plus/app/app.js
+
+      - name: Check FamilySyncKids++ required UI
+        run: |
+          grep -q 'id="childModeBtn"' familysynckids-plus-plus/app/index.html
+          grep -q 'id="parentModeBtn"' familysynckids-plus-plus/app/index.html
+          grep -q 'id="setupDialog"' familysynckids-plus-plus/app/index.html
+          grep -q 'sendMessage' familysynckids-plus-plus/app/app.js
+          grep -q 'toggleTaskHelp' familysynckids-plus-plus/app/app.js
+          grep -q 'BroadcastChannel' familysynckids-plus-plus/app/app.js
+
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
