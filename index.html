@@ -2,397 +2,245 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio Łukasza S.: operacje, dokumenty, dane, automatyzacja i działające narzędzia — od Fleet Ops Desk i systemów procesowych po local-first DocPilot.">
-  <meta name="theme-color" content="#0b1220">
-  <title>Łukasz St-cz, Operacje, dane i procesy firmowe</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio Łukasza St-cz: operacje, transport, flota, dokumenty, procesy B2B i praktyczne narzędzia. Zobacz działające flow, portale i aplikacje.">
+  <meta name="theme-color" content="#0a0f18">
+  <meta property="og:title" content="Łukasz St-cz — procesy, operacje i narzędzia">
+  <meta property="og:description" content="Nie tylko opis. Przeklikaj proces transportowy, portal ról, obsługę zlecenia, dokumenty i wybrane aplikacje.">
+  <meta property="og:type" content="website">
+  <title>Łukasz St-cz — operacje, procesy i narzędzia</title>
+  <link rel="stylesheet" href="styles.css?v=20261007">
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Strona główna portfolio">
+    <a class="brand" href="#top" aria-label="Portfolio Łukasza St-cz">
       <span class="brand-mark">ŁS</span>
-      <span>Łukasz St-cz</span>
+      <span class="brand-copy"><b>Łukasz St-cz</b><small>operacje · procesy · narzędzia</small></span>
     </a>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Otwórz menu">Menu</button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav id="mainNav" aria-label="Główna nawigacja">
-      <a href="#wyniki">Wyniki</a>
-      <a href="#najwazniejsze">Główne projekty</a>
-      <a href="publikacje.html">Publikacje</a>
-      <a href="#excel">Excel</a>
-      <a href="#python">Python + SQL</a>
-      <a href="#projekty">Projekty</a>
-      <a href="#film-zielona-marka">Materiał wideo</a>
-      <a href="o-projekcie.html">O projekcie</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#procesy">Procesy</a>
+      <a href="#pracodawca">Dla pracodawcy</a>
+      <a href="#klient">Dla klienta</a>
+      <a href="#aplikacje">Aplikacje</a>
+      <a href="#o-mnie">O mnie</a>
+      <a class="nav-cta" href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow">ROZWIĄZYWANIE PROBLEMÓW OPERACYJNYCH</p>
-        <h1>Pomagam firmom odzyskać kontrolę nad sprawami, dokumentami, terminami i odpowiedzialnością.</h1>
-        <p class="lead">Gdy zapytania są niepełne, dokumenty krążą bez statusu, a terminy i koszty wymagają ciągłego pilnowania, firma traci czas i pieniądze. Od ponad 17 lat porządkuję takie sytuacje w obsłudze B2B i operacjach. Każdy projekt w portfolio pokazuje dowód: problem, model działania i narzędzie, które prowadzi do kolejnego kroku.</p>
+        <p class="eyebrow">OPERACJE · LOGISTYKA · DANE · AUTOMATYZACJA</p>
+        <h1>Porządkuję proces. Potem buduję narzędzie, które pomaga go pilnować.</h1>
+        <p class="lead">Łączę doświadczenie w transporcie, flocie, dokumentacji B2B i produkcji poligraficznej z praktycznym tworzeniem systemów, dashboardów i aplikacji. To portfolio jest zbudowane tak, żeby nie trzeba było wierzyć w opis — można wejść w proces i go przeklikać.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#najwazniejsze">Zobacz projekty operacyjne</a>
-          <a class="button secondary" href="#publikacje">Poznaj sposób pracy</a>
+          <a class="button primary" href="transportflow-360/proces.html">Przejdź przez TransportFlow</a>
+          <a class="button secondary" href="operacje-biuro.html">Profil zawodowy</a>
         </div>
-        <p class="privacy-note">Portfolio zanonimizowane, bez danych firmowych, osobowych i operacyjnych klientów.</p>
+        <p class="micro">Dane w demonstracjach są syntetyczne lub zanonimizowane. Projekty pokazują sposób myślenia, strukturę procesu i jakość wykonania.</p>
       </div>
-      <div class="hero-panel" aria-label="Najważniejsze kompetencje">
-        <div class="status"><span></span> Warszawa i okolice · współpraca także zdalnie</div>
-        <h2>Problem → kontrola</h2>
-        <ul class="skill-list">
-          <li><strong>Rozproszone sprawy</strong><span>status, właściciel i następny krok</span></li>
-          <li><strong>Niepełne dokumenty</strong><span>kontrola, termin i rozliczenie</span></li>
-          <li><strong>Koszty bez obrazu</strong><span>rejestr, wskaźnik i decyzja</span></li>
-          <li><strong>Niejasne zapytania</strong><span>formularz, komplet danych i wycena</span></li>
-        </ul>
+
+      <aside class="story-panel" aria-label="Schemat pracy">
+        <p class="panel-label">RDZEŃ MOJEJ PRACY</p>
+        <ol class="story-flow">
+          <li><span>01</span><div><b>Wejście</b><small>zapytanie, dokument, zlecenie</small></div></li>
+          <li><span>02</span><div><b>Kontrola</b><small>kompletność, koszt, termin, ryzyko</small></div></li>
+          <li><span>03</span><div><b>Realizacja</b><small>właściciel, status, następny krok</small></div></li>
+          <li><span>04</span><div><b>Dowód</b><small>CMR, POD, protokół, historia</small></div></li>
+          <li><span>05</span><div><b>Zamknięcie</b><small>rozliczenie, KPI, wnioski</small></div></li>
+        </ol>
+      </aside>
+    </section>
+
+    <section class="section route-section" aria-labelledby="route-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">SZYBKI START</p>
+        <h2 id="route-title">Wejdź tam, gdzie jest dla Ciebie najwięcej wartości.</h2>
+      </div>
+      <div class="route-grid">
+        <a class="route-card" href="#pracodawca">
+          <span>01</span>
+          <div><b>Jestem pracodawcą</b><p>Profil zawodowy, procesy operacyjne, transport, flota i praktyczna praca z danymi.</p></div>
+          <i>→</i>
+        </a>
+        <a class="route-card" href="#klient">
+          <span>02</span>
+          <div><b>Jestem klientem</b><p>Strony, formularze, obsługa zapytań, dokumenty i proste systemy dla firmy.</p></div>
+          <i>→</i>
+        </a>
+        <a class="route-card" href="#aplikacje">
+          <span>03</span>
+          <div><b>Chcę zobaczyć narzędzia</b><p>DocPilot, FamilySyncKids++, narzędzia dokumentowe i pozostałe dema.</p></div>
+          <i>→</i>
+        </a>
       </div>
     </section>
 
-    <section class="metrics section" id="wyniki" aria-labelledby="wyniki-title">
+    <section class="section" id="procesy" aria-labelledby="procesy-title">
       <div class="section-heading">
-        <p class="eyebrow">DOWODY, NIE DEKLARACJE</p>
-        <h2 id="wyniki-title">Wyniki pracy operacyjnej</h2>
+        <p class="eyebrow">NAJLEPSZE DOWODY</p>
+        <h2 id="procesy-title">Trzy procesy, które można realnie przeklikać.</h2>
+        <p class="section-lead">Zamiast kilkunastu równorzędnych projektów — trzy przykłady pokazujące pełny tok informacji: od wejścia sprawy do jej zamknięcia.</p>
       </div>
-      <div class="metric-grid">
-        <article><span class="metric-value">17+</span><h3>lat doświadczenia</h3><p>Koordynacja, administracja, B2B i produkcja.</p></article>
-        <article><span class="metric-value">18</span><h3>pojazdów we flocie</h3><p>W tym 3 kontenerowe z windą; przeglądy, UDT, szkody i koszty.</p></article>
-        <article><span class="metric-value">−39%</span><h3>zwrotów, sieć A</h3><p>Efekt analizy przyczyn i działań korygujących.</p></article>
-        <article><span class="metric-value">−32%</span><h3>zwrotów, sieć B</h3><p>Poprawa jakości koordynacji i realizacji.</p></article>
-      </div>
-    </section>
 
-    <section class="section featured-projects" id="najwazniejsze" aria-labelledby="najwazniejsze-title">
-      <div class="section-heading">
-        <p class="eyebrow">NAJWAŻNIEJSZE REALIZACJE</p>
-        <h2 id="najwazniejsze-title">Problemy firm przełożone na działające modele pracy</h2>
-        <p class="lead">To nie są makiety funkcji. Każdy przykład odpowiada na konkretny problem: jak nie zgubić sprawy, jak dopilnować dokumentu, jak zobaczyć koszt, jak połączyć role i jak przeprowadzić zlecenie od początku do rozliczenia.</p>
-      </div>
-      <div class="featured-grid">
-        <article class="featured-card featured-card-primary">
-          <p class="case-number">DOCPILOT · STABILNE 4.0.0 · LIFE PILOT PREVIEW</p>
-          <h3>Problem: dokumenty, terminy i działania są rozproszone po folderach</h3>
-          <p>DocPilot pomaga ogarnąć skany, PDF-y, faktury, umowy i pisma, zanim zamienią się w folder pełen przypadkowych nazw. Odczytuje dokument, wyłapuje ważne dane i terminy, pomaga go znaleźć później i pokazuje proponowaną zmianę zanim cokolwiek zrobi z plikiem.</p>
-          <div class="featured-stats"><span><b>Lokalnie</b> dokumenty zostają na komputerze</span><span><b>OCR</b> odczytuje skany i PDF-y</span><span><b>Kontrola</b> najpierw sprawdzasz, potem zatwierdzasz</span><span><b>Windows</b> zwykły instalator i wersja Portable</span></div>
-          <a href="docpilot/">Zobacz DocPilot →</a>
+      <article class="project-feature transport-feature">
+        <div class="project-copy">
+          <p class="project-kicker">01 · TRANSPORT / FLOTA / DOKUMENTY</p>
+          <h3>TransportFlow 360</h3>
+          <p>Najbardziej przekrojowy projekt. Pokazuje zlecenie transportowe od zapytania i kalkulacji przez kierowcę, pojazd, dokumenty, realizację i POD aż po fakturę i KPI.</p>
+          <div class="flow-line" aria-label="Skrócony proces TransportFlow">
+            <span>Zapytanie</span><b>→</b><span>Wycena</span><b>→</b><span>Plan</span><b>→</b><span>Transport</span><b>→</b><span>POD</span><b>→</b><span>Rozliczenie</span>
+          </div>
+          <div class="action-row">
+            <a class="button primary" href="transportflow-360/proces.html">Mapa procesu A–Z</a>
+            <a class="button secondary" href="transportflow-360/portal/">Portal — zmień rolę</a>
+            <a class="text-link" href="transportflow-360/kalkulator.html">Kalkulator stawki →</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <img src="transportflow-360/assets/social-preview.png" alt="Podgląd projektu TransportFlow 360">
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <article class="project-card">
+          <p class="project-kicker">02 · OBSŁUGA USŁUGI</p>
+          <h3>Auto Naprawa — od zgłoszenia do follow-upu</h3>
+          <p>Przykład procesu dla firmy usługowej: diagnoza, kosztorys, zgoda klienta, części, wykonanie, kontrola jakości, faktura i historia.</p>
+          <div class="flow-mini"><span>Zgłoszenie</span><span>Diagnoza</span><span>Zgoda</span><span>Realizacja</span><span>QC</span><span>Faktura</span></div>
+          <div class="action-row">
+            <a class="button secondary" href="auto-naprawa-preview/">Przeklikaj proces</a>
+            <a class="text-link" href="auto-naprawa-preview/portal/?role=manager">Panel kierownika →</a>
+          </div>
         </article>
-        <article class="featured-card featured-card-primary">
-          <p class="case-number">DIALOGNEST · v3.1 · PRIVATE PREVIEW</p>
-          <h3>Problem: rozmowy z różnymi asystentami AI są rozrzucone po kilku usługach</h3>
-          <p>DialogNest zbiera eksporty rozmów z ChatGPT, Claude, Gemini, Copilot i plików tekstowych w jednym lokalnym archiwum. Pozwala je przeszukiwać, oznaczać, grupować w projekty, porównywać duplikaty oraz tworzyć szyfrowane kopie zapasowe — bez wysyłania całego archiwum do zewnętrznej bazy.</p>
-          <div class="featured-stats"><span><b>Lokalnie</b> IndexedDB i prywatne archiwum</span><span><b>Import</b> wiele źródeł i archiwa ZIP/TGZ</span><span><b>Recovery</b> snapshots, kosz i cofanie importu</span><span><b>Windows</b> natywna aplikacja Tauri + PWA</span></div>
-          <a href="dialognest/">Zobacz DialogNest →</a>
-        </article>
-        <article class="featured-card featured-card-primary">
-          <p class="case-number">01 / OPERACJE I FLOTA</p>
-          <h3>Problem: flota, terminy i koszty wymagają ciągłego pilnowania</h3>
-          <p>Model pracy z 18 pojazdami łączy serwis, dokumenty, najem, leasing, ubezpieczenia, szkody oraz wyposażenie. Każdy obszar ma rejestr, termin, odpowiedzialność i punkt kontroli.</p>
-          <div class="featured-stats"><span><b>Flota</b> 18 pojazdów</span><span><b>Terminy</b> serwis i UDT</span><span><b>Koszty</b> porównania okresów</span><span><b>Sprawy</b> status i właściciel</span></div>
-          <a href="case-studies/01-operacje-i-flota.md">Zobacz opis operacji →</a>
-        </article>
-        <article class="featured-card featured-card-primary green-project">
-          <p class="case-number">02 / TRANSPORTFLOW</p>
-          <h3>Jeden proces zamiast Excela, telefonu i kilku osobnych rejestrów</h3>
-          <p>Projekt pokazuje obsługę zlecenia od wyceny i przydziału auta po dokumenty, realizację, marżę, dostawę i rozliczenie. Pierwsza wersja pracuje na modelu 20 zestawów i 26 kierowców. Druga rozwija ten sam układ do 50 zestawów i 58 kierowców.</p>
-          <div class="feature-tags"><span>20 i 50 zestawów</span><span>26 i 58 kierowców</span><span>role i KPI</span><span>testy i CI</span></div>
-          <div class="feature-actions"><a href="transportflow-360/">Otwórz demo →</a><a href="https://github.com/lukaszst-cz/operations-office-portfolio/tree/main/transportflow-control-center">Zobacz większą wersję →</a></div>
-        </article>
-        <article class="featured-card">
-          <p class="case-number">03 / PRINTFLOW 360</p>
-          <h3>Problem: działy pracują na wspólnym zleceniu, lecz bez wspólnego obrazu</h3>
-          <p>44-arkuszowy model łączy ofertę, produkcję, jakość, logistykę, fakturowanie, kadry, nieruchomość i flotę. Pokazuje, jak utrzymać wspólny obraz pracy między działami.</p>
-          <a href="case-studies/05-printflow-360.md">Zobacz studium →</a>
-        </article>
-        <article class="featured-card">
-          <p class="case-number">04 / SECOND BRAIN</p>
-          <h3>Problem: ważna wiedza znika między dokumentami, wiadomościami i zadaniami</h3>
-          <p>Centrum dowodzenia łączy szybki zapis, priorytety, terminy, aktywne sprawy, projekty i dokumenty. Informacja ma właściwe miejsce, status oraz następne działanie.</p>
-          <a href="case-studies/04-second-brain.md">Zobacz pełny opis →</a>
+
+        <article class="project-card">
+          <p class="project-kicker">03 · PRODUKCJA / PREPRESS / ORDER-TO-CASH</p>
+          <h3>PrintFlow 360</h3>
+          <p>Projekt bliski mojemu doświadczeniu DTP i produkcyjnemu: zapytanie, oferta, przygotowanie plików, produkcja, wysyłka, faktura i analiza wyniku.</p>
+          <div class="flow-mini"><span>Brief</span><span>Oferta</span><span>Prepress</span><span>Produkcja</span><span>Wysyłka</span><span>KPI</span></div>
+          <div class="action-row">
+            <a class="button secondary" href="https://lukaszst-cz.github.io/printflow-360/">Otwórz projekt</a>
+            <a class="text-link" href="https://lukaszst-cz.github.io/printflow-360/portal/">Portal ról →</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="section cases" id="technologie" aria-labelledby="technologie-title">
-      <div class="section-heading">
-        <p class="eyebrow">TECHNOLOGIE POTWIERDZONE PRACĄ</p>
-        <h2 id="technologie-title">Każda technologia ma w portfolio konkretne zastosowanie</h2>
-        <p class="lead">Kod ma sens wtedy, gdy rozwiązuje problem procesu. Poniżej są narzędzia, ich rola oraz projekt, w którym można je sprawdzić.</p>
+    <section class="section audience-section" id="pracodawca" aria-labelledby="pracodawca-title">
+      <div class="audience-copy">
+        <p class="eyebrow">DLA PRACODAWCY</p>
+        <h2 id="pracodawca-title">Najpierw doświadczenie. Potem dowód, jak organizuję pracę.</h2>
+        <p>Najmocniej pasuję do ról łączących administrację, logistykę, flotę, dokumentację, obsługę B2B i koordynację operacyjną. Narzędzia są dodatkiem — mają pokazać, że potrafię przełożyć proces na dane, statusy i kontrolę.</p>
+        <div class="action-row">
+          <a class="button primary" href="operacje-biuro.html">Zobacz profil zawodowy</a>
+          <a class="button secondary" href="transportflow-360/portal/">Sprawdź portal ról</a>
+        </div>
       </div>
-      <div class="case-grid">
-        <article class="case-card accent"><p class="case-number">PYTHON · FASTAPI · OCR · SQLITE</p><h3>DocPilot: lokalne przetwarzanie dokumentów i terminów</h3><p>FastAPI spina lokalny backend, OCR odczytuje skany i PDF-y, SQLite przechowuje indeks i historię, a wyszukiwanie oraz Q&A działają lokalnie. Projekt obejmuje także PWA, wersję Windows, powiadomienia, backup, redakcję danych i opcjonalny MCP.</p><a href="https://github.com/lukaszst-cz/docpilot">Zobacz DocPilot →</a></article>
-        <article class="case-card accent"><p class="case-number">PYTHON · SQLITE · SQL</p><h3>Dane operacyjne, statusy i kontrola kosztów</h3><p>Python obsługuje logikę, SQLite przechowuje relacje, a SQL pozwala wyciągnąć z danych informację potrzebną do decyzji. Dowód: Fleet Ops Desk oraz PrintFlow Control Center.</p><a href="https://github.com/lukaszst-cz/fleet-ops-desk">Zobacz Fleet Ops Desk →</a></article>
-        <article class="case-card"><p class="case-number">JAVASCRIPT · HTML · CSS</p><h3>Interfejs, w którym widać proces i następny krok</h3><p>Strony, formularze, widoki ról, filtrowanie i PWA pokazują informację właściwej osobie bez przeciążania procesu. Dowód: Zielona Marka Portal i TransportFlow 360.</p><a href="zielona-marka/portal/o-aplikacji.html">Zobacz portal i dokumentację →</a></article>
-        <article class="case-card accent"><p class="case-number">PYTHON · SQLITE · QA</p><h3>TransportFlow — prototyp Python/SQLite</h3><p>Lokalny backend demonstracyjny dla modelu 20 zestawów i 26 kierowców: zlecenia, dokumenty, koszty, marża, blokady procesu oraz automatyczne testy danych.</p><a href="https://github.com/lukaszst-cz/transportflow-control-center">Zobacz prototyp →</a></article>
-        <article class="case-card"><p class="case-number">API · JSON · CLOUDFLARE</p><h3>Przepływ danych między widokiem a logiką procesu</h3><p>Endpointy HTTP i JSON pokazują, jak dashboard, zlecenie, eksport i zmiana statusu mogą działać w jednym modelu. W projektach zastosowano także środowisko Cloudflare Workers.</p><a href="https://github.com/lukaszst-cz/transportflow-control-center">Zobacz architekturę projektu →</a></article>
-        <article class="case-card accent"><p class="case-number">QA · TESTY · GITHUB ACTIONS</p><h3>Sprawdzenie rozwiązania przed przekazaniem dalej</h3><p>Przypadki pozytywne, negatywne i graniczne, smoke, regresja, testy API i SQLite oraz automatyczna kontrola w GitHub Actions. Dowód: 16 przypadków i 20 testów Python w PrintFlow Control Center.</p><a href="https://github.com/lukaszst-cz/printflow-control-center">Zobacz kod i materiały QA →</a></article>
+      <div class="proof-list">
+        <article><b>Transport i flota</b><p>CMR, WZ, karty drogowe, terminy, serwis, koszty, szkody, leasing i najem.</p></article>
+        <article><b>Koordynacja B2B</b><p>Od zapytania i specyfikacji przez realizację do rozliczenia lub reklamacji.</p></article>
+        <article><b>DTP / prepress / produkcja</b><p>Pliki, soft proof, druk, introligatornia, terminy, wykonawcy i kontrola jakości.</p></article>
+        <article><b>Dane i narzędzia</b><p>Excel, SQL, Python, Notion, Google Workspace i lekkie aplikacje wspierające proces.</p></article>
       </div>
     </section>
 
-    <section class="section cases" id="portfolio" aria-labelledby="portfolio-title">
+    <section class="section audience-section reverse" id="klient" aria-labelledby="klient-title">
+      <div class="audience-copy">
+        <p class="eyebrow">DLA KLIENTA</p>
+        <h2 id="klient-title">Najpierw problem biznesowy. Technologia dopiero później.</h2>
+        <p>Przy stronie lub prostym systemie zaczynam od pytania: jaka informacja dziś ginie, kto musi jej szukać i co powinno wydarzyć się automatycznie albo jednym kliknięciem.</p>
+        <div class="action-row">
+          <a class="button primary" href="https://zielona-marka.pl/">Zielona Marka</a>
+          <a class="button secondary" href="https://lead-offer-zm.pages.dev/">Obsługa zapytania — demo</a>
+        </div>
+      </div>
+      <div class="client-grid">
+        <a href="https://zielona-marka.pl/"><b>Strona i pierwszy kontakt</b><p>Oferta, kwalifikacja zapytania i czytelny następny krok.</p><span>Otwórz →</span></a>
+        <a href="https://lead-offer-zm.pages.dev/"><b>Lead & Offer Copilot</b><p>Od wiadomości klienta do braków, szkicu odpowiedzi i statusu sprawy.</p><span>Uruchom →</span></a>
+        <a href="https://document-checker-zm.pages.dev/"><b>Document Checker</b><p>Wstępna kontrola CSV, Excela i PDF przed wysłaniem.</p><span>Uruchom →</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="aplikacje" aria-labelledby="apps-title">
       <div class="section-heading row">
-        <div><p class="eyebrow">STUDIA PRZYPADKU</p><h2 id="portfolio-title">Dowody: od problemu operacyjnego do działającego rozwiązania</h2></div>
-        <div class="filters" role="group" aria-label="Filtruj studia przypadku">
-          <button class="filter active" data-filter="all">Wszystkie</button>
-          <button class="filter" data-filter="operations">Operacje</button>
-          <button class="filter" data-filter="office">Administracja</button>
-          <button class="filter" data-filter="data">Dane i automatyzacja</button>
+        <div>
+          <p class="eyebrow">WYBRANE APLIKACJE</p>
+          <h2 id="apps-title">Mniej projektów na pierwszym planie. Więcej rzeczy do sprawdzenia.</h2>
+          <p class="section-lead">Poniżej trzy publiczne przykłady. Pełny katalog pozostaje na osobnej stronie, żeby główne portfolio nie zamieniało się w listę repozytoriów.</p>
         </div>
+        <a class="button secondary" href="aplikacje.html">Wszystkie aplikacje</a>
       </div>
-      <div class="case-grid">
-        <article class="case-card" data-category="operations office">
-          <p class="case-number">01 / OPERACJE</p>
-          <h3>Koordynacja floty i ciągłości pracy</h3>
-          <p>System kontroli 18 pojazdów w latach 2018–2024: serwis, 3 kontenery z windą, 11 leasingów, najem, kaucje, ubezpieczenia, szkody i wyposażenie taxi.</p>
-          <ul><li>porównania okres do okresu</li><li>pełniejsza kontrola terminów i kosztów</li><li>czytelny obieg informacji</li></ul>
-          <a href="case-studies/01-operacje-i-flota.md">Czytaj opis →</a>
+      <div class="apps-grid">
+        <article class="app-card">
+          <div class="app-top"><span>WINDOWS · LOCAL-FIRST</span><i>publiczne</i></div>
+          <h3>DocPilot</h3>
+          <p>OCR, terminy, wyszukiwanie, duplikaty, porównywanie dokumentów i bezpieczne operacje na plikach.</p>
+          <a href="docpilot/">Zobacz aplikację →</a>
         </article>
-        <article class="case-card" data-category="office operations">
-          <p class="case-number">02 / DOKUMENTACJA</p>
-          <h3>Kontrola dokumentów transportowych</h3>
-          <p>Weryfikacja CMR, WZ i kart drogowych, wyjaśnianie braków oraz cyfrowe porządkowanie dokumentacji do rozliczeń.</p>
-          <ul><li>kontrola kompletności</li><li>jasne statusy dokumentów</li><li>szybsze wyjaśnianie rozbieżności</li></ul>
-          <a href="case-studies/02-dokumentacja-transportowa.md">Czytaj opis →</a>
+        <article class="app-card">
+          <div class="app-top"><span>RODZINA · PWA</span><i>Local 1.0</i></div>
+          <h3>FamilySyncKids++</h3>
+          <p>Dwa widoki jednego systemu: rodzic i dziecko pracują na wspólnych zadaniach, rutynach i historii.</p>
+          <a href="familysynckids-plus-plus/app/">Uruchom →</a>
         </article>
-        <article class="case-card" data-category="operations office">
-          <p class="case-number">03 / B2B</p>
-          <h3>Obsługa klientów i koordynacja produkcji</h3>
-          <p>Łączenie wymagań klienta z DTP, produkcją, introligatornią, magazynem i transportem, od oferty do reklamacji.</p>
-          <ul><li>−39% zwrotów: sieć detaliczna A</li><li>−32% zwrotów: sieć detaliczna B</li><li>pełna odpowiedzialność za realizację</li></ul>
-          <a href="case-studies/03-obsluga-b2b-i-produkcja.md">Czytaj opis →</a>
-        </article>
-        <article class="case-card accent" data-category="data office">
-          <p class="case-number">04 / DANE I WIEDZA</p>
-          <h3>Second Brain, organizacja wiedzy</h3>
-          <p>Struktura do porządkowania dokumentów, baz i powiązań, wspierana przez automatyzację oraz kontrolę jakości informacji.</p>
-          <div class="mini-metrics"><span><b>Start</b> szybki zapis</span><span><b>Dziś</b> priorytety</span><span><b>Terminy</b> monitoring</span><span><b>Projekty</b> działania</span></div>
-          <a href="case-studies/04-second-brain.md">Czytaj opis →</a>
-        </article>
-        <article class="case-card accent" data-category="operations office data">
-          <p class="case-number">05 / PRINTFLOW 360</p>
-          <h3>Pełny proces poligraficzny w Excelu</h3>
-          <p>Model Order-to-Cash łączący sprzedaż, DTP, trzy zmiany produkcyjne, introligatornię, jakość, logistykę, fakturowanie, kadry, nieruchomość i flotę.</p>
-          <ul><li>44 połączone arkusze</li><li>499 zdefiniowanych pól</li><li>120 syntetycznych zleceń</li></ul>
-          <a href="case-studies/05-printflow-360.md">Czytaj opis →</a>
-        </article>
-        <article class="case-card" data-category="office data">
-          <p class="case-number">06 / O PORTFOLIO</p>
-          <h3>Od doświadczenia do strony online</h3>
-          <p>Opis celu portfolio, wykorzystanych technologii i zasad anonimizacji. Materiał wyjaśnia, dlaczego projekty powstały oraz jakie kompetencje prezentują.</p>
-          <ul><li>HTML, CSS i JavaScript</li><li>GitHub oraz GitHub Pages</li><li>Excel, Python, QA i analiza procesów</li></ul>
-          <a href="o-projekcie.html">Zobacz opis →</a>
-        </article>
-        <article class="case-card accent" data-category="operations office data">
-          <p class="case-number">07 / PWA I QA</p>
-          <h3>ZIELONA MARKA, portal klienta i działów</h3>
-          <p>Instalowalna aplikacja PWA pokazująca status zlecenia dla klienta oraz kolejki pracy dla handlu, produkcji, jakości, logistyki i administracji.</p>
-          <ul><li>portal klienta i panel ról</li><li>Android, iPhone i iPad bez sklepu</li><li>Python, SQLite, JSON i pakiet QA</li></ul>
-          <a href="zielona-marka/">Zobacz projekt →</a>
-        </article>
-        <article class="case-card accent" data-category="operations office data">
-          <p class="case-number">08 / TRANSPORTFLOW 360</p>
-          <h3>Transport ciężki, taxi i kontenery, proces A–Z</h3>
-          <p>Model od zapytania ofertowego i kalkulacji stawki po czas kierowcy, dokumenty, monitoring, dostawę, fakturę i płatność.</p>
-          <ul><li>20 zestawów: 12 chłodni, 4 cysterny i 4 plandeki</li><li>osobne moduły taxi oraz 3 kontenerów z windą</li><li>Excel, PWA, Python, SQLite i QA</li></ul>
-          <a href="transportflow-360/">Zobacz projekt →</a>
-        </article>
-        <article class="case-card accent" data-category="operations office data">
-          <p class="case-number">09 / WORKSHOPFLOW 360</p>
-          <h3>Warsztat samochodowy, proces i panel 20-osobowego zespołu</h3>
-          <p>Rynkowa symulacja niezależnego serwisu: od rezerwacji i diagnozy po kosztorys, zgodę, części, naprawę, kontrolę jakości, fakturę i wydanie auta.</p>
-          <ul><li>14 kontrolowanych etapów obsługi</li><li>9 widoków ról i portal klienta</li><li>KPI, obciążenie 8 stanowisk i dane syntetyczne</li></ul>
-          <a href="workshopflow-360/">Zobacz projekt →</a>
-        </article>
-        <article class="case-card accent" data-category="operations office data web">
-          <p class="case-number">10 / AUTO NAPRAWA, PREZENTACJA KLIENTA</p>
-          <h3>Strona warsztatu, portal klienta i panel zarządzania</h3>
-          <p>Kompletna wersja pokazowa dla klienta: strona usługowa, status naprawy, widoki pracowników, pełny panel kierownika oraz demonstracja faktur i KSeF.</p>
-          <ul><li>publiczna strona do swobodnego przeklikania</li><li>portal klienta i pełny widok kierownika</li><li>proces od przyjęcia pojazdu do faktury</li></ul>
-          <a href="auto-naprawa-preview/">Otwórz prezentację →</a>
-        </article>
-        <article class="case-card accent" data-category="operations office data web">
-          <p class="case-number">12 / ZIELONA-MARKA.PL</p>
-          <h3>Strona sprzedażowa, kwalifikacja zapytań i obsługa klienta</h3>
-          <p>Rozwijana strona usługowa, która prowadzi klienta od poznania oferty do konkretnego zapytania, a właścicielowi porządkuje pierwszy kontakt i kolejne kroki realizacji.</p>
-          <ul><li>responsywny układ i dopracowana nawigacja mobilna</li><li>formularz zbierający dane potrzebne do wyceny</li><li>Studio z widokiem procesu i statusów</li></ul>
-          <a href="https://zielona-marka.pl/">Otwórz działającą stronę →</a>
-        </article>
-        <article class="case-card accent" data-category="office data web">
-          <p class="case-number">13 / OBSŁUGA ZAPYTAŃ I OFERT</p>
-          <h3>Od wiadomości klienta do zatwierdzonej odpowiedzi</h3>
-          <p>Demonstracja procesu, w którym wiadomość zostaje uporządkowana, braki są widoczne, powstaje szkic odpowiedzi i oferty, a sprawa trafia do lekkiego CRM-u.</p>
-          <ul><li>różne wymagania dla usług, warsztatu, transportu i B2B</li><li>szkic odpowiedzi, oferty i następnego kroku</li><li>człowiek zatwierdza treść przed wysłaniem</li></ul>
-          <a href="case-studies/08-obsluga-zapytan-i-ofert.md">Czytaj opis →</a>
-        </article>
-        <article class="case-card" data-category="office data">
-          <p class="case-number">14 / KONTROLA DOKUMENTÓW</p>
-          <h3>Sprawdzenie danych przed wysłaniem do klienta</h3>
-          <p>Praktyczne narzędzie do wstępnej kontroli danych z CSV, Excela i PDF: pola wymagane, NIP, data, e-mail, kwoty netto, brutto i VAT oraz prawdopodobne duplikaty.</p>
-          <ul><li>kontrola wykonywana lokalnie w przeglądarce</li><li>normalizacja danych i eksport CSV</li><li>jasne ograniczenia: raport wymaga weryfikacji osoby odpowiedzialnej</li></ul>
-          <a href="case-studies/09-kontrola-dokumentow.md">Czytaj opis →</a>
-        </article>
-        <article class="case-card" data-category="operations data web">
-          <p class="case-number">15 / MATERIAŁ UZUPEŁNIAJĄCY</p>
-          <h3>Film promocyjny Zielonej Marki</h3>
-          <p>Krótki materiał pokazujący, jak problem niepełnego zapytania można przełożyć na prostą, zrozumiałą komunikację dla klienta.</p>
-          <a href="#film-zielona-marka">Obejrzyj materiał →</a>
+        <article class="app-card">
+          <div class="app-top"><span>DOKUMENTY · WEB</span><i>demo</i></div>
+          <h3>Document Checker</h3>
+          <p>Prosty przykład walidacji danych przed wysłaniem — bez udawania pełnego systemu DMS.</p>
+          <a href="https://document-checker-zm.pages.dev/">Uruchom →</a>
         </article>
       </div>
     </section>
 
-    <section class="section excel-section" id="transportflow" aria-labelledby="transportflow-title">
-      <div class="excel-copy">
-        <p class="eyebrow">TRANSPORT · FLEET · COMPLIANCE</p>
-        <h2 id="transportflow-title">TransportFlow 360, model 20 zestawów</h2>
-        <p>Model obsługi transportu krajowego i międzynarodowego. Zlecenie przechodzi przez wycenę, dyspozycję, sprawdzenie dokumentów, realizację, dostawę i rozliczenie. W demo można przełączać role i sprawdzić, jakie informacje widzi klient, kierowca, dyspozytor, finanse czy właściciel.</p>
-        <ul class="check-list"><li>20 zestawów ciężkich i 26 kierowców w publicznym demo</li><li>9 widoków ról, portal PWA, kalkulator stawki, KPI i dokumenty</li><li>odczyty tachografu: karta kierowcy co 28 dni, jednostka pojazdowa co 90 dni</li><li>GitHub Actions sprawdza m.in. linki, widoki ról, PWA, mobile i kalkulator</li><li>większa wersja Control Center: 50 zestawów i 58 kierowców</li></ul>
-        <div class="hero-actions">
-          <a class="button primary" href="transportflow-360/">Otwórz projekt</a>
-          <a class="button secondary" href="transportflow-360/assets/TransportFlow_360_demo.xlsx" download>Pobierz skoroszyt .xlsx</a>
-        </div>
-        <p class="privacy-note">Wszystkie rekordy, identyfikatory, kwoty i trasy są demonstracyjne. Publiczny portal symuluje role; produkcyjne ograniczenie dostępu wymaga backendu i uwierzytelniania.</p>
-      </div>
-      <div class="dashboard-preview printflow-preview" aria-label="Podgląd projektu TransportFlow 360">
-        <img class="project-dashboard-image" src="transportflow-360/assets/social-preview.png" alt="TransportFlow 360, ciężarówki, taxi, kontenery i panel zarządzania transportem">
-      </div>
-    </section>
-
-    <section class="section excel-section" id="printflow" aria-labelledby="printflow-title">
-      <div class="excel-copy">
-        <p class="eyebrow">GŁÓWNY PROJEKT EXCEL</p>
-        <h2 id="printflow-title">ZIELONA MARKA PrintFlow 360</h2>
-        <p>Zanonimizowany system operacyjno-finansowy pokazujący pełny cykl realizacji zamówienia w przedsiębiorstwie poligraficzno-logistycznym, od zapytania, oferty i zaliczki po produkcję, wysyłkę, fakturę, reklamację i analizę rentowności.</p>
-        <ul class="check-list"><li>44 arkusze, dashboard KPI, RACI i instrukcje działowe</li><li>pracownicy korzystali z przypisanych arkuszy i zakresów odpowiedzialności</li><li>twórca systemu miał pełny widok zarządczy, kontrolny i raportowy</li><li>rozliczenia pracowników, nieruchomość, media, podatki JDG i flota 18 pojazdów</li></ul>
-        <div class="hero-actions">
-          <a class="button primary" href="assets/ZIELONA_MARKA_PrintFlow_360_demo.xlsx" download>Pobierz pełny skoroszyt .xlsx</a>
-          <a class="button secondary" href="case-studies/05-printflow-360.md">Zobacz studium przypadku</a>
-        </div>
-        <p class="privacy-note">Publiczna wersja pokazuje pełną architekturę wyłącznie jako portfolio. Skoroszyt wykorzystuje tylko dane losowe i zanonimizowane; nie zawiera danych osobowych, rzeczywistych klientów, pracowników, pojazdów ani dokumentów źródłowych.</p>
-      </div>
-      <div class="dashboard-preview printflow-preview" aria-label="Zanonimizowany podgląd dashboardu PrintFlow 360">
-        <img class="project-dashboard-image" src="assets/printflow-360-preview.png" alt="Publiczny podgląd projektu PrintFlow 360 z danymi syntetycznymi">
-      </div>
-    </section>
-
-    <section class="section excel-section" id="excel" aria-labelledby="excel-title">
-      <div class="excel-copy">
-        <p class="eyebrow">DOWÓD UMIEJĘTNOŚCI</p>
-        <h2 id="excel-title">System zarządzania flotą w Excelu</h2>
-        <p>Edytowalny skoroszyt pokazujący obsługę 18 pojazdów w latach 2018–2024. Łączy dokumenty, terminy, koszty, 11 leasingów, najem i kaucje, szkody, ubezpieczenia oraz wyposażenie samochodów do pracy taxi.</p>
-        <ul class="check-list"><li>18 anonimowych pojazdów, w tym 3 kontenerowe z windą</li><li>168 rekordów kosztowych i 21 umów najmu</li><li>11 leasingów z lat 2018–2023 i 5 przykładów wyposażenia taxi</li><li>analizy rok, kwartał, miesiąc, tydzień i dzień</li></ul>
-        <a class="button primary" href="assets/dashboard_operacyjny_demo.xlsx" download>Pobierz skoroszyt .xlsx</a>
-      </div>
-      <div class="dashboard-preview" aria-label="Podgląd demonstracyjnego dashboardu">
-        <div class="dash-top"><span>Dashboard floty</span><small>DANE DEMONSTRACYJNE</small></div>
-        <div class="dash-kpis"><div><small>Pojazdy</small><strong>18</strong></div><div><small>Kontenery + winda</small><strong>3</strong></div><div><small>Kompletność</small><strong>94%</strong></div></div>
-        <div class="chart" aria-label="Demonstracyjny trend kosztów rocznych 2018–2024">
-          <span style="--h:60%"><i>18k</i></span><span style="--h:78%"><i>23k</i></span><span style="--h:68%"><i>20k</i></span><span style="--h:90%"><i>27k</i></span><span style="--h:74%"><i>22k</i></span><span style="--h:82%"><i>25k</i></span>
-        </div>
-        <div class="chart-labels"><span>2018</span><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2024</span></div>
-      </div>
-    </section>
-
-    <section class="section excel-section" id="python" aria-labelledby="python-title">
-      <div class="excel-copy">
-        <p class="eyebrow">MINIAPLIKACJA</p>
-        <h2 id="python-title">Fleet Ops Desk, Python, SQLite i CSS</h2>
-        <p>Prosty, lokalny panel demonstracyjny pokazujący relacyjną bazę danych pojazdów, najmu, kosztów i leasingu. Aplikacja działa bez zewnętrznych bibliotek: Python tworzy i obsługuje bazę SQLite, SQL liczy wskaźniki, a HTML/CSS prezentuje wyniki.</p>
-        <ul class="check-list"><li>18 anonimowych pojazdów i 3 kontenery z windą</li><li>filtrowanie rejestru oraz zapytania SQL</li><li>koszty okresowe, 21 umów najmu i 11 leasingów</li><li>kod do uruchomienia lokalnie w Pythonie</li></ul>
-        <a class="button primary" href="fleet-ops-desk/README.md">Zobacz projekt Python + SQL</a>
-      </div>
-      <div class="dashboard-preview" aria-label="Podgląd aplikacji Fleet Ops Desk">
-        <div class="dash-top"><span>Fleet Ops Desk</span><small>PYTHON · SQLITE</small></div>
-        <div class="dash-kpis"><div><small>Pojazdy</small><strong>18</strong></div><div><small>Najem</small><strong>21</strong></div><div><small>Leasing</small><strong>11</strong></div></div>
-        <div class="mini-metrics"><span><b>SQL</b> relacje</span><span><b>CSS</b> panel</span><span><b>PY</b> logika</span></div>
-      </div>
-    </section>
-
-    <section class="section publications" id="publikacje" aria-labelledby="publikacje-title">
-      <div class="section-heading row">
-        <div><p class="eyebrow">PUBLIKACJE I WIEDZA</p><h2 id="publikacje-title">Artykuły rozwijające projekty pokazane w portfolio</h2></div>
-        <a class="button secondary" href="publikacje.html">Otwórz bibliotekę publikacji</a>
-      </div>
-      <div class="case-grid">
-        <article class="case-card accent"><p class="case-number">01 / SECOND BRAIN 2.0</p><h3>Jak zbudować centrum dowodzenia zamiast kolejnego archiwum</h3><p>O szybkim zapisie, priorytetach, terminach, następnym kroku i łączeniu Notion z dokumentami źródłowymi.</p><a href="publikacje.html#second-brain">Czytaj materiał →</a></article>
-        <article class="case-card"><p class="case-number">02 / TRANSPORTFLOW</p><h3>Jedno zlecenie, wiele ról i jedna wspólna informacja</h3><p>O tym, gdzie transport traci czas oraz jak połączyć zlecenia, kierowców, dokumenty, pojazdy i płatności.</p><a href="publikacje.html#transportflow">Czytaj materiał →</a></article>
-        <article class="case-card"><p class="case-number">03 / OBIEG DOKUMENTÓW</p><h3>Dokument jest użyteczny dopiero wtedy, gdy prowadzi do działania</h3><p>Artykuł o statusach, terminach, odpowiedzialności i blokadach procesu na przykładzie transportu.</p><a href="transportflow-360/obieg-dokumentow.html">Czytaj artykuł →</a></article>
-        <article class="case-card accent"><p class="case-number">04 / ZIELONA MARKA</p><h3>Dlaczego zwykły formularz kontaktowy tworzy dodatkową pracę</h3><p>Materiał do publikacji z filmem o kwalifikacji zapytania i uporządkowaniu pierwszego kontaktu z klientem.</p><a href="publikacje.html#zielona-marka">Czytaj materiał →</a></article>
-      </div>
-    </section>
-
-    <section class="section cases" id="projekty" aria-labelledby="projekty-title">
+    <section class="section method-section" aria-labelledby="method-title">
       <div class="section-heading">
-        <p class="eyebrow">SAMODZIELNE REALIZACJE</p>
-        <h2 id="projekty-title">Kod, dane i QA jako dowód sposobu pracy</h2>
-        <p class="lead">Każdy projekt można otworzyć jako osobne repozytorium. Dzięki temu klient lub rekruter widzi nie tylko opis problemu, lecz także model danych, dokumentację, testy i działającą demonstrację.</p>
+        <p class="eyebrow">SPOSÓB PRACY</p>
+        <h2 id="method-title">Problem → flow → dane → kontrola → test.</h2>
       </div>
-      <div class="case-grid">
-        <article class="case-card accent"><p class="case-number">01 / WEB APP</p><h3>Zielona Marka Studio</h3><p>Nowoczesna strona demonstracyjna studia i drukarni z ofertą, realizacjami, formularzem oraz panelem PrintFlow.</p><a href="https://github.com/lukaszst-cz/zielona-marka-studio">Otwórz osobny projekt →</a></article>
-        <article class="case-card accent"><p class="case-number">03 / EXCEL</p><h3>PrintFlow 360</h3><p>Model Order-to-Cash: 44 arkusze, dashboard KPI, RACI oraz syntetyczne dane procesu produkcyjnego.</p><a href="https://github.com/lukaszst-cz/printflow-360">Otwórz osobny projekt →</a></article>
-        <article class="case-card"><p class="case-number">04 / PYTHON + QA</p><h3>PrintFlow Control Center</h3><p>Aplikacja procesowa z API, bazą SQLite, testami scenariuszy, regresją i dokumentacją jakościową. Pokazuje proste programowanie wykorzystane do kontroli zleceń, statusów i danych.</p><a href="https://github.com/lukaszst-cz/printflow-control-center">Otwórz kod i testy →</a></article>
-        <article class="case-card accent"><p class="case-number">05 / TRANSPORT · 20 ZESTAWÓW</p><h3>TransportFlow 360</h3><p>Portal, kalkulator i skoroszyt dla 20 zestawów, 26 kierowców oraz dodatkowych modułów taxi i kontenerów.</p><a href="https://github.com/lukaszst-cz/transportflow-360">Otwórz osobny projekt →</a></article>
-        <article class="case-card"><p class="case-number">06 / PYTHON · SQLITE · 20 ZESTAWÓW</p><h3>TransportFlow Control Center</h3><p>Backendowa demonstracja procesu transportowego: 20 zestawów, 26 kierowców, zlecenia, dokumenty, koszty, marża i kontrola danych w CI.</p><a href="https://github.com/lukaszst-cz/transportflow-control-center">Otwórz kod i testy →</a></article>
-        <article class="case-card accent"><p class="case-number">07 / WORKSHOP</p><h3>WorkshopFlow 360</h3><p>Symulacja pracy serwisu samochodowego, od rezerwacji po wydanie auta i analizę KPI.</p><a href="https://github.com/lukaszst-cz/workshopflow-360">Otwórz osobny projekt →</a></article>
-        <article class="case-card"><p class="case-number">08 / PYTHON + SQL</p><h3>Fleet Ops Desk</h3><p>Prosty lokalny panel w Pythonie i SQLite do kontroli floty, najmu, leasingu oraz kosztów. Dowód pracy z relacyjnymi danymi, zapytaniami SQL i czytelnym widokiem operacyjnym.</p><a href="https://github.com/lukaszst-cz/fleet-ops-desk">Otwórz kod projektu →</a></article>
-        <article class="case-card accent"><p class="case-number">09 / SERVICE</p><h3>Auto Naprawa KSeF Demo</h3><p>Strona warsztatu oraz demonstracyjny panel dokumentów i obsługi klienta.</p><a href="https://github.com/lukaszst-cz/auto-naprawa-ksef-demo">Otwórz osobny projekt →</a></article>
-        <article class="case-card"><p class="case-number">10 / CLIENT PREVIEW</p><h3>AUTO NAPRAWA, kompletna prezentacja</h3><p>Publiczna ścieżka demonstracyjna łącząca stronę warsztatu, portal klienta, panel kierownika oraz faktury i KSeF.</p><a href="auto-naprawa-preview/">Przeklikaj działającą wersję →</a></article>
-        <article class="case-card accent"><p class="case-number">11 / LIVE WEB</p><h3>Zielona Marka, strona i Studio</h3><p>Aktualna strona usługowa z kwalifikacją zapytań, dopracowanym widokiem mobilnym oraz prezentacją procesu obsługi klienta.</p><a href="https://zielona-marka.pl/">Otwórz działającą stronę →</a></article>
-        <article class="case-card accent"><p class="case-number">12 / OBSŁUGA ZAPYTAŃ</p><h3>Od wiadomości klienta do kolejnego kroku</h3><p>Przeglądarkowa demonstracja drogi od wiadomości klienta przez uzupełnienie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.</p><a href="https://lead-offer-zm.pages.dev/">Otwórz działające demo →</a></article>
-        <article class="case-card"><p class="case-number">13 / KONTROLA DOKUMENTÓW</p><h3>Sprawdzenie danych przed wysłaniem</h3><p>Lokalne narzędzie do wstępnej kontroli danych z CSV, Excela i PDF: kompletności, NIP-u, dat, e-maili, kwot oraz duplikatów.</p><a href="https://document-checker-zm.pages.dev/">Otwórz działające demo →</a></article>
-        <article class="case-card accent"><p class="case-number">14 / DOCUMENT INTELLIGENCE · WINDOWS · PWA</p><h3>DocPilot</h3><p>Local-first aplikacja do porządkowania dokumentów, OCR, terminów, wyszukiwania, lokalnego Q&amp;A, porównywania wersji, wykrywania duplikatów i bezpiecznych operacji na plikach z historią cofania.</p><a href="docpilot/">Zobacz aplikację i pobierz →</a></article>
-        <article class="case-card"><p class="case-number">15 / AI ARCHIVE · WINDOWS · PWA</p><h3>DialogNest 5.3</h3><p>Lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot: wyszukiwanie, projekty, tagi, recovery, szyfrowane backupy i desktop Windows. Obecnie w testach zamkniętych.</p><a href="dialognest/">Zobacz aplikację →</a></article>
-        <article class="case-card accent"><p class="case-number">16 / LIFEPILOT · PREVIEW · LOCAL-FIRST</p><h3>LifePilot: dokument → decyzja → termin → dowód</h3><p>Warstwa nad DocPilot, która po analizie dokumentu pokazuje „Co teraz?”, priorytet i termin oraz pozwala utworzyć lokalny ProofPack z oryginałem, chronologią i sumami SHA-256.</p><a href="lifepilot/">Zobacz LifePilot →</a></article>
-        <article class="case-card"><p class="case-number">17 / FAMILY · LOCAL-FIRST</p><h3>FamilySyncKids++ Local 1.0</h3><p>Dwa panele — rodzica i dziecka — pracujące na jednym źródle danych: zadania, rutyny, szkoła, czytanie, aktywność, wiadomości i historia. Wersja lokalna działa bez konta; synchronizacja między urządzeniami jest kolejnym etapem.</p><a href="familysynckids-plus-plus/">Zobacz projekt i uruchom →</a></article>
-        <article class="case-card accent"><p class="case-number">18 / DEVICE CARE · WINDOWS + ANDROID</p><h3>SpokojnyPC+ / Spokojny+</h3><p>Local-first diagnostyka urządzeń z baseline kondycji, Battery Care, Security Check, historią zmian i bezpiecznym DeviceLink. Telefon może odczytać status sparowanego PC bez zdalnego wykonywania poleceń.</p><a href="https://github.com/lukaszst-cz/spokojny-pc-plus">Otwórz repozytorium →</a></article>
-        <article class="case-card accent"><p class="case-number">19 / DOWNLOADS · TESTY</p><h3>Aplikacje do pobrania i testowania</h3><p>Jedna strona zbierająca programy Windows oraz działające demonstracje online, z jasnym oznaczeniem sposobu uruchomienia i statusu każdego projektu.</p><a href="aplikacje.html">Pobierz lub uruchom →</a></article>
-        <article class="case-card"><p class="case-number">20 / MATERIAŁ UZUPEŁNIAJĄCY</p><h3>Film promocyjny Zielonej Marki</h3><p>Krótki materiał komunikacyjny pokazujący problem niepełnego zapytania i prostą drogę do uporządkowanego pierwszego kontaktu.</p><a href="#film-zielona-marka">Obejrzyj materiał →</a></article>
-      </div>
+      <ol class="method-grid">
+        <li><span>01</span><b>Rozumiem problem</b><p>Co ginie, co się opóźnia, gdzie brakuje właściciela albo danych.</p></li>
+        <li><span>02</span><b>Rysuję przepływ</b><p>Wejście, decyzje, role, statusy, wyjątki i warunek zamknięcia.</p></li>
+        <li><span>03</span><b>Buduję najprostsze narzędzie</b><p>Arkusz, formularz, panel, baza lub aplikacja — zależnie od potrzeby.</p></li>
+        <li><span>04</span><b>Sprawdzam scenariusze</b><p>Przypadki normalne, braki danych, błędne statusy i sytuacje graniczne.</p></li>
+        <li><span>05</span><b>Zostawiam czytelną historię</b><p>Dokumentacja, status, decyzja i możliwość ustalenia, co wydarzyło się wcześniej.</p></li>
+      </ol>
     </section>
 
-    <section class="section media-showcase" id="film-zielona-marka" aria-labelledby="film-title">
-      <div class="media-copy">
-        <p class="eyebrow">MATERIAŁ UZUPEŁNIAJĄCY</p>
-        <h2 id="film-title">Film o jednym problemie: niepełnym zapytaniu klienta</h2>
-        <p>To dodatkowy przykład komunikacji dla firmy usługowej. Pokazuje, jak przełożyć problem operacyjny na jasny przekaz: klient podaje potrzebne dane, a firma od razu wie, co ma zrobić dalej.</p>
-        <ul class="check-list"><li>problem odbiorcy pokazany przed nazwą marki</li><li>czytelne napisy przydatne także bez dźwięku</li><li>krótka forma do strony i mediów społecznościowych</li></ul>
-        <a class="button secondary" href="case-studies/07-zielona-marka-strona-i-film.md">Zobacz opis realizacji</a>
+    <section class="section about-section" id="o-mnie" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">O MNIE</p>
+        <h2 id="about-title">Łączę operacje z technologią, zamiast traktować je jako dwa osobne światy.</h2>
       </div>
-      <div class="video-frame">
-        <video controls preload="metadata" playsinline poster="assets/zielona-marka-film-poster.svg">
-          <source src="assets/zielona-marka-film-promocyjny-30s.mp4" type="video/mp4">
-          Twoja przeglądarka nie obsługuje odtwarzania filmu.
-        </video>
-        <p>Materiał uzupełniający, 30 sekund.</p>
+      <div class="about-copy">
+        <p>Moje doświadczenie obejmuje IT, DTP i prepress, produkcję poligraficzną, administrację, transport i pracę z flotą. Studiowałem informatykę ze specjalizacją bazodanową. W projektach najbardziej interesuje mnie praktyczne połączenie danych z codzienną pracą ludzi.</p>
+        <div class="skill-groups">
+          <div><b>Operacje</b><span>transport · flota · B2B · dokumentacja · produkcja</span></div>
+          <div><b>Dane</b><span>Excel · SQL · SQLite · raportowanie · walidacja</span></div>
+          <div><b>Narzędzia</b><span>Python · C#/.NET · JavaScript/TypeScript · React · GitHub</span></div>
+          <div><b>Organizacja</b><span>Notion · Obsidian · Google Workspace · procesy i statusy</span></div>
+        </div>
       </div>
-    </section>
-
-    <section class="section trust-section">
-      <div><p class="eyebrow">SPOSÓB PRACY</p><h2>Problem, odpowiedzialność, kontrola i sprawdzenie wyniku.</h2></div>
-      <div class="principles"><article><b>01</b><h3>Właściciel sprawy</h3><p>Ustalam, kto wykonuje kolejny krok, jaki jest termin i po czym poznać, że zadanie jest zamknięte.</p></article><article><b>02</b><h3>Weryfikacja</h3><p>Sprawdzam dane, kompletność, logikę procesu i scenariusze działania przed wykorzystaniem wyniku.</p></article><article><b>03</b><h3>Poufność</h3><p>Nie umieszczam w publicznych narzędziach informacji wrażliwych ani danych klientów.</p></article></div>
     </section>
   </main>
 
   <footer id="kontakt">
-    <div><p class="eyebrow">KONTAKT</p><h2>Porozmawiajmy o stronie, formularzu lub procesie w Twojej firmie.</h2></div>
-    <div class="footer-links"><a href="https://github.com/lukaszst-cz">GitHub</a></div>
-    <p class="copyright">© <span id="year"></span> Łukasz St-cz · Portfolio bez danych poufnych</p>
+    <div>
+      <p class="eyebrow">KONTAKT</p>
+      <h2>Jeżeli widzisz tu proces podobny do Twojego — porozmawiajmy.</h2>
+      <p>Rekrutacja: administracja, logistyka, flota i koordynacja operacyjna. Współpraca: strony, formularze, procesy i proste narzędzia dla firm.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="button primary" href="mailto:lukasz.staniewicz@gmail.com">Kontakt rekrutacyjny</a>
+      <a class="button secondary" href="mailto:kontakt@zielona-marka.pl">Kontakt — Zielona Marka</a>
+      <a class="text-link" href="https://github.com/lukaszst-cz">GitHub →</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Łukasz St-cz · Portfolio zanonimizowane</p>
   </footer>
-  <script src="script.js"></script>
 
-  <style>
-    .creator-support-strip{max-width:1180px;margin:0 auto;padding:18px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 18px;border-top:1px solid rgba(127,127,127,.22);font:600 13px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}
-    .creator-support-strip span{opacity:.86}.creator-support-strip a{font-weight:800;color:inherit;text-decoration:underline;text-underline-offset:3px}
-    @media print{.creator-support-strip{display:none!important}}
-  </style>
-  <aside class="creator-support-strip" aria-label="Wsparcie autora i Zielona Marka">
-    <span>☕ Projekt udostępniony bezpłatnie — jeśli Ci się przydaje, możesz <a href="https://buymeacoffee.com/nalesnik_plus_plus" target="_blank" rel="noopener noreferrer">postawić Naleśnikowi++ kawę</a>.</span>
-    <span>Potrzebujesz własnej strony lub prostego systemu dla firmy? <a href="https://zielona-marka.pl" target="_blank" rel="noopener noreferrer">Zobacz Zielona Marka ↗</a></span>
-  </aside>
+  <script src="script.js"></script>
 </body>
 </html>
