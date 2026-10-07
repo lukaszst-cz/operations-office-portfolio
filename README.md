@@ -1,175 +1,47 @@
-# Portfolio operacji, danych i procesów firmowych, Łukasz St-cz
+# Portfolio — Łukasz St-cz
 
-Praktyczne, zanonimizowane portfolio pokazujące, jak rozwiązywać problemy operacyjne firmy: sprawy bez właściciela, dokumenty bez statusu, terminy bez kontroli, koszty bez wspólnego obrazu i zlecenia przechodzące przez wiele ról. Modele danych, proste aplikacje, testy QA, strony i formularze są tu dowodem sposobu pracy, a nie listą przypadkowych technologii.
+Łączę doświadczenie operacyjne z tworzeniem prostych narzędzi do pracy z procesem, dokumentami i danymi. Najmocniejsze obszary to **transport i flota, administracja i dokumentacja B2B, produkcja / DTP oraz organizacja przepływu informacji**.
 
-## Problemy i dowody w repozytorium
+## Zacznij tutaj
 
-- **Koordynacja operacyjna:** zlecenia, priorytety, zasoby, terminy i rozliczenia.
-- **Excel i raportowanie:** edytowalny dashboard KPI, formuły, tabele i wykresy.
-- **Flota 2018–2024:** rejestr 18 pojazdów, w tym 3 kontenerowych z windą i kontrolą UDT.
-- **Finansowanie:** symulacja 11 leasingów uruchomionych w latach 2018–2023.
-- **Najem:** umowy dla klientów krajowych i zagranicznych, kaucje, potrącenia, płatności oraz protokoły wydania i zwrotu.
-- **Taxi:** rejestr montażu taksometrów, legalizacji, urządzeń fiskalnych, oznakowania i kosztów serwisu.
-- **Ryzyko i koszty:** ubezpieczenia, szkody, przestoje, pojazdy zastępcze oraz koszty eksploatacyjne.
-- **Analizy okresowe:** porównania roczne, kwartalne, miesięczne, tygodniowe i dzienne z poprzednim oraz kolejnym okresem.
-- **Automatyzacja pracy biurowej:** analiza, dokumentacja i usprawnianie powtarzalnych zadań przy zachowaniu kontroli merytorycznej i poufności danych.
-- **Python, SQL i CSS:** miniaplikacja [Fleet Ops Desk](fleet-ops-desk/README.md), lokalny panel SQLite do prezentacji floty, kosztów, najmu i leasingu.
-- **PrintFlow 360:** zanonimizowany model Order-to-Cash dla przedsiębiorstwa poligraficzno-logistycznego, 44 arkusze, 499 pól, dashboard KPI, RACI, produkcja trzyzmianowa, rozliczenia pracowników, nieruchomość i flota.
-- **PrintFlow QA i automatyzacja testów:** strategia oparta na ryzyku, macierz śledzenia, bramki GO/NO-GO, 16 przypadków testowych, smoke i regresja, raporty defektów oraz 20 automatycznych testów Python uruchamianych w GitHub Actions.
-- **TransportFlow 360:** model pracy firmy transportowej dla 20 zestawów (12 chłodni, 4 cysterny, 4 plandeki) i 26 kierowców. Obejmuje wycenę, zlecenia, dokumenty, role użytkowników, kalkulator stawki, PWA i testy QA.
-- **Obsługa zapytania i oferty:** demonstracja drogi od wiadomości klienta przez rozpoznanie braków i szkic odpowiedzi do statusu sprawy w lekkim CRM-ie.
-- **Kontrola dokumentów:** lokalna kontrola plików CSV, Excel i PDF przed wysłaniem, obejmująca kompletność, NIP, daty, e-maile, kwoty i duplikaty.
-- **DocPilot 4.0.0:** stabilne publiczne wydanie local-first dla Windows/PWA do OCR, indeksowania dokumentów, wykrywania terminów, lokalnego wyszukiwania i Q&A, porównywania wersji, wykrywania duplikatów, redakcji danych oraz bezpiecznych operacji na plikach z historią cofania. Dostępne są instalator Windows, wersja Portable ZIP i sumy SHA-256.
-- **DialogNest 5.3.0:** lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot z wyszukiwaniem, projektami, tagami, recovery, szyfrowanymi backupami i aplikacją Windows. Repozytorium pozostaje prywatne, a wydanie jest obecnie udostępniane testerom.
-- **FamilySyncKids++ Local 1.0:** local-first panel organizacji dla rodzica i dziecka. Dwa widoki korzystają z jednego źródła danych dla zadań, rutyn, szkoły, czytania, aktywności, wiadomości i historii. Wersja lokalna działa bez konta i backendu, ma eksport/import JSON; synchronizacja między urządzeniami jest kolejnym etapem.
-- **SpokojnyPC+ 3.1 / Spokojny+:** lokalny opiekun urządzeń z baseline kondycji, monitoringiem, Battery Care, Security Check, historią zmian i DeviceLink. Klient Android korzysta ze wspólnego rdzenia, a sparowany telefon może odczytać status PC bez możliwości zdalnego wykonywania poleceń.
+- **[Portfolio online](https://lukaszst-cz.github.io/operations-office-portfolio/)** — najlepszy punkt startowy.
+- **[Profil zawodowy](https://lukaszst-cz.github.io/operations-office-portfolio/operacje-biuro.html)** — dla rekrutera i pracodawcy.
+- **[TransportFlow 360 — mapa procesu A–Z](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/proces.html)** — pełny flow transportowy.
+- **[TransportFlow Portal](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/portal/)** — zmiana ról: klient, handel, dyspozytor, kierowca, flota, finanse.
+- **[Aplikacje](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)** — publiczne narzędzia i dema.
 
-## Technologie i praktyka inżynierska
+## Co warto przeklikać
 
-Portfolio łączy pracę operacyjną z tworzeniem narzędzi, które można obejrzeć, uruchomić i zweryfikować. Każda pozycja poniżej wynika z kodu albo dokumentacji dostępnej w repozytorium.
-
-| Obszar | Potwierdzone kompetencje |
-| --- | --- |
-| Frontend i strony | TypeScript, React, JavaScript ES6, HTML5, CSS3, Tailwind CSS, C#/.NET, responsywne interfejsy, PWA i podstawy dostępności |
-| Backend i dane | Python, FastAPI, PHP, WordPress, SQLite, SQL, JSON, OCR, modelowanie danych, indeksowanie, walidacja i eksport danych |
-| API i automatyzacja | Projektowanie endpointów HTTP, automatyzacje API, testowanie odpowiedzi JSON, GitHub Actions, PWA, opcjonalny MCP oraz zautomatyzowane kontrole demonstracji |
-| Cloud i wdrożenia | Cloudflare Workers, Cloudflare D1, GitHub Pages, środowiska demonstracyjne i konfiguracja deploymentu |
-| QA i jakość | Strategia oparta na ryzyku, przypadki testowe, testy eksploracyjne, smoke, regresja, raporty defektów, traceability, quality gates GO/NO-GO oraz testy automatyczne Python `unittest` |
-| Analityka i dokumentacja | Excel, Google Sheets, dashboardy KPI, formuły, raportowanie, Notion, Obsidian, CSV, Markdown i dokumentacja procesowa |
-
-### QA: co faktycznie robię w tych projektach
-
-- Przekładam wymagania i ryzyka procesu na przypadki testowe, checklisty oraz macierz śledzenia.
-- Testuję scenariusze pozytywne, negatywne, graniczne i eksploracyjne, w tym przepływ ról, alerty oraz dane wejściowe.
-- Automatyzuję testy logiki, API, JSON i SQLite w Pythonie, a wyniki uruchamiam w GitHub Actions przy zmianach kodu.
-- Dokumentuję defekty przez wpływ, priorytet, kroki odtworzenia i kryterium akceptacji. Decyzję o wydaniu wspieram bramką GO/NO-GO.
-
-Zakres każdej demonstracji jest opisany wprost wraz z ograniczeniami. Dzięki temu portfolio pokazuje realny sposób pracy, a nie deklaracje bez materiału do sprawdzenia.
-
-## Portfolio online
-
-- [Aplikacje — pobierz i testuj](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)
-- [Główne portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/)
-
-Strona startowa znajduje się w pliku [`index.html`](index.html) i jest przygotowana do publikacji przez GitHub Pages.
-
-### ZIELONA MARKA, strona demonstracyjna i portal PWA
-
-Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego można przełożyć na stronę prezentacyjną, portal statusów zleceń i panel działów:
-
-- [Start tutaj, jedna strona prowadząca przez całe portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/udostepnij.html)
-- [Strona demonstracyjna ZIELONEJ MARKI](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/)
-- [Jak powstawał projekt, osobisty opis procesu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/jak-powstal-projekt.html)
-- [PrintFlow Portal, klient i działy](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/)
-- [Opis powstania aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/o-aplikacji.html)
-- [Instrukcja PWA dla Androida, Apple i komputera](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/portal/instrukcja.html)
-- [Pakiet QA portalu](zielona-marka/portal/qa/README.md)
-- [Pracownia procesów: kalkulator i dashboard KPI](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/pracownia.html)
-- [Case study PrintFlow: RACI, wyjątki, dokumenty, API i QA](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka/case-study.html)
-
-Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczego zlecenia oraz działów pracujących na własnych kolejkach. Jest instalowalny na Androidzie, iPhonie i iPadzie bez Google Play ani App Store. Dane są syntetyczne, a lokalne zmiany zapisują się wyłącznie w przeglądarce.
-
-### TransportFlow 360, transport ciężki, taxi i kontenery
-
-- [Strona startowa projektu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/)
-- [Transport ciężki i cykl życia zestawu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/flota.html)
-- [Najem taxi i samochody kontenerowe z windą](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/taxi-kontenery.html)
-- [Portal ról i status klienta](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/portal/)
-- [Artykuł o powstawaniu projektu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/jak-powstal-projekt.html)
-- [Skoroszyt TransportFlow 360](transportflow-360/assets/TransportFlow_360_demo.xlsx)
-- [Aplikacja Python/SQLite i dokumentacja QA](transportflow-control-center/README.md)
-
-## Samodzielne projekty
-
-To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przypadku oraz materiały demonstracyjne. Najważniejsze realizacje są również dostępne jako osobne repozytoria, aby można było je szybko pokazać rekruterowi, klientowi albo zespołowi technicznemu.
-
-| Projekt | Co pokazuje | Osobne repozytorium |
+| Projekt | Co pokazuje | Start |
 | --- | --- | --- |
-| Zielona Marka Studio | Responsywna strona demonstracyjna i panel PrintFlow | [zielona-marka-studio](https://github.com/lukaszst-cz/zielona-marka-studio) |
-| PrintFlow 360 | Model Excel Order-to-Cash, KPI i RACI | [printflow-360](https://github.com/lukaszst-cz/printflow-360) |
-| PrintFlow Control Center | Python, SQLite, API, testy i QA | [printflow-control-center](https://github.com/lukaszst-cz/printflow-control-center) |
-| TransportFlow 360 | Excel, portal PWA i kalkulator transportowy | [transportflow-360](https://github.com/lukaszst-cz/transportflow-360) |
-| TransportFlow Control Center | Większa wersja modelu: 50 zestawów, 58 kierowców, CRM, dokumenty, finanse, role, PWA i CI | [kod w portfolio](https://github.com/lukaszst-cz/operations-office-portfolio/tree/main/transportflow-control-center) |
-| TransportFlow Python/SQLite | Lokalny prototyp backendu dla wersji 20/26, z API, SQLite i testami automatycznymi | [transportflow-control-center](https://github.com/lukaszst-cz/transportflow-control-center) |
-| WorkshopFlow 360 | Portal i proces obsługi warsztatu samochodowego | [workshopflow-360](https://github.com/lukaszst-cz/workshopflow-360) |
-| Fleet Ops Desk | Lokalny panel floty w Pythonie i SQLite | [fleet-ops-desk](https://github.com/lukaszst-cz/fleet-ops-desk) |
-| DocPilot | Local-first dokumenty, OCR, terminy, Review Queue, wyszukiwanie lokalne, Windows/PWA i opcjonalny MCP | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) · [repo](https://github.com/lukaszst-cz/docpilot) |
-| DialogNest | Lokalne archiwum rozmów AI, wyszukiwanie, projekty, backup, recovery, MCP i aplikacja Windows | [strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/dialognest/) |
-| Auto Naprawa KSeF Demo | Strona warsztatu i panel dokumentów | [auto-naprawa-ksef-demo](https://github.com/lukaszst-cz/auto-naprawa-ksef-demo) |
-| Zielona Marka, strona i Studio | Strona usługowa, kwalifikacja zapytań i widok procesu klienta | [zielona-marka-pl](https://github.com/lukaszst-cz/zielona-marka-pl) |
-| Obsługa zapytania i oferty | Wiadomość, braki, szkic odpowiedzi, oferta i lekki CRM z zatwierdzeniem człowieka | [projekt na GitHubie](https://github.com/lukaszst-cz/lead-offer-copilot) |
-| Kontrola dokumentów | Lokalne sprawdzanie CSV, Excela i PDF przed wysłaniem do klienta | [document-checker](https://github.com/lukaszst-cz/document-checker) |
-| Film promocyjny Zielonej Marki | Scenariusz, narracja, montaż, napisy i obróbka dźwięku | [prezentacja w portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/#film-zielona-marka) |
+| **TransportFlow 360** | zlecenie transportowe od zapytania do faktury i KPI | [proces A–Z](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/proces.html) |
+| **Auto Naprawa** | proces firmy usługowej: diagnoza, wycena, zgoda, realizacja, QC, faktura | [demo](https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/) |
+| **PrintFlow 360** | Order-to-Cash dla produkcji / poligrafii i role w procesie | [projekt](https://lukaszst-cz.github.io/printflow-360/) |
+| **DocPilot** | dokumenty, OCR, terminy, wyszukiwanie, duplikaty i praca local-first | [strona aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) |
+| **FamilySyncKids++** | dwa widoki tego samego procesu i jednego źródła danych | [uruchom](https://lukaszst-cz.github.io/operations-office-portfolio/familysynckids-plus-plus/app/) |
+| **Document Checker** | wstępna kontrola CSV, Excela i PDF przed wysłaniem | [demo](https://document-checker-zm.pages.dev/) |
 
-### Działające prezentacje
+## Jak pracuję
 
-- [Główne portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/)
-- [Zielona Marka Studio](https://zielona-marka.pl/studio)
-- [PrintFlow 360](https://lukaszst-cz.github.io/printflow-360/)
-- [TransportFlow 360](https://lukaszst-cz.github.io/transportflow-360/)
-- [WorkshopFlow 360](https://lukaszst-cz.github.io/workshopflow-360/)
-- [Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
-- [Zielona Marka, aktualna strona](https://zielona-marka.pl/)
-- [Obsługa zapytania i oferty](https://lead-offer-zm.pages.dev/)
-- [Kontrola dokumentów](https://document-checker-zm.pages.dev/)
-- [DocPilot, repozytorium i wydania Windows](https://github.com/lukaszst-cz/docpilot)
-- [DialogNest 5.3.0, strona produktu](https://lukaszst-cz.github.io/operations-office-portfolio/dialognest/)
-- [Aplikacje, pobieranie i testy](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)
-- [Film promocyjny Zielonej Marki](https://lukaszst-cz.github.io/operations-office-portfolio/#film-zielona-marka)
+1. **Problem** — ustalam, gdzie ginie informacja, czas albo odpowiedzialność.
+2. **Flow** — rozpisuję role, statusy, warunki przejścia i wyjątki.
+3. **Dane** — określam, co trzeba zapisać i co jest źródłem prawdy.
+4. **Narzędzie** — wybieram najprostszą formę: arkusz, formularz, panel, baza lub aplikacja.
+5. **Kontrola** — sprawdzam scenariusze poprawne, błędne i graniczne.
 
-## Aktualizacja, 19 września 2026
+## Kompetencje
 
-Portfolio uzupełniono o prace wykonane w ostatnich dniach:
+**Operacje:** transport, flota, CMR/WZ, dokumentacja, B2B, koordynacja, DTP/prepress, produkcja.  
+**Dane:** Excel, SQL, SQLite, CSV, raportowanie, walidacja.  
+**Technologia:** Python, C#/.NET, JavaScript, TypeScript, React, HTML/CSS, Git, GitHub Actions.  
+**Organizacja:** Notion, Obsidian, Google Workspace, procesy, statusy, dokumentacja.
 
-- rozwój DocPilot od publicznego v0.5.1 do gałęzi main 0.9.1 RC: onboarding, diagnostyka, bezpieczniejszy upload, stabilniejszy desktop, synchronizacja indeksu po Undo, test aktualizacji istniejącej instalacji i rozszerzone testy Windows;
+## Prywatność
 
-- dopracowanie mobilnego nagłówka i nawigacji serwisu Zielona Marka,
-- prezentację strony usługowej, formularza kwalifikującego zapytania oraz widoku procesu klienta,
-- przygotowanie czterech wersji 30-sekundowego filmu promocyjnego,
-- publikację finalnej wersji filmu z ekspresyjnym lektorem, napisami i obróbką dźwięku,
-- nowe studium realizacji łączące cel biznesowy, decyzje produkcyjne i efekt końcowy.
-- dodanie publicznych demonstracji obsługi zapytania i oferty oraz kontroli dokumentów,
-- uporządkowanie materiałów publikacyjnych i połączenie ich z właściwymi projektami.
-
-Na stronie głównej wyróżniono projekty przekrojowe: Second Brain Łukasz 2.0, zielona-marka.pl, oba odrębne modele TransportFlow oraz PrintFlow 360. Second Brain oraz aktualna strona Zielonej Marki otrzymały rozbudowane prezentacje, ponieważ najlepiej pokazują porządkowanie informacji i przełożenie procesu na działające rozwiązanie dla klienta.
-
-Opis Second Brain zaktualizowano na podstawie obecnej struktury w Notion. Starsze liczby inwentaryzacyjne zastąpiono opisem działającego systemu: szybkiego zapisu, priorytetów, terminów, przeglądu tygodnia, spraw i dokumentów, pracy, projektów oraz powiązań z materiałami źródłowymi.
-
-Dodano również stronę [`publikacje.html`](publikacje.html), która zbiera artykuły i materiały dotyczące Second Brain, TransportFlow oraz Zielonej Marki.
-
-## Przykład Excel
-
-W katalogu `assets` znajduje się edytowalny skoroszyt `dashboard_operacyjny_demo.xlsx`. Zawiera 10 połączonych arkuszy: Dashboard, Pojazdy, Serwis i terminy, Koszty, Szkody i najem, Najem i umowy, Leasing i taxi, Analizy okresowe, Słowniki i Instrukcja.
-
-## PrintFlow 360, pełny skoroszyt
-
-Plik [`ZIELONA_MARKA_PrintFlow_360_demo.xlsx`](assets/ZIELONA_MARKA_PrintFlow_360_demo.xlsx) zawiera 44 połączone arkusze, 499 zdefiniowanych pól, dashboard KPI, instrukcje działowe, macierz RACI oraz syntetyczne dane procesu poligraficzno-logistycznego.
-
-Skoroszyt jest publicznym materiałem demonstracyjnym. Wszystkie osoby, klienci, pracownicy, pojazdy, umowy, dokumenty, daty operacyjne i kwoty jednostkowe są losowe lub zanonimizowane. Plik nie zawiera makr, połączeń zewnętrznych ani metadanych autora.
-
-### Model odpowiedzialności i dostępu
-
-W rzeczywistym sposobie pracy poszczególne osoby korzystały tylko z arkuszy, zakresów i informacji przypisanych do ich działu oraz odpowiedzialności. Handel, DTP, produkcja, jakość, magazyn, logistyka, kadry, księgowość i flota pracowały na właściwych dla siebie częściach procesu.
-
-Twórca systemu i właściciel procesu miał pełny dostęp do całego skoroszytu: parametrów, słowników, kontroli, dashboardu, rentowności, kosztów, rozliczeń i raportowania zarządczego. Publiczny plik demonstracyjny pokazuje pełną architekturę wyłącznie po to, aby zaprezentować sposób zaprojektowania rozwiązania.
-
-W danych demonstracyjnych znajduje się m.in. 168 rekordów kosztowych z lat 2018–2024, 21 umów najmu, 11 leasingów oraz 5 przykładów wyposażenia samochodów do pracy taxi.
-
-> Wszystkie kwoty, daty i identyfikatory są symulacją. Portfolio nie zawiera rzeczywistych rejestracji, VIN, danych klientów, pracowników, finansujących, ubezpieczycieli ani poufnych dokumentów firmowych.
-
-## Studia przypadku
-
-1. [Koordynacja operacji i floty](case-studies/01-operacje-i-flota.md)
-2. [Dokumentacja transportowa](case-studies/02-dokumentacja-transportowa.md)
-3. [Obsługa kluczowych klientów i produkcja](case-studies/03-obsluga-b2b-i-produkcja.md)
-4. [Second Brain i cyfrowa organizacja informacji](case-studies/04-second-brain.md)
-5. [ZIELONA MARKA PrintFlow 360](case-studies/05-printflow-360.md)
-6. [TransportFlow 360, od zapytania do zapłaty](case-studies/06-transportflow-360.md)
-7. [Zielona Marka, strona usługowa i film promocyjny](case-studies/07-zielona-marka-strona-i-film.md)
-8. [Obsługa zapytania i oferty](case-studies/08-obsluga-zapytan-i-ofert.md)
-9. [Kontrola dokumentów przed wysłaniem](case-studies/09-kontrola-dokumentow.md)
+Publiczne projekty używają danych syntetycznych lub zanonimizowanych. Nie publikuję danych klientów, pracowników ani dokumentów źródłowych.
 
 ## Kontakt
 
-- [GitHub](https://github.com/lukaszst-cz)
-- [☕ Buy Me a Coffee — nalesnik_plus_plus](https://buymeacoffee.com/nalesnik_plus_plus) — dobrowolne wsparcie rozwoju darmowych projektów.
+- GitHub: [github.com/lukaszst-cz](https://github.com/lukaszst-cz)
+- Rekrutacja: [lukasz.staniewicz@gmail.com](mailto:lukasz.staniewicz@gmail.com)
+- Współpraca: [kontakt@zielona-marka.pl](mailto:kontakt@zielona-marka.pl)
