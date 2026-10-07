@@ -3,102 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Aplikacje Łukasza S. i Zielonej Marki — programy Windows i działające demonstracje do pobrania i testowania.">
-  <meta property="og:title" content="Aplikacje — pobierz i testuj">
-  <meta property="og:description" content="DocPilot, DialogNest, FamilySyncKids++, Spokojny+ i działające dema narzędzi w jednym miejscu.">
-  <meta property="og:type" content="website">
-  <title>Aplikacje — pobierz i testuj</title>
+  <meta name="description" content="Publiczne aplikacje i demonstracje Łukasza St-cz — projekty, które można uruchomić, przeklikać lub pobrać.">
+  <meta name="theme-color" content="#0a0f18">
+  <title>Aplikacje i dema — Łukasz St-cz</title>
   <style>
-    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#edf2f7;background:#0a0d12;--panel:#111722;--line:#293244;--muted:#9aa7b8;--accent:#a9c7ff;--ok:#8fe0ad}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 78% 0,#18283f 0,#0a0d12 36%);min-height:100vh}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 22px}
-    header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}.brand{text-decoration:none;font-weight:900}.back{color:#bac4d2;text-decoration:none}
-    .hero{padding:64px 0 40px}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.14em;color:var(--accent)}h1{font-size:clamp(42px,7vw,76px);line-height:.98;letter-spacing:-.045em;margin:12px 0 18px}.lead{max-width:800px;color:#bcc6d3;font-size:19px;line-height:1.6}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:22px 0 64px}.card{border:1px solid var(--line);background:linear-gradient(180deg,#121a26,#0f151e);border-radius:18px;padding:22px;display:flex;flex-direction:column;min-height:250px}.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.badge{font-size:11px;font-weight:900;letter-spacing:.08em;border:1px solid #3b4d68;border-radius:999px;padding:6px 9px;color:#d7e4f8}.badge.ok{border-color:#365b43;color:var(--ok)}.badge.test{border-color:#5b4d79;color:#cfbfff}h2{margin:0 0 10px;font-size:25px}.card p{color:var(--muted);line-height:1.55}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:auto;padding-top:18px}.btn{padding:11px 14px;border-radius:10px;text-decoration:none;font-weight:800;background:#edf2f7;color:#111720}.btn.secondary{background:#1b2533;color:#edf2f7;border:1px solid #344258}.small{font-size:12px;color:#79879a;margin-top:12px}.section-title{font-size:30px;margin:18px 0 4px}.footer{border-top:1px solid var(--line);padding:28px 0 46px;color:#7d8999;font-size:13px}
-    @media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding-top:38px}.card{min-height:0}.btn{width:100%;text-align:center}}
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#eef4fb;background:#0a0f18;--panel:#111a28;--line:#28364b;--muted:#9baabd;--green:#8be0b0}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#172740 0,#0a0f18 38%);min-height:100vh}a{color:inherit}
+    .wrap{max-width:1080px;margin:auto;padding:0 22px}header{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.06)}.brand{text-decoration:none;font-weight:900}.back{text-decoration:none;color:#b8c4d2;font-size:14px}
+    .hero{padding:64px 0 34px}.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:900;color:var(--green)}h1{font-size:clamp(42px,7vw,72px);line-height:1;letter-spacing:-.05em;margin:10px 0 18px}.lead{max-width:760px;color:#bdc7d4;font-size:18px;line-height:1.6}
+    .section{padding:28px 0 46px}.section h2{font-size:30px;letter-spacing:-.03em;margin:0 0 8px}.section>p{color:var(--muted);max-width:760px;margin:0 0 20px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.card{border:1px solid var(--line);background:linear-gradient(180deg,#121c2b,#0f1723);border-radius:17px;padding:20px;display:flex;flex-direction:column;min-height:220px}.top{display:flex;justify-content:space-between;gap:14px}.badge{font-size:10px;font-weight:900;letter-spacing:.08em;border:1px solid #385146;border-radius:999px;padding:5px 8px;color:var(--green);height:max-content}.card h3{font-size:24px;margin:0 0 8px}.card p{color:var(--muted);line-height:1.55;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:18px}.btn{padding:10px 13px;border-radius:9px;text-decoration:none;font-weight:850;background:#eef4fb;color:#101722;font-size:13px}.btn.secondary{background:#1a2637;color:#eef4fb;border:1px solid #33445c}.note{font-size:11px;color:#74859a;margin-top:12px}
+    footer{border-top:1px solid var(--line);padding:28px 0 42px;color:#7d8b9e;font-size:12px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding-top:40px}.card{min-height:0}.btn{width:100%;text-align:center}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header><a class="brand" href="./">Łukasz St-cz · aplikacje</a><a class="back" href="./">← Portfolio</a></header>
+    <header>
+      <a class="brand" href="./">Łukasz St-cz · aplikacje</a>
+      <a class="back" href="./">← Portfolio</a>
+    </header>
+
     <main>
       <section class="hero">
-        <div class="eyebrow">WINDOWS · PWA · DEMO ONLINE</div>
-        <h1>Pobierz albo przetestuj.</h1>
-        <p class="lead">Jedna strona z projektami, które można rzeczywiście uruchomić. Programy Windows mają wyraźnie oznaczony sposób instalacji, a pozostałe narzędzia otwierają się bezpośrednio w przeglądarce.</p>
+        <div class="eyebrow">TYLKO PUBLICZNE I SPRAWDZALNE</div>
+        <h1>Uruchom, przeklikaj albo pobierz.</h1>
+        <p class="lead">Na tej stronie pokazuję tylko rzeczy, które osoba z zewnątrz może faktycznie otworzyć. Projekty prywatne, zamknięte testy i eksperymenty nie są tu mieszane z gotowymi demonstracjami.</p>
       </section>
 
-      <h2 class="section-title">Programy Windows</h2>
-      <section class="grid">
-        <article class="card">
-          <div class="top"><div><h2>DocPilot 4.0.0</h2><p>Lokalne porządkowanie dokumentów, OCR, terminy, wyszukiwanie, duplikaty, porównywanie wersji i bezpieczne operacje na plikach.</p></div><span class="badge ok">PUBLICZNY</span></div>
-          <div class="actions">
-            <a class="btn" href="https://github.com/lukaszst-cz/docpilot/releases/download/v4.0.0/DocPilot-Setup-Windows-x64.exe">Pobierz instalator EXE</a>
-            <a class="btn secondary" href="https://github.com/lukaszst-cz/docpilot/releases/download/v4.0.0/DocPilot-Portable-Windows-x64.zip">Portable ZIP</a>
-            <a class="btn secondary" href="docpilot/">Opis i instrukcja</a>
-          </div>
-          <p class="small">Instalator nie ma jeszcze komercyjnego podpisu code-signing, dlatego Windows może pokazać ostrzeżenie SmartScreen.</p>
-        </article>
-
-        <article class="card">
-          <div class="top"><div><h2>DialogNest 5.3.0</h2><p>Lokalne archiwum rozmów z ChatGPT, Claude, Gemini i Copilot z wyszukiwaniem, projektami, tagami, recovery i szyfrowanymi kopiami.</p></div><span class="badge test">TESTY ZAMKNIĘTE</span></div>
-          <div class="actions">
-            <a class="btn" href="dialognest/">Zobacz aplikację</a>
-            <a class="btn secondary" href="mailto:kontakt@zielona-marka.pl?subject=DialogNest%205.3%20-%20testy">Poproś o dostęp do testów</a>
-          </div>
-          <p class="small">Repozytorium i pliki wydania są obecnie prywatne. Testerzy otrzymują wersję Windows wraz z instrukcją i sumami SHA-256.</p>
-        </article>
+      <section class="section">
+        <h2>Procesy do przeklikania</h2>
+        <p>Najlepsze przykłady pokazujące nie tylko interfejs, ale też role, statusy i kolejne kroki.</p>
+        <div class="grid">
+          <article class="card"><div class="top"><div><h3>TransportFlow 360</h3><p>Pełny proces transportowy: zapytanie, kalkulacja, plan, kierowca, flota, dokumenty, POD, faktura i KPI.</p></div><span class="badge">FLOW</span></div><div class="actions"><a class="btn" href="transportflow-360/proces.html">Mapa procesu</a><a class="btn secondary" href="transportflow-360/portal/">Portal ról</a></div></article>
+          <article class="card"><div class="top"><div><h3>Auto Naprawa</h3><p>Proces firmy usługowej od zgłoszenia, diagnozy i zgody klienta do kontroli jakości, faktury i follow-upu.</p></div><span class="badge">FLOW</span></div><div class="actions"><a class="btn" href="auto-naprawa-preview/">Otwórz demo</a><a class="btn secondary" href="auto-naprawa-preview/portal/?role=manager">Panel kierownika</a></div></article>
+          <article class="card"><div class="top"><div><h3>PrintFlow 360</h3><p>Order-to-Cash dla produkcji i poligrafii: brief, oferta, prepress, produkcja, wysyłka i rozliczenie.</p></div><span class="badge">FLOW</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/printflow-360/">Otwórz projekt</a><a class="btn secondary" href="https://lukaszst-cz.github.io/printflow-360/portal/">Portal ról</a></div></article>
+          <article class="card"><div class="top"><div><h3>Lead &amp; Offer Copilot</h3><p>Od wiadomości klienta przez brakujące dane i szkic odpowiedzi do kolejnego kroku w sprawie.</p></div><span class="badge">ONLINE</span></div><div class="actions"><a class="btn" href="https://lead-offer-zm.pages.dev/">Uruchom demo</a></div></article>
+        </div>
       </section>
 
-      <h2 class="section-title">Nowe produkty / preview</h2>
-      <section class="grid">
-        <article class="card">
-          <div class="top"><div><h2>LifePilot</h2><p>Warstwa nad DocPilot: wrzuć dokument → zobacz co to jest → co zrobić → do kiedy → zachowaj ProofPack.</p></div><span class="badge test">PREVIEW</span></div>
-          <div class="actions">
-            <a class="btn" href="lifepilot/">Zobacz opis</a>
-            <a class="btn secondary" href="https://github.com/lukaszst-cz/docpilot">Kod projektu</a>
-          </div>
-          <p class="small">LifePilot jest obecnie rozwijany i testowany w kodzie DocPilot. Stabilny publiczny instalator pozostaje na wersji DocPilot 4.0.0.</p>
-        </article>
-
-        <article class="card">
-          <div class="top"><div><h2>FamilySyncKids++ Local 1.0</h2><p>Panel rodzica i dziecka oparty na jednym źródle danych: zadania, rutyny, szkoła, czytanie, aktywność, wiadomości i historia.</p></div><span class="badge ok">LOCAL-FIRST</span></div>
-          <div class="actions">
-            <a class="btn" href="familysynckids-plus-plus/app/">Uruchom aplikację</a>
-            <a class="btn secondary" href="familysynckids-plus-plus/">Zobacz projekt</a>
-          </div>
-          <p class="small">Działa bez konta i backendu, zapisuje dane lokalnie i ma eksport/import JSON. Synchronizacja między różnymi urządzeniami nie jest jeszcze dostępna.</p>
-        </article>
-
-        <article class="card">
-          <div class="top"><div><h2>SpokojnyPC+ 3.1 / Spokojny+</h2><p>Lokalna diagnostyka urządzeń: kondycja, baseline, bateria, sieć, bezpieczeństwo, historia zmian i bezpieczne parowanie PC ↔ Android.</p></div><span class="badge test">ROZWIJANY</span></div>
-          <div class="actions">
-            <a class="btn" href="https://github.com/lukaszst-cz/spokojny-pc-plus">Otwórz repozytorium</a>
-          </div>
-          <p class="small">DeviceLink pozwala telefonowi odczytać status sparowanego PC; projekt nie udostępnia dowolnego zdalnego wykonywania poleceń.</p>
-        </article>
-      </section>
-
-      <h2 class="section-title">Dema do uruchomienia od razu</h2>
-      <section class="grid">
-        <article class="card"><div class="top"><div><h2>Document Checker</h2><p>Kontrola CSV, Excel i PDF przed wysłaniem: kompletność, NIP, daty, e-maile, kwoty i potencjalne duplikaty.</p></div><span class="badge ok">ONLINE</span></div><div class="actions"><a class="btn" href="https://document-checker-zm.pages.dev/">Uruchom demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/document-checker">Kod projektu</a></div></article>
-        <article class="card"><div class="top"><div><h2>Lead &amp; Offer Copilot</h2><p>Od wiadomości klienta przez wykrycie braków i szkic odpowiedzi do kolejnego kroku w lekkim CRM-ie.</p></div><span class="badge ok">ONLINE</span></div><div class="actions"><a class="btn" href="https://lead-offer-zm.pages.dev/">Uruchom demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/lead-offer-copilot">Kod projektu</a></div></article>
-        <article class="card"><div class="top"><div><h2>TransportFlow 360</h2><p>Demonstracja procesu transportowego: wycena, zlecenia, flota, dokumenty, role, KPI i kalkulator stawki.</p></div><span class="badge ok">PWA</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/transportflow-360/">Otwórz</a><a class="btn secondary" href="https://lukaszst-cz.github.io/transportflow-360/portal/">Portal</a></div></article>
-        <article class="card"><div class="top"><div><h2>Fleet Ops Desk</h2><p>Model pracy z flotą, kosztami, najmem, leasingiem, serwisem i relacyjnymi danymi SQLite.</p></div><span class="badge ok">DEMO</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/fleet-ops-desk/">Otwórz demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/fleet-ops-desk">Kod projektu</a></div></article>
-        <article class="card"><div class="top"><div><h2>WorkshopFlow 360</h2><p>Pełny przebieg obsługi warsztatu: rezerwacja, diagnoza, kosztorys, naprawa, kontrola jakości, faktura i wydanie auta.</p></div><span class="badge ok">ONLINE</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/workshopflow-360/">Uruchom</a></div></article>
-        <article class="card"><div class="top"><div><h2>PrintFlow 360</h2><p>Model Order-to-Cash dla produkcji i poligrafii z portalem PWA, KPI, kalkulatorem i skoroszytem Excel.</p></div><span class="badge ok">PWA</span></div><div class="actions"><a class="btn" href="https://lukaszst-cz.github.io/printflow-360/">Uruchom</a><a class="btn secondary" href="https://lukaszst-cz.github.io/printflow-360/portal/">Portal</a></div></article>
+      <section class="section">
+        <h2>Aplikacje</h2>
+        <p>Publiczne narzędzia, które można uruchomić lub pobrać bez dostępu do prywatnego repozytorium.</p>
+        <div class="grid">
+          <article class="card"><div class="top"><div><h3>DocPilot</h3><p>Local-first dla Windows: OCR, terminy, wyszukiwanie, duplikaty, wersje dokumentów i historia operacji.</p></div><span class="badge">WINDOWS</span></div><div class="actions"><a class="btn" href="docpilot/">Opis i pobieranie</a><a class="btn secondary" href="https://github.com/lukaszst-cz/docpilot">Kod</a></div></article>
+          <article class="card"><div class="top"><div><h3>FamilySyncKids++</h3><p>Panel rodzica i dziecka oparty na jednym źródle danych: zadania, rutyny, szkoła, czytanie i historia.</p></div><span class="badge">PWA</span></div><div class="actions"><a class="btn" href="familysynckids-plus-plus/app/">Uruchom</a><a class="btn secondary" href="familysynckids-plus-plus/">Opis</a></div></article>
+          <article class="card"><div class="top"><div><h3>Document Checker</h3><p>Wstępna kontrola CSV, Excela i PDF: kompletność, daty, e-maile, kwoty i potencjalne duplikaty.</p></div><span class="badge">ONLINE</span></div><div class="actions"><a class="btn" href="https://document-checker-zm.pages.dev/">Uruchom demo</a><a class="btn secondary" href="https://github.com/lukaszst-cz/document-checker">Kod</a></div></article>
+          <article class="card"><div class="top"><div><h3>Fleet Ops Desk</h3><p>Mała aplikacja Python + SQLite do pracy z relacyjnymi danymi floty, kosztów, najmu i leasingów.</p></div><span class="badge">KOD</span></div><div class="actions"><a class="btn" href="https://github.com/lukaszst-cz/fleet-ops-desk">Repozytorium</a></div><p class="note">Projekt uruchamiany lokalnie; README zawiera prostą instrukcję startu.</p></article>
+        </div>
       </section>
     </main>
-    <div class="footer">Aplikacje i demonstracje Łukasza S. · Zielona Marka · projekty wykorzystują dane demonstracyjne lub działają lokalnie zgodnie z opisem każdego narzędzia.</div>
-  </div>
 
-  <style>
-    .creator-support-strip{max-width:1180px;margin:0 auto;padding:18px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 18px;border-top:1px solid rgba(127,127,127,.22);font:600 13px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}
-    .creator-support-strip span{opacity:.86}.creator-support-strip a{font-weight:800;color:inherit;text-decoration:underline;text-underline-offset:3px}
-    @media print{.creator-support-strip{display:none!important}}
-  </style>
-  <aside class="creator-support-strip" aria-label="Wsparcie autora i Zielona Marka">
-    <span>☕ Projekt udostępniony bezpłatnie — jeśli Ci się przydaje, możesz <a href="https://buymeacoffee.com/nalesnik_plus_plus" target="_blank" rel="noopener noreferrer">postawić Naleśnikowi++ kawę</a>.</span>
-    <span>Potrzebujesz własnej strony lub prostego systemu dla firmy? <a href="https://zielona-marka.pl" target="_blank" rel="noopener noreferrer">Zobacz Zielona Marka ↗</a></span>
-  </aside>
+    <footer>Publiczne portfolio Łukasza St-cz · projekty demonstracyjne wykorzystują dane syntetyczne lub zanonimizowane.</footer>
+  </div>
 </body>
 </html>
