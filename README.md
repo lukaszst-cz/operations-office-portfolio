@@ -69,14 +69,6 @@ Publiczny fragment portfolio pokazujący, jak model procesu poligraficznego moż
 
 Portal PWA pokazuje dwie perspektywy: klienta sprawdzającego status pojedynczego zlecenia oraz działów pracujących na własnych kolejkach. Jest instalowalny na Androidzie, iPhonie i iPadzie bez Google Play ani App Store. Dane są syntetyczne, a lokalne zmiany zapisują się wyłącznie w przeglądarce.
 
-### ZIELONA MARKA, motyw WordPress dla firmy tworzącej strony
-
-- [Interaktywny podgląd projektu](https://lukaszst-cz.github.io/operations-office-portfolio/zielona-marka-wordpress-preview/)
-- [Kod źródłowy motywu](zielona-marka-wordpress/)
-- [Aktualny kod i status motywu WordPress](https://github.com/lukaszst-cz/zielona-marka-wordpress)
-
-Projekt pokazuje kompletny proces przygotowania strony firmowej: pozycjonowanie oferty, nowy kierunek wizualny, responsywny layout, sekcję realizacji edytowaną w panelu WordPressa, bezpieczny formularz briefu oraz lekką warstwę techniczną bez ciężkiego kreatora stron.
-
 ### TransportFlow 360, transport ciężki, taxi i kontenery
 
 - [Strona startowa projektu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/)
@@ -117,7 +109,6 @@ To repozytorium jest centralnym portfolio. Zawiera pełny kontekst, studia przyp
 - [TransportFlow 360](https://lukaszst-cz.github.io/transportflow-360/)
 - [WorkshopFlow 360](https://lukaszst-cz.github.io/workshopflow-360/)
 - [Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
-- [Zielona Marka WordPress, podgląd wizualny](https://lukaszst-cz.github.io/zielona-marka-wordpress/preview/)
 - [Zielona Marka, aktualna strona](https://zielona-marka.pl/)
 - [Obsługa zapytania i oferty](https://lead-offer-zm.pages.dev/)
 - [Kontrola dokumentów](https://document-checker-zm.pages.dev/)
