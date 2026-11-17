@@ -116,3 +116,19 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--green);outline-offs
   .method-grid{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.route-card,.button{transition:none}}
+
+
+/* Przegląd koncepcji WWW w portfolio zawodowym. */
+.sites-section{border-top:1px solid rgba(255,255,255,.05)}
+.site-showcase-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.site-showcase-item{display:flex;flex-direction:column;min-width:0;padding:20px;border:1px solid var(--line);border-radius:15px;background:var(--surface);text-decoration:none;transition:border-color .2s,background-color .2s}
+.site-showcase-item:hover{border-color:var(--green);background:var(--surface-2)}
+.site-showcase-item small{font-size:10px;letter-spacing:.1em;font-weight:800;color:var(--green)}
+.site-showcase-item strong{display:block;margin:12px 0 6px;font-size:20px;line-height:1.2}
+.site-showcase-item p{margin:0 0 20px;color:var(--muted);font-size:13px;line-height:1.6}
+.site-showcase-item span{margin-top:auto;font-size:12px;font-weight:800;color:var(--green)}
+.sites-followup{margin-top:22px}
+@media(max-width:920px){.site-showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.site-showcase-grid{grid-template-columns:1fr}.site-showcase-item{padding:18px}}
+@media(prefers-reduced-motion:reduce){.site-showcase-item{transition:none}}
+
