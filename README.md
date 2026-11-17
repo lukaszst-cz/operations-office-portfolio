@@ -1,47 +1,55 @@
-# Portfolio — Łukasz St-cz
+# Portfolio zawodowe: Łukasz St-cz
 
-Łączę doświadczenie operacyjne z tworzeniem prostych narzędzi do pracy z procesem, dokumentami i danymi. Najmocniejsze obszary to **transport i flota, administracja i dokumentacja B2B, produkcja / DTP oraz organizacja przepływu informacji**.
+To portfolio pokazuje, jak łączę doświadczenie w **transporcie, flocie, administracji B2B, produkcji i DTP** z tworzeniem praktycznych narzędzi. Punktem wyjścia są konkretne procesy: kto otrzymuje informację, podejmuje decyzję, uzupełnia dokument i zamyka sprawę.
 
-## Zacznij tutaj
+## Zobacz w przeglądarce
 
-- **[Portfolio online](https://lukaszst-cz.github.io/operations-office-portfolio/)** — najlepszy punkt startowy.
-- **[Profil zawodowy](https://lukaszst-cz.github.io/operations-office-portfolio/operacje-biuro.html)** — dla rekrutera i pracodawcy.
-- **[TransportFlow 360 — mapa procesu A–Z](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/proces.html)** — pełny flow transportowy.
-- **[TransportFlow Portal](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/portal/)** — zmiana ról: klient, handel, dyspozytor, kierowca, flota, finanse.
-- **[Aplikacje](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)** — publiczne narzędzia i dema.
+- [Strona główna portfolio](https://lukaszst-cz.github.io/operations-office-portfolio/)
+- [Profil zawodowy](https://lukaszst-cz.github.io/operations-office-portfolio/operacje-biuro.html)
+- [Katalog aplikacji i demonstracji](https://lukaszst-cz.github.io/operations-office-portfolio/aplikacje.html)
+- [TransportFlow 360: mapa procesu](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/proces.html)
+- [TransportFlow 360: portal ról](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/portal/)
 
-## Co warto przeklikać
+## Projekty procesowe
 
-| Projekt | Co pokazuje | Start |
-| --- | --- | --- |
-| **TransportFlow 360** | zlecenie transportowe od zapytania do faktury i KPI | [proces A–Z](https://lukaszst-cz.github.io/operations-office-portfolio/transportflow-360/proces.html) |
-| **Auto Naprawa** | proces firmy usługowej: diagnoza, wycena, zgoda, realizacja, QC, faktura | [demo](https://lukaszst-cz.github.io/operations-office-portfolio/auto-naprawa-preview/) |
-| **PrintFlow 360** | Order-to-Cash dla produkcji / poligrafii i role w procesie | [projekt](https://lukaszst-cz.github.io/printflow-360/) |
-| **DocPilot** | dokumenty, OCR, terminy, wyszukiwanie, duplikaty i praca local-first | [strona aplikacji](https://lukaszst-cz.github.io/operations-office-portfolio/docpilot/) |
-| **FamilySyncKids++** | dwa widoki tego samego procesu i jednego źródła danych | [uruchom](https://lukaszst-cz.github.io/operations-office-portfolio/familysynckids-plus-plus/app/) |
-| **Document Checker** | wstępna kontrola CSV, Excela i PDF przed wysłaniem | [demo](https://document-checker-zm.pages.dev/) |
+| Projekt | Zakres |
+| --- | --- |
+| [TransportFlow 360](https://github.com/lukaszst-cz/transportflow-360) | Model zlecenia od zapytania i kalkulacji do POD, faktury i KPI, z portalem PWA i arkuszem Excel. |
+| [PrintFlow 360](https://github.com/lukaszst-cz/printflow-360) | Model Order-to-Cash w poligrafii i produkcji, z rolami, kontrolą jakości i wskaźnikami. |
+| [WorkshopFlow 360](https://github.com/lukaszst-cz/workshopflow-360) | Demonstracja procesu obsługi warsztatu od zgłoszenia do wydania pojazdu. |
+| [Centrum Budowlane PWA](https://github.com/lukaszst-cz/centrum-budowlane-pwa) | Interaktywny model zamówień, magazynu, tartaku, HDS, dokumentów i finansów. |
+
+## Aplikacje i małe narzędzia
+
+- **[DocPilot](https://github.com/lukaszst-cz/docpilot)**: lokalna aplikacja Windows do OCR, wyszukiwania i porządkowania dokumentów. Stabilne wydanie 4.0; rozwijany LifePilot pozostaje wersją preview.
+- **[Aktywnik+](https://github.com/lukaszst-cz/aktywnik-plus)**: bezpłatna PWA do aktywności własnej i rodzinnej. Beta, pilot; nie jest formalnym wdrożeniem szkolnym.
+- **[CzyToŚciema?](https://github.com/lukaszst-cz/czy-to-sciema)**: lokalna analiza podejrzanych SMS-ów, e-maili, adresów i kodów QR.
+- **[Lead & Offer Copilot](https://github.com/lukaszst-cz/lead-offer-copilot)**: porządkowanie zapytania, lista braków i szkic odpowiedzi do zatwierdzenia.
+- **[Document Checker](https://github.com/lukaszst-cz/document-checker)**: kontrola kompletności i zgodności danych CSV, XLSX i PDF.
+- **[Fleet Ops Desk](https://github.com/lukaszst-cz/fleet-ops-desk)**: lokalna analiza relacyjnych danych o pojazdach i kosztach.
+- **[FamilySyncKids++](familysynckids-plus-plus/)**: rodzinna aplikacja local-first z oddzielnymi widokami rodzica i dziecka, bez synchronizacji między urządzeniami.
+
+## Zielona Marka: strony i rozwiązania dla firm
+
+Osobne [portfolio Zielonej Marki](https://zielona-marka.pl/portfolio) obejmuje koncepcje stron i ich modernizacji, katalogi i gazetki produktowe, aplikacje oraz arkusze. W [repozytorium strony](https://github.com/lukaszst-cz/zielona-marka-pl) znajduje się jej kod. Projekty koncepcyjne są oznaczone jako demonstracje, a nie realizacje dla klientów.
 
 ## Jak pracuję
 
-1. **Problem** — ustalam, gdzie ginie informacja, czas albo odpowiedzialność.
-2. **Flow** — rozpisuję role, statusy, warunki przejścia i wyjątki.
-3. **Dane** — określam, co trzeba zapisać i co jest źródłem prawdy.
-4. **Narzędzie** — wybieram najprostszą formę: arkusz, formularz, panel, baza lub aplikacja.
-5. **Kontrola** — sprawdzam scenariusze poprawne, błędne i graniczne.
+1. Ustalam problem i cel procesu.
+2. Porządkuję role, statusy, dane, terminy i wyjątki.
+3. Projektuję najprostsze rozwiązanie, które można zweryfikować.
+4. Sprawdzam scenariusze typowe, błędne i graniczne.
+5. Dokumentuję zakres, wyniki testów i ograniczenia.
 
-## Kompetencje
+**Technologie:** Python, SQL / SQLite, Excel, C# / .NET, JavaScript, TypeScript, React, HTML / CSS, GitHub Actions.  
+**Organizacja:** Notion, Obsidian, Google Workspace, dokumentacja i kontrola procesu.
 
-**Operacje:** transport, flota, CMR/WZ, dokumentacja, B2B, koordynacja, DTP/prepress, produkcja.  
-**Dane:** Excel, SQL, SQLite, CSV, raportowanie, walidacja.  
-**Technologia:** Python, C#/.NET, JavaScript, TypeScript, React, HTML/CSS, Git, GitHub Actions.  
-**Organizacja:** Notion, Obsidian, Google Workspace, procesy, statusy, dokumentacja.
+### Zakres i prywatność
 
-## Prywatność
-
-Publiczne projekty używają danych syntetycznych lub zanonimizowanych. Nie publikuję danych klientów, pracowników ani dokumentów źródłowych.
+Przykłady procesowe wykorzystują dane syntetyczne lub zanonimizowane. Publiczna demonstracja nie jest gotowym systemem ERP, TMS, CRM ani dowodem wdrożenia u klienta. Funkcje, których projekt nie realizuje, są opisane w odpowiednim repozytorium.
 
 ## Kontakt
 
-- GitHub: [github.com/lukaszst-cz](https://github.com/lukaszst-cz)
-- Rekrutacja: [lukasz.staniewicz@gmail.com](mailto:lukasz.staniewicz@gmail.com)
-- Współpraca: [kontakt@zielona-marka.pl](mailto:kontakt@zielona-marka.pl)
+- [GitHub](https://github.com/lukaszst-cz)
+- [Sprawy zawodowe](mailto:lukasz.staniewicz@gmail.com)
+- [Współpraca z Zieloną Marką](mailto:kontakt@zielona-marka.pl)
