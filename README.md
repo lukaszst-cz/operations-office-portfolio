@@ -31,7 +31,7 @@ To portfolio pokazuje, jak łączę doświadczenie w **transporcie, flocie, admi
 
 ## Zielona Marka: strony i rozwiązania dla firm
 
-[Portfolio Zielonej Marki](https://zielona-marka.pl/portfolio) zawiera koncepcje witryn, katalogów B2B, gazetek, aplikacji oraz materiałów przed i po modernizacji. Na [stronie głównej portfolio zawodowego](https://lukaszst-cz.github.io/operations-office-portfolio/#projekty-www) znajduje się także przegląd wybranych prac.
+[Portfolio marki Zielona Marka](https://zielona-marka.pl/portfolio) zawiera koncepcje witryn, katalogów B2B, gazetek, aplikacji oraz materiałów przed i po modernizacji. Na [stronie głównej portfolio zawodowego](https://lukaszst-cz.github.io/operations-office-portfolio/#projekty-www) znajduje się także przegląd wybranych prac.
 
 **Bezpośrednie demonstracje stron:** [PHU MARECKI](https://phu-marecki.vercel.app), [BUDRIVO](https://budrivo.vercel.app), [MATERIVO](https://materivo-pro.vercel.app), [NEXIO ELEKTRO](https://nexio-elektro.vercel.app), [NAVORO HURT](https://navoro-hurt-koncepcja.vercel.app), [SOLIDOM](https://solidom.vercel.app), [AUREA SMILE](https://aurea-smile.vercel.app) oraz [SOLIDENT](https://solident-mu.vercel.app).
 
@@ -56,4 +56,4 @@ Przykłady procesowe wykorzystują dane syntetyczne lub zanonimizowane. Publiczn
 
 - [GitHub](https://github.com/lukaszst-cz)
 - [Sprawy zawodowe](mailto:lukasz.staniewicz@gmail.com)
-- [Współpraca z Zieloną Marką](mailto:kontakt@zielona-marka.pl)
+- [Współpraca: Zielona Marka](mailto:kontakt@zielona-marka.pl)
